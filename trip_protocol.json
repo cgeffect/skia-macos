@@ -1,0 +1,408 @@
+{
+    "version": "1.0",
+    "metadata": {
+        "title": "青海湖旅游攻略",
+        "description": "基于trip.json的Skia渲染协议",
+        "canvas": {
+            "width": 1242,
+            "height": 1660,
+            "background": {
+                "type": "color",
+                "value": "#FFFFFF"
+            }
+        }
+    },
+    "tracks": {
+        "images": [
+            {
+                "id": "background_1",
+                "type": "image",
+                "source": {
+                    "type": "file",
+                    "path": "res/images/image_0.png"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "rotation": 0.0,
+                    "anchor": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "opacity": 1.0,
+                    "blendMode": "srcOver"
+                }
+            },
+            {
+                "id": "background_2",
+                "type": "image",
+                "source": {
+                    "type": "file",
+                    "path": "res/images/image_1.png"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "rotation": 0.0,
+                    "anchor": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "opacity": 1.0,
+                    "blendMode": "srcOver"
+                }
+            },
+            {
+                "id": "decoration_right",
+                "type": "image",
+                "source": {
+                    "type": "file",
+                    "path": "res/images/image_2.png"
+                },
+                "transform": {
+                    "position": {
+                        "x": 1175,
+                        "y": 1033
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "rotation": 0.0,
+                    "anchor": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "opacity": 1.0,
+                    "blendMode": "srcOver"
+                }
+            },
+            {
+                "id": "decoration_left",
+                "type": "image",
+                "source": {
+                    "type": "file",
+                    "path": "res/images/image_3.png"
+                },
+                "transform": {
+                    "position": {
+                        "x": 45,
+                        "y": 452
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "rotation": 0.0,
+                    "anchor": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "opacity": 1.0,
+                    "blendMode": "srcOver"
+                }
+            },
+            {
+                "id": "main_image",
+                "type": "image",
+                "source": {
+                    "type": "file",
+                    "path": "res/images/image_4.png"
+                },
+                "transform": {
+                    "position": {
+                        "x": 119,
+                        "y": 538
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "rotation": 0.0,
+                    "anchor": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "opacity": 1.0,
+                    "blendMode": "srcOver"
+                }
+            },
+            {
+                "id": "text_bg_1",
+                "type": "image",
+                "source": {
+                    "type": "file",
+                    "path": "res/images/image_5.png"
+                },
+                "transform": {
+                    "position": {
+                        "x": 124,
+                        "y": 329
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "rotation": 0.0,
+                    "anchor": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "opacity": 1.0,
+                    "blendMode": "srcOver"
+                }
+            },
+            {
+                "id": "text_bg_2",
+                "type": "image",
+                "source": {
+                    "type": "file",
+                    "path": "res/images/image_6.png"
+                },
+                "transform": {
+                    "position": {
+                        "x": 255,
+                        "y": 1329
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "rotation": 0.0,
+                    "anchor": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "opacity": 1.0,
+                    "blendMode": "srcOver"
+                }
+            },
+            {
+                "id": "bottom_text_bg",
+                "type": "image",
+                "source": {
+                    "type": "file",
+                    "path": "res/images/image_7.png"
+                },
+                "transform": {
+                    "position": {
+                        "x": 103,
+                        "y": 1534
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "rotation": 0.0,
+                    "anchor": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "opacity": 1.0,
+                    "blendMode": "srcOver"
+                }
+            }
+        ],
+        "texts": [
+            {
+                "id": "title",
+                "type": "text",
+                "content": "青海湖旅游攻略",
+                "transform": {
+                    "position": {
+                        "x": 111.7632,
+                        "y": 96.096
+                    },
+                    "scale": {
+                        "x": 1.7652,
+                        "y": 1.7652
+                    },
+                    "rotation": 0.0,
+                    "anchor": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "opacity": 1.0,
+                    "blendMode": "srcOver"
+                },
+                "style": {
+                    "font": {
+                        "family": "站酷快乐体",
+                        "size": 80,
+                        "weight": "normal",
+                        "slant": "upright",
+                        "embolden": false,
+                        "linearMetrics": false,
+                        "baselineSnap": false,
+                        "forceAutoHinting": false,
+                        "embeddedBitmaps": true,
+                        "subpixel": true,
+                        "edging": "antialias"
+                    },
+                    "color": {
+                        "fill": "#1F87E8",
+                        "stroke": "#FFFFFF",
+                        "strokeWidth": 10.0
+                    },
+                    "shadow": {
+                        "enabled": false
+                    },
+                    "paragraph": {
+                        "textAlign": "left",
+                        "textDirection": "ltr",
+                        "maxLines": 0,
+                        "ellipsis": "",
+                        "height": 0,
+                        "minHeight": 0,
+                        "maxHeight": 0,
+                        "textHeightBehavior": "all",
+                        "effectiveAlign": "left",
+                        "disableHinting": false
+                    }
+                }
+            },
+            {
+                "id": "subtitle_1",
+                "type": "text",
+                "content": "4天人均花费不到2000",
+                "transform": {
+                    "position": {
+                        "x": 199,
+                        "y": 387
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "rotation": 0.0,
+                    "anchor": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "opacity": 1.0,
+                    "blendMode": "srcOver"
+                },
+                "style": {
+                    "font": {
+                        "family": "站酷快乐体",
+                        "size": 75,
+                        "weight": "normal",
+                        "slant": "upright",
+                        "embolden": false,
+                        "linearMetrics": false,
+                        "baselineSnap": false,
+                        "forceAutoHinting": false,
+                        "embeddedBitmaps": true,
+                        "subpixel": true,
+                        "edging": "antialias"
+                    },
+                    "color": {
+                        "fill": "#5943CC",
+                        "stroke": "transparent",
+                        "strokeWidth": 0.0
+                    },
+                    "shadow": {
+                        "enabled": false
+                    },
+                    "paragraph": {
+                        "textAlign": "left",
+                        "textDirection": "ltr",
+                        "maxLines": 0,
+                        "ellipsis": "",
+                        "height": 0,
+                        "minHeight": 0,
+                        "maxHeight": 0,
+                        "textHeightBehavior": "all",
+                        "effectiveAlign": "left",
+                        "disableHinting": false
+                    }
+                }
+            },
+            {
+                "id": "subtitle_2",
+                "type": "text",
+                "content": "规划路线 住宿安排、美食分享",
+                "transform": {
+                    "position": {
+                        "x": 308,
+                        "y": 1396
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "rotation": 0.0,
+                    "anchor": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "opacity": 1.0,
+                    "blendMode": "srcOver"
+                },
+                "style": {
+                    "font": {
+                        "family": "站酷快乐体",
+                        "size": 57,
+                        "weight": "normal",
+                        "slant": "upright",
+                        "embolden": false,
+                        "linearMetrics": false,
+                        "baselineSnap": false,
+                        "forceAutoHinting": false,
+                        "embeddedBitmaps": true,
+                        "subpixel": true,
+                        "edging": "antialias"
+                    },
+                    "color": {
+                        "fill": "#5943CC",
+                        "stroke": "transparent",
+                        "strokeWidth": 0.0
+                    },
+                    "shadow": {
+                        "enabled": false
+                    },
+                    "paragraph": {
+                        "textAlign": "left",
+                        "textDirection": "ltr",
+                        "maxLines": 0,
+                        "ellipsis": "",
+                        "height": 0,
+                        "minHeight": 0,
+                        "maxHeight": 0,
+                        "textHeightBehavior": "all",
+                        "effectiveAlign": "left",
+                        "disableHinting": false
+                    }
+                }
+            }
+        ]
+    },
+    "output": {
+        "format": "PNG",
+        "quality": 100,
+        "filename": "trip_rendered.png",
+        "metadata": {
+            "title": "青海湖旅游攻略",
+            "description": "4天人均花费不到2000，规划路线 住宿安排、美食分享",
+            "keywords": [
+                "青海湖",
+                "旅游",
+                "攻略",
+                "住宿",
+                "美食"
+            ]
+        }
+    }
+}

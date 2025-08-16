@@ -27,7 +27,7 @@ list(APPEND libSRV_INCLUDES_DIR ${libSRV_TRD_ROOT_PATH}/skia/Skia-macOS-Release-
 file(GLOB_RECURSE ABSL_LIBS ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/skia/Skia-macOS-Release-arm64/out/Release-arm64/*.a)
 message(ABSL_LIBS ${ABSL_LIBS})
 file(GLOB_RECURSE allCPP 
-        ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp        
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
         )
 # 在Xcode里面按照文件实际目录显示, 不要平铺
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${allCPP})
