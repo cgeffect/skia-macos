@@ -57,5 +57,13 @@ int main() {
             std::cerr << "❌ 杯子海报渲染失败: " << engine.getErrorMessage() << std::endl;
         }
         
+        // 示例7: 渲染冬至海报
+        std::cout << "\n=== 示例7: 渲染冬至海报 ===" << std::endl;
+        if (engine.renderFromProtocol("projects/horizontal/horizontal_protocol.json")) {
+            std::cout << "✅ 冬至海报渲染成功！" << std::endl;
+        } else {
+            std::cerr << "❌ 冬至海报渲染失败: " << engine.getErrorMessage() << std::endl;
+        }
+        
         return 0;
     } 

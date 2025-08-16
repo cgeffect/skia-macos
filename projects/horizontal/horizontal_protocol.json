@@ -1,0 +1,112 @@
+{
+    "canvas": {
+        "width": 900,
+        "height": 383,
+        "backgroundColor": "#FFFFFF"
+    },
+    "images": [
+        {
+            "id": "background_1",
+            "path": "projects/horizontal/resources/horizontal_bg_1.png",
+            "x": 0,
+            "y": 0,
+            "width": 900,
+            "height": 383,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "rotation": 0,
+            "opacity": 1.0
+        },
+        {
+            "id": "decor_1",
+            "path": "projects/horizontal/resources/horizontal_decor_1.png",
+            "x": 47,
+            "y": 36,
+            "width": 36,
+            "height": 51,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "rotation": 0,
+            "opacity": 1.0
+        },
+        {
+            "id": "decor_2",
+            "path": "projects/horizontal/resources/horizontal_decor_2.png",
+            "x": 742,
+            "y": 106,
+            "width": 30,
+            "height": 42,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "rotation": 0,
+            "opacity": 1.0
+        },
+        {
+            "id": "decor_3",
+            "path": "projects/horizontal/resources/horizontal_decor_3.png",
+            "x": -20,
+            "y": 16,
+            "width": 378,
+            "height": 367,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "rotation": 0,
+            "opacity": 1.0
+        },
+        {
+            "id": "decor_4",
+            "path": "projects/horizontal/resources/horizontal_decor_4.png",
+            "x": 309,
+            "y": 296,
+            "width": 294,
+            "height": 72,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "rotation": 0,
+            "opacity": 1.0
+        },
+        {
+            "id": "decor_5",
+            "path": "projects/horizontal/resources/horizontal_decor_5.png",
+            "x": 340,
+            "y": 176,
+            "width": 373,
+            "height": 69,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "rotation": 0,
+            "opacity": 1.0
+        }
+    ],
+    "texts": [
+        {
+            "id": "text_1",
+            "content": "今天你吃饺子了吗？",
+            "x": 381,
+            "y": 195,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 34,
+            "color": "#FFFFFF",
+            "opacity": 1.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0
+        },
+        {
+            "id": "text_2",
+            "content": "今日冬至",
+            "x": 343,
+            "y": 65,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 95,
+            "color": "#FFFEFD",
+            "opacity": 1.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0
+        }
+    ],
+    "output": {
+        "format": "png",
+        "quality": 100,
+        "filename": "horizontal_poster.png"
+    }
+}
