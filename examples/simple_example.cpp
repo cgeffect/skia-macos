@@ -33,5 +33,13 @@ int main() {
         std::cerr << "❌ 美食海报渲染失败: " << engine.getErrorMessage() << std::endl;
     }
     
+    // 示例4: 渲染春天海报
+    std::cout << "\n=== 示例4: 渲染春天海报 ===" << std::endl;
+    if (engine.renderFromProtocol("projects/spring/spring_protocol.json")) {
+        std::cout << "✅ 春天海报渲染成功！" << std::endl;
+    } else {
+        std::cerr << "❌ 春天海报渲染失败: " << engine.getErrorMessage() << std::endl;
+    }
+    
     return 0;
 } 
