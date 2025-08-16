@@ -1,11 +1,10 @@
-#include "protocol_parser.h"
-#include "3rdparty/json/include/nlohmann/json.hpp"
+#include "parsers/protocol_parser.h"
+#include "utils/color_parser.h"
 #include <fstream>
 #include <sstream>
 #include <iostream>
-#include <regex>
 
-using json = nlohmann::json;
+namespace skia_renderer {
 
 ProtocolParser::ProtocolParser() : valid(false) {
 }
@@ -94,14 +93,12 @@ bool ProtocolParser::parseImages(const json& j) {
         ImageElement img;
         img.id = parseString(imgJson, "id", "");
         img.path = parseString(imgJson, "path", "");
-        img.x = parseFloat(imgJson, "x", 0.0f);
-        img.y = parseFloat(imgJson, "y", 0.0f);
-        img.width = parseFloat(imgJson, "width", 0.0f);
-        img.height = parseFloat(imgJson, "height", 0.0f);
-        img.scaleX = parseFloat(imgJson, "scaleX", 1.0f);
-        img.scaleY = parseFloat(imgJson, "scaleY", 1.0f);
-        img.rotation = parseFloat(imgJson, "rotation", 0.0f);
-        img.opacity = parseFloat(imgJson, "opacity", 1.0f);
+        img.width = parseInt(imgJson, "width", 0);
+        img.height = parseInt(imgJson, "height", 0);
+        
+        if (!parseTransform(imgJson, img.transform)) {
+            return false;
+        }
         
         protocol.images.push_back(img);
     }
@@ -119,21 +116,14 @@ bool ProtocolParser::parseTexts(const json& j) {
         TextElement text;
         text.id = parseString(textJson, "id", "");
         text.content = parseString(textJson, "content", "");
-        text.x = parseFloat(textJson, "x", 0.0f);
-        text.y = parseFloat(textJson, "y", 0.0f);
-        text.fontSize = parseFloat(textJson, "fontSize", 12.0f);
-        text.fontFamily = parseString(textJson, "fontFamily", "Arial");
-        text.fillColor = parseColor(parseString(textJson, "fillColor", "#000000"));
-        text.strokeColor = parseColor(parseString(textJson, "strokeColor", "#000000"));
-        text.strokeWidth = parseFloat(textJson, "strokeWidth", 0.0f);
-        text.hasShadow = parseBool(textJson, "hasShadow", false);
-        text.shadowDx = parseFloat(textJson, "shadowDx", 0.0f);
-        text.shadowDy = parseFloat(textJson, "shadowDy", 0.0f);
-        text.shadowSigma = parseFloat(textJson, "shadowSigma", 0.0f);
-        text.shadowColor = parseColor(parseString(textJson, "shadowColor", "#000000"));
-        text.scaleX = parseFloat(textJson, "scaleX", 1.0f);
-        text.scaleY = parseFloat(textJson, "scaleY", 1.0f);
-        text.rotation = parseFloat(textJson, "rotation", 0.0f);
+        
+        if (!parseTransform(textJson, text.transform)) {
+            return false;
+        }
+        
+        if (!parseTextStyle(textJson, text.style)) {
+            return false;
+        }
         
         protocol.texts.push_back(text);
     }
@@ -147,43 +137,28 @@ bool ProtocolParser::parseOutput(const json& j) {
     return true;
 }
 
-SkColor ProtocolParser::parseColor(const std::string& colorString) {
-    if (colorString.empty()) {
-        return SK_ColorBLACK;
-    }
-    
-    // 处理 #RRGGBB 格式
-    if (colorString[0] == '#') {
-        std::string hex = colorString.substr(1);
-        if (hex.length() == 6) {
-            unsigned int r, g, b;
-            sscanf(hex.c_str(), "%02x%02x%02x", &r, &g, &b);
-            return SkColorSetRGB(r, g, b);
-        }
-    }
-    
-    // 处理 rgb(r,g,b) 格式
-    std::regex rgbPattern(R"(rgb\((\d+),\s*(\d+),\s*(\d+)\))");
-    std::smatch match;
-    if (std::regex_match(colorString, match, rgbPattern)) {
-        int r = std::stoi(match[1]);
-        int g = std::stoi(match[2]);
-        int b = std::stoi(match[3]);
-        return SkColorSetRGB(r, g, b);
-    }
-    
-    // 处理 rgba(r,g,b,a) 格式
-    std::regex rgbaPattern(R"(rgba\((\d+),\s*(\d+),\s*(\d+),\s*([\d.]+)\))");
-    if (std::regex_match(colorString, match, rgbaPattern)) {
-        int r = std::stoi(match[1]);
-        int g = std::stoi(match[2]);
-        int b = std::stoi(match[3]);
-        float a = std::stof(match[4]);
-        return SkColorSetARGB(static_cast<U8CPU>(a * 255), r, g, b);
-    }
-    
-    // 默认返回黑色
-    return SK_ColorBLACK;
+bool ProtocolParser::parseTransform(const json& j, Transform& transform) {
+    transform.x = parseFloat(j, "x", 0.0f);
+    transform.y = parseFloat(j, "y", 0.0f);
+    transform.scaleX = parseFloat(j, "scaleX", 1.0f);
+    transform.scaleY = parseFloat(j, "scaleY", 1.0f);
+    transform.rotation = parseFloat(j, "rotation", 0.0f);
+    transform.opacity = parseFloat(j, "opacity", 1.0f);
+    return true;
+}
+
+bool ProtocolParser::parseTextStyle(const json& j, TextStyle& style) {
+    style.fontFamily = parseString(j, "fontFamily", "Arial");
+    style.fontSize = parseFloat(j, "fontSize", 12.0f);
+    style.fillColor = ColorParser::parseColor(parseString(j, "fillColor", "#000000"));
+    style.strokeColor = ColorParser::parseColor(parseString(j, "strokeColor", "#000000"));
+    style.strokeWidth = parseFloat(j, "strokeWidth", 0.0f);
+    style.hasShadow = parseBool(j, "hasShadow", false);
+    style.shadowDx = parseFloat(j, "shadowDx", 0.0f);
+    style.shadowDy = parseFloat(j, "shadowDy", 0.0f);
+    style.shadowSigma = parseFloat(j, "shadowSigma", 0.0f);
+    style.shadowColor = ColorParser::parseColor(parseString(j, "shadowColor", "#000000"));
+    return true;
 }
 
 float ProtocolParser::parseFloat(const json& j, const std::string& key, float defaultValue) {
@@ -212,4 +187,6 @@ bool ProtocolParser::parseBool(const json& j, const std::string& key, bool defau
         return j[key].get<bool>();
     }
     return defaultValue;
-} 
+}
+
+} // namespace skia_renderer 

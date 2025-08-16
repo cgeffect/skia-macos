@@ -22,15 +22,23 @@ set(libSRV_TRD_ROOT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty)
 list(APPEND libSRV_INCLUDES_DIR ./)
 list(APPEND libSRV_INCLUDES_DIR ${libSRV_TRD_ROOT_PATH}/skia/Skia-macOS-Release-arm64)
 list(APPEND libSRV_INCLUDES_DIR ${libSRV_TRD_ROOT_PATH}/json/include)
+list(APPEND libSRV_INCLUDES_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 # list(APPEND libs_trd_srv ${libSRV_TRD_ROOT_PATH}/skia/deploy/lib/libskia.a)
 
 file(GLOB_RECURSE ABSL_LIBS ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/skia/Skia-macOS-Release-arm64/out/Release-arm64/*.a)
 message(ABSL_LIBS ${ABSL_LIBS})
 file(GLOB_RECURSE allCPP 
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/protocol_parser.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/universal_renderer.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/examples/simple_example.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/core/types.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/utils/color_parser.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/parsers/protocol_parser.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/resources/font_manager.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/canvas_renderer.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/image_renderer.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/text_renderer.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/output/image_writer.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/engine/render_engine.cpp
         )
 # 在Xcode里面按照文件实际目录显示, 不要平铺
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${allCPP})
