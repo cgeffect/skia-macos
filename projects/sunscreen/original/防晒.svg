@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1242" height="1660" viewBox="0 0 1242 1660" xml:space="preserve">
+<desc>Created with Fabric.js 5.5.2</desc>
+<defs>
+<clipPath id="CLIPPATH_14" >
+	<rect transform="matrix(1 0 0 1 621 830)" x="-621" y="-830" rx="0" ry="0" width="1242" height="1660" />
+</clipPath>
+</defs>
+<g clip-path="url(#CLIPPATH_14)" >
+<g transform="matrix(1 0 0 1 621 830)" id="workspace"  >
+<rect style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"  x="-621" y="-830" rx="0" ry="0" width="1242" height="1660" />
+</g>
+<g transform="matrix(1 0 0 1 621 830)" id="039bbaf0-3324-4976-987a-10cced99807b"  >
+	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750055896004_5873ae6dee.png" x="-621" y="-830" width="1242" height="1660"></image>
+</g>
+<g transform="matrix(1 0 0 1 621 830)" id="f2f44068-d0bc-4f3c-b283-3bc2e2ea248b"  >
+	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750055897166_9044386c55.png" x="-621" y="-830" width="1242" height="1660"></image>
+</g>
+<g transform="matrix(1 0 0 1 196 894)" id="10735677-51b2-4b04-8e03-709d7a833828"  >
+	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750055909963_c45b313606.png" x="-127" y="-140" width="254" height="280"></image>
+</g>
+<g transform="matrix(1 0 0 1 1075 602.5)" id="1be06120-8445-4670-b0b5-8bd738a8a6c2"  >
+	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750055910288_b393d5958b.png" x="-159" y="-159.5" width="318" height="319"></image>
+</g>
+<g transform="matrix(1 0 0 1 924.5 1455.5)" id="3205f6cf-03f6-4603-a07c-80b8aa211de4"  >
+	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750055910784_4a60647266.png" x="-260.5" y="-129.5" width="521" height="259"></image>
+</g>
+<g transform="matrix(1 0 0 1 620.5 397.5)" id="69fc4116-42a6-4064-bee0-e00f93ca8729"  >
+	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750055911396_ee850dcd4b.png" x="-368.5" y="-45.5" width="737" height="91"></image>
+</g>
+<g transform="matrix(1 0 0 1 680 403.355)" style="" id="17384c6f-04c3-4d66-9dfe-9f86904332e7"  >
+		<text xml:space="preserve" font-family="站酷快乐体" font-size="67" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(199,77,76); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-357.5" y="21.0474" style="white-space: pre; ">好物推荐 值得收藏</tspan></text>
+</g>
+<g transform="matrix(1 0 0 1 623.5 202.481)" style="filter: url(#SVGID_7);" id="7362d59a-1935-40c8-94fb-56483ebbbdd2"  >
+<filter id="SVGID_7" y="-21.66%" height="143.32%" x="-20.41%" width="140.82%" >
+	<feGaussianBlur in="SourceAlpha" stdDeviation="0"></feGaussianBlur>
+	<feOffset dx="4" dy="3" result="oBlur" ></feOffset>
+	<feFlood flood-color="rgb(4,74,149)" flood-opacity="1"/>
+	<feComposite in2="oBlur" operator="in" />
+	<feMerge>
+		<feMergeNode></feMergeNode>
+		<feMergeNode in="SourceGraphic"></feMergeNode>
+	</feMerge>
+</filter>
+		<text xml:space="preserve" font-family="站酷快乐体" font-size="160" font-style="normal" font-weight="normal" style="stroke: rgb(255,255,255); stroke-width: 6; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(31,135,232); fill-rule: nonzero; opacity: 1; white-space: pre;" paint-order="stroke"  ><tspan x="-484.7547" y="50.2624" >夏日防晒攻略</tspan></text>
+</g>
+</g>
+</svg>

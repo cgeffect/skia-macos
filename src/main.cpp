@@ -45,9 +45,9 @@ struct ImageElement {
     int width, height;
 };
 
-class TripRenderer {
+class UniversalRenderer {
 public:
-    TripRenderer() {
+    UniversalRenderer() {
         // 初始化字体管理器
         fontMgr = SkFontMgr_New_CoreText(nullptr);
     }
@@ -98,6 +98,97 @@ public:
         std::cout << "青海湖旅游攻略图已保存为trip_rendered.png" << std::endl;
         return true;
     }
+    
+    // 渲染防晒海报
+    bool renderSunscreen() {
+        // 创建画布
+        SkImageInfo info = SkImageInfo::Make(
+            1242, 1660,
+            SkColorType::kRGBA_8888_SkColorType,
+            SkAlphaType::kOpaque_SkAlphaType);
+        sk_sp<SkSurface> surface(SkSurfaces::Raster(info));
+        if (!surface) {
+            std::cerr << "无法创建Surface" << std::endl;
+            return false;
+        }
+        SkCanvas* canvas = surface->getCanvas();
+        
+        // 设置白色背景
+        canvas->clear(SK_ColorWHITE);
+        
+        // 渲染图片元素
+        renderSunscreenImageElements(canvas);
+        
+        // 渲染文本元素
+        renderSunscreenTextElements(canvas);
+        
+        // 保存图像
+        sk_sp<SkImage> image = surface->makeImageSnapshot();
+        SkPixmap pixmap;
+        if (!image->peekPixels(&pixmap)) {
+            std::cerr << "无法获取像素数据" << std::endl;
+            return false;
+        }
+        
+        SkFILEWStream out("sunscreen_poster.png");
+        if (!out.isValid()) {
+            std::cerr << "无法打开输出文件" << std::endl;
+            return false;
+        }
+        
+        SkPngEncoder::Options options;
+        if (!SkPngEncoder::Encode(&out, pixmap, options)) {
+            std::cerr << "PNG编码失败" << std::endl;
+            return false;
+        }
+        
+        std::cout << "防晒海报已保存为sunscreen_poster.png" << std::endl;
+        return true;
+    }
+    
+    // 渲染美食海报
+    bool renderFood() {
+        // 创建画布
+        SkImageInfo info = SkImageInfo::Make(
+            1242, 1660,
+            SkColorType::kRGBA_8888_SkColorType,
+            SkAlphaType::kOpaque_SkAlphaType);
+        sk_sp<SkSurface> surface(SkSurfaces::Raster(info));
+        if (!surface) {
+            std::cerr << "无法创建Surface" << std::endl;
+            return false;
+        }
+        SkCanvas* canvas = surface->getCanvas();
+        
+        // 设置白色背景
+        canvas->clear(SK_ColorWHITE);
+        
+        // 渲染图片元素
+        renderFoodImageElements(canvas);
+        
+        // 保存图像
+        sk_sp<SkImage> image = surface->makeImageSnapshot();
+        SkPixmap pixmap;
+        if (!image->peekPixels(&pixmap)) {
+            std::cerr << "无法获取像素数据" << std::endl;
+            return false;
+        }
+        
+        SkFILEWStream out("food_poster.png");
+        if (!out.isValid()) {
+            std::cerr << "无法打开输出文件" << std::endl;
+            return false;
+        }
+        
+        SkPngEncoder::Options options;
+        if (!SkPngEncoder::Encode(&out, pixmap, options)) {
+            std::cerr << "PNG编码失败" << std::endl;
+            return false;
+        }
+        
+        std::cout << "美食海报已保存为food_poster.png" << std::endl;
+        return true;
+    }
 
 private:
     sk_sp<SkFontMgr> fontMgr;
@@ -106,20 +197,20 @@ private:
         // 定义图片元素
         std::vector<ImageElement> images = {
             // 背景图片
-            {"res/images/image_0.png", 0, 0, 1.0, 1.0, 0.0, 1.0, 1242, 1660},
-            {"res/images/image_1.png", 0, 0, 1.0, 1.0, 0.0, 1.0, 1242, 1660},
+            {"projects/trip/resources/image_0.png", 0, 0, 1.0, 1.0, 0.0, 1.0, 1242, 1660},
+            {"projects/trip/resources/image_1.png", 0, 0, 1.0, 1.0, 0.0, 1.0, 1242, 1660},
             
             // 装饰元素
-            {"res/images/image_2.png", 1175, 1033, 1.0, 1.0, 0.0, 1.0, 22, 224},
-            {"res/images/image_3.png", 45, 452, 1.0, 1.0, 0.0, 1.0, 22, 224},
+            {"projects/trip/resources/image_2.png", 1175, 1033, 1.0, 1.0, 0.0, 1.0, 22, 224},
+            {"projects/trip/resources/image_3.png", 45, 452, 1.0, 1.0, 0.0, 1.0, 22, 224},
             
             // 主图片
-            {"res/images/image_4.png", 119, 538, 1.0, 1.0, 0.0, 1.0, 1005, 749},
+            {"projects/trip/resources/image_4.png", 119, 538, 1.0, 1.0, 0.0, 1.0, 1005, 749},
             
             // 文字背景
-            {"res/images/image_5.png", 124, 329, 1.0, 1.0, 0.0, 1.0, 906, 165},
-            {"res/images/image_6.png", 255, 1329, 1.0, 1.0, 0.0, 1.0, 906, 165},
-            {"res/images/image_7.png", 103, 1534, 1.0, 1.0, 0.0, 1.0, 492, 47}
+            {"projects/trip/resources/image_5.png", 124, 329, 1.0, 1.0, 0.0, 1.0, 906, 165},
+            {"projects/trip/resources/image_6.png", 255, 1329, 1.0, 1.0, 0.0, 1.0, 906, 165},
+            {"projects/trip/resources/image_7.png", 103, 1534, 1.0, 1.0, 0.0, 1.0, 492, 47}
         };
         
         // 渲染每个图片元素
@@ -219,16 +310,104 @@ private:
         // 恢复画布状态
         canvas->restore();
     }
+    
+    // 防晒海报相关方法
+    void renderSunscreenImageElements(SkCanvas* canvas) {
+        // 定义图片元素
+        std::vector<ImageElement> images = {
+            {"projects/sunscreen/resources/sunscreen_bg_1.png", 0, 0, 1.0, 1.0, 0.0, 1.0, 1242, 1660},
+            {"projects/sunscreen/resources/sunscreen_bg_2.png", 0, 0, 1.0, 1.0, 0.0, 1.0, 1242, 1660},
+            {"projects/sunscreen/resources/sunscreen_product_1.png", 69, 754, 1.0, 1.0, 0.0, 1.0, 254, 280},
+            {"projects/sunscreen/resources/sunscreen_product_2.png", 916, 443, 1.0, 1.0, 0.0, 1.0, 318, 319},
+            {"projects/sunscreen/resources/sunscreen_product_3.png", 664, 1326, 1.0, 1.0, 0.0, 1.0, 521, 259},
+            {"projects/sunscreen/resources/sunscreen_decor.png", 252, 352, 1.0, 1.0, 0.0, 1.0, 737, 91}
+        };
+        
+        // 渲染每个图片元素
+        for (const auto& img : images) {
+            renderImageElement(canvas, img);
+        }
+    }
+    
+    void renderSunscreenTextElements(SkCanvas* canvas) {
+        // 加载字体
+        sk_sp<SkTypeface> typeface = fontMgr->makeFromFile("res/字制区喜脉体.ttf", 0);
+        if (!typeface) {
+            std::cerr << "无法加载字体文件，使用系统字体" << std::endl;
+            typeface = fontMgr->legacyMakeTypeface("Arial", SkFontStyle::Normal());
+        }
+        
+        // 定义文本元素
+        std::vector<TextElement> texts = {
+            {
+                "夏日防晒攻略", 135.7453, 109.081, 160, "站酷快乐体",
+                SkColorSetRGB(31, 135, 232), SK_ColorWHITE, 6.0f,
+                true, 4, 3, 0, SkColorSetRGB(4, 74, 149),
+                1.0, 1.0
+            },
+            {
+                "好物推荐 值得收藏", 322, 365, 67, "站酷快乐体",
+                SkColorSetRGB(199, 77, 76), SkColorSetRGB(199, 77, 76), 0.0f,
+                false, 0, 0, 0, SK_ColorBLACK,
+                1.0, 1.0
+            }
+        };
+        
+        // 渲染每个文本元素
+        for (const auto& text : texts) {
+            renderTextElement(canvas, text, typeface);
+        }
+    }
+    
+    // 美食海报相关方法
+    void renderFoodImageElements(SkCanvas* canvas) {
+        // 定义图片元素
+        std::vector<ImageElement> images = {
+            {"projects/food/resources/food_bg_1.png", -29, -228, 1.0, 1.0, 0.0, 1.0, 1285, 1927},
+            {"projects/food/resources/food_bg_2.png", 24, 37, 1.0, 1.0, 0.0, 1.0, 1194, 1586},
+            {"projects/food/resources/food_main.png", 95, 105, 1.0, 1.0, 0.0, 1.0, 1050, 750},
+            {"projects/food/resources/food_decor_1.png", 921, 589, 1.0, 1.0, 0.0, 1.0, 226, 223},
+            {"projects/food/resources/food_decor_2.png", 64, 1079, 1.0, 1.0, 0.0, 1.0, 396, 175},
+            {"projects/food/resources/food_text_bg_1.png", 83, 125, 1.0, 1.0, 0.0, 1.0, 1081, 351},
+            {"projects/food/resources/food_text_bg_2.png", 84, 1343, 1.0, 1.0, 0.0, 1.0, 1097, 147},
+            {"projects/food/resources/food_text_bg_3.png", 143, 1362, 1.0, 1.0, 0.0, 1.0, 978, 111}
+        };
+        
+        // 渲染每个图片元素
+        for (const auto& img : images) {
+            renderImageElement(canvas, img);
+        }
+    }
 };
 
 int main() {
-    // 使用青海湖旅游攻略渲染器
-    TripRenderer renderer;
+    // 使用通用渲染器
+    UniversalRenderer renderer;
     
+    // 渲染青海湖旅游攻略
+    std::cout << "正在渲染青海湖旅游攻略..." << std::endl;
     if (renderer.renderTrip()) {
         std::cout << "青海湖旅游攻略图渲染成功！" << std::endl;
     } else {
         std::cerr << "青海湖旅游攻略图渲染失败！" << std::endl;
+        return 1;
+    }
+    
+    // 渲染防晒海报
+    std::cout << "正在渲染防晒海报..." << std::endl;
+    if (renderer.renderSunscreen()) {
+        std::cout << "防晒海报渲染成功！" << std::endl;
+    } else {
+        std::cerr << "防晒海报渲染失败！" << std::endl;
+        return 1;
+    }
+    
+    // 渲染美食海报
+    std::cout << "正在渲染美食海报..." << std::endl;
+    if (renderer.renderFood()) {
+        std::cout << "美食海报渲染成功！" << std::endl;
+    } else {
+        std::cerr << "美食海报渲染失败！" << std::endl;
         return 1;
     }
     

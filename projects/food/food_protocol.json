@@ -1,0 +1,111 @@
+{
+    "canvas": {
+        "width": 1242,
+        "height": 1660,
+        "background": "#FFFFFF"
+    },
+    "images": [
+        {
+            "id": "background_1",
+            "path": "projects/food/resources/food_bg_1.png",
+            "x": -29,
+            "y": -228,
+            "width": 1285,
+            "height": 1927,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "rotation": 0,
+            "opacity": 1.0
+        },
+        {
+            "id": "background_2",
+            "path": "projects/food/resources/food_bg_2.png",
+            "x": 24,
+            "y": 37,
+            "width": 1194,
+            "height": 1586,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "rotation": 0,
+            "opacity": 1.0
+        },
+        {
+            "id": "main_image",
+            "path": "projects/food/resources/food_main.png",
+            "x": 95,
+            "y": 105,
+            "width": 1050,
+            "height": 750,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "rotation": 0,
+            "opacity": 1.0
+        },
+        {
+            "id": "decor_1",
+            "path": "projects/food/resources/food_decor_1.png",
+            "x": 921,
+            "y": 589,
+            "width": 226,
+            "height": 223,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "rotation": 0,
+            "opacity": 1.0
+        },
+        {
+            "id": "decor_2",
+            "path": "projects/food/resources/food_decor_2.png",
+            "x": 64,
+            "y": 1079,
+            "width": 396,
+            "height": 175,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "rotation": 0,
+            "opacity": 1.0
+        },
+        {
+            "id": "text_bg_1",
+            "path": "projects/food/resources/food_text_bg_1.png",
+            "x": 83,
+            "y": 125,
+            "width": 1081,
+            "height": 351,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "rotation": 0,
+            "opacity": 1.0
+        },
+        {
+            "id": "text_bg_2",
+            "path": "projects/food/resources/food_text_bg_2.png",
+            "x": 84,
+            "y": 1343,
+            "width": 1097,
+            "height": 147,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "rotation": 0,
+            "opacity": 1.0
+        },
+        {
+            "id": "text_bg_3",
+            "path": "projects/food/resources/food_text_bg_3.png",
+            "x": 143,
+            "y": 1362,
+            "width": 978,
+            "height": 111,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "rotation": 0,
+            "opacity": 1.0
+        }
+    ],
+    "texts": [],
+    "output": {
+        "format": "png",
+        "filename": "food_poster.png",
+        "quality": 100
+    }
+}
