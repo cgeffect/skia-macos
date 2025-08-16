@@ -116,6 +116,8 @@ bool ProtocolParser::parseTexts(const json& j) {
         TextElement text;
         text.id = parseString(textJson, "id", "");
         text.content = parseString(textJson, "content", "");
+        text.width = parseFloat(textJson, "width", 0.0f);
+        text.height = parseFloat(textJson, "height", 0.0f);
         
         if (!parseTransform(textJson, text.transform)) {
             return false;

@@ -3,418 +3,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1242" height="2208" viewBox="0 0 1242 2208" xml:space="preserve">
 <desc>Created with Fabric.js 5.5.2</desc>
 <defs>
-<clipPath id="CLIPPATH_119" >
+<clipPath id="CLIPPATH_6" >
 	<rect transform="matrix(1 0 0 1 621 1104)" x="-621" y="-1104" rx="0" ry="0" width="1242" height="2208" />
 </clipPath>
 </defs>
-<g clip-path="url(#CLIPPATH_119)" >
+<g clip-path="url(#CLIPPATH_6)" >
 <g transform="matrix(1 0 0 1 621 1104)" id="workspace"  >
 <rect style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"  x="-621" y="-1104" rx="0" ry="0" width="1242" height="2208" />
 </g>
-<g transform="matrix(1 0 0 1 621 1104)" id="3dc5b0fb-8efc-4cb9-9278-da7c6d9c641d"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067139557_b76e244d5d.png" x="-621" y="-1104" width="1242" height="2208"></image>
+<g transform="matrix(1 0 0 1 621 1104)" id="4c4011b3-4e26-4fff-913f-2f50373f4243"  >
+	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750064593476_7b8a7d34b3.png" x="-621" y="-1104" width="1242" height="2208"></image>
 </g>
-<g transform="matrix(1 0 0 1 621 1104)" id="e18d656f-73df-40f9-b2b9-7d0460f45307"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067140845_f9c1acf878.png" x="-838" y="-1118" width="1676" height="2236"></image>
+<g transform="matrix(1 0 0 1 621 1544.5)" id="831e0674-ded6-455c-8f86-c3672620ad80"  >
+	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750064601238_a02e4e2fce.png" x="-621" y="-689.5" width="1242" height="1379"></image>
 </g>
-<g transform="matrix(1 0 0 1 552 984)" id="5c4d8af4-9176-47f2-b9fb-1c9e4ea63465"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067141868_0c1304f243.png" x="-816" y="-344" width="1632" height="688"></image>
+<g transform="matrix(1 0 0 1 494 911)" id="adc7861e-0d5d-4c3e-b7a1-b239ff597e23"  >
+	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750064614513_0097508463.png" x="-136" y="-122" width="272" height="244"></image>
 </g>
-<g transform="matrix(1 0 0 1 551.5 983.5)" id="6420f171-13ec-4175-9257-91d790846aa9"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067142341_c21a78627e.png" x="-815.5" y="-343.5" width="1631" height="687"></image>
+<g transform="matrix(1 0 0 1 900.5 655)" id="a46b3e03-703c-4d14-9c50-9d9a0cd160cb"  >
+	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750064614937_d926d49d85.png" x="-341.5" y="-655" width="683" height="1310"></image>
 </g>
-<g transform="matrix(1 0 0 1 364.5 406)" id="e075dc03-2e48-4268-b7fc-6aae89fab4ec"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067143442_d3c498e72f.png" x="-288.5" y="-340" width="577" height="680"></image>
+<g transform="matrix(1 0 0 1 358.5 281.7)" style="" id="99c8f9c4-c7e2-4af5-8cae-2c9908ffdb16"  >
+		<text xml:space="preserve" font-family="站酷快乐体" font-size="280" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(71,78,71); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-324" y="87.9592" style="white-space: pre; ">立</tspan></text>
 </g>
-<g transform="matrix(1 0 0 1 364 405.5)" id="1e6452dd-e95a-433a-b8f7-5bb7158707cd"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067143877_36b7b1beb8.png" x="-288" y="-339.5" width="576" height="679"></image>
+<g transform="matrix(1 0 0 1 662 543.9048)" style="" id="601ff390-9291-4842-afef-29b4c232cdd8"  >
+		<text xml:space="preserve" font-family="站酷快乐体" font-size="319" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(71,78,71); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-377.5" y="100.2107" style="white-space: pre; ">春</tspan></text>
 </g>
-<g transform="matrix(1 0 0 1 364 405.5)" id="ab4924e4-ad70-469f-889a-a9bfaa37d2ae"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067144245_5784045c02.png" x="-288" y="-339.5" width="576" height="679"></image>
+<g transform="matrix(1 0 0 1 148.5 838.668)" style="" id="c1778c5f-f3f0-44e2-ad1a-0b499ac7ac8b"  >
+		<text xml:space="preserve" font-family="站酷快乐体" font-size="60" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(71,78,71); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-42" y="-256.4196" style="white-space: pre; ">不</tspan><tspan x="-42" y="-177.7716" style="white-space: pre; ">知</tspan><tspan x="-42" y="-99.1236" style="white-space: pre; ">细</tspan><tspan x="-42" y="-20.4756" style="white-space: pre; ">叶</tspan><tspan x="-42" y="58.1724" style="white-space: pre; ">谁</tspan><tspan x="-42" y="136.8204" style="white-space: pre; ">裁</tspan><tspan x="-42" y="215.4684" style="white-space: pre; ">出</tspan><tspan x="-42" y="294.1164" style="white-space: pre; "></tspan></text>
 </g>
-<g transform="matrix(1 0 0 1 364 405.5)" id="7d3a238c-9942-4e49-8e28-d4db57f30c03"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067144652_8f95b04d6f.png" x="-288" y="-339.5" width="576" height="679"></image>
+<g transform="matrix(1 0 0 1 261.5 1003.668)" style="" id="dd411a6d-c648-41e6-b8d2-468780d9d52f"  >
+		<text xml:space="preserve" font-family="站酷快乐体" font-size="60" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(71,78,71); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-42" y="-256.4196" style="white-space: pre; ">二</tspan><tspan x="-42" y="-177.7716" style="white-space: pre; ">月</tspan><tspan x="-42" y="-99.1236" style="white-space: pre; ">春</tspan><tspan x="-42" y="-20.4756" style="white-space: pre; ">风</tspan><tspan x="-42" y="58.1724" style="white-space: pre; ">似</tspan><tspan x="-42" y="136.8204" style="white-space: pre; ">剪</tspan><tspan x="-42" y="215.4684" style="white-space: pre; ">刀</tspan><tspan x="-42" y="294.1164" style="white-space: pre; "></tspan></text>
 </g>
-<g transform="matrix(1 0 0 1 364 405.5)" id="78f7d354-ed54-4bdf-8308-4d4ef5eb195f"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067145555_316f99e105.png" x="-288" y="-339.5" width="576" height="679"></image>
+<g transform="matrix(1 0 0 1 337.5 239.5)" id="f7e4b0d6-60dc-4183-85f5-e7e3bbe0d00d"  >
+	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750064616678_5c0be19c12.png" x="-53.5" y="-84.5" width="107" height="169"></image>
 </g>
-<g transform="matrix(1 0 0 1 364 405.5)" id="034802aa-5bd3-4cba-b989-7acd32c1ed7c"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 0.4706;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067145958_8ec7e21a3b.png" x="-288" y="-339.5" width="576" height="679"></image>
+<g transform="matrix(1 0 0 1 347.5 259.5512)" style="" id="81266ad6-5e45-4c85-85a5-7ce3eb07e048"  >
+		<text xml:space="preserve" font-family="站酷快乐体" font-size="64" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-42" y="-63.7862" style="white-space: pre; ">节</tspan><tspan x="-42" y="20.105" style="white-space: pre; ">气</tspan><tspan x="-42" y="103.9962" style="white-space: pre; "></tspan></text>
 </g>
-<g transform="matrix(1 0 0 1 364 405.5)" id="731d7d5f-5593-4a38-b80c-2c6f898d458c"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067146426_1ef1faa855.png" x="-288" y="-339.5" width="576" height="679"></image>
+<g transform="matrix(1 0 0 1 900 1930)" id="f29e89a4-3604-4fbf-9b93-99197810d087"  >
 </g>
-<g transform="matrix(1 0 0 1 317 523)" id="d54def60-c41b-4255-b017-6c4e737a4de5"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067147012_8825a70430.png" x="-237" y="-190" width="474" height="380"></image>
-</g>
-<g transform="matrix(1 0 0 1 316 497)" id="40cfde0a-4b20-45bf-89c3-6a8fb6716219"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067147382_601afca7c7.png" x="-235" y="-190" width="470" height="380"></image>
-</g>
-<g transform="matrix(1 0 0 1 315 472.5)" id="6196af52-0b55-4bdf-a4f2-dc99d71a6b12"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067147807_45ac87c1fc.png" x="-235" y="-200.5" width="470" height="401"></image>
-</g>
-<g transform="matrix(1 0 0 1 315.5 431)" id="9483d06d-29ea-45fa-9e56-8a77b8ba6ec4"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067148115_5aafa8a8af.png" x="-198.5" y="-151" width="397" height="302"></image>
-</g>
-<g transform="matrix(1 0 0 1 314 434)" id="4ca4d55c-793c-443d-89a9-1fba83da631c"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067148486_3ca3557f2c.png" x="-198" y="-138" width="396" height="276"></image>
-</g>
-<g transform="matrix(1 0 0 1 318.5 446)" id="cd886a48-eefc-436f-a6b0-b94e3a005067"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067149020_b6acc03bad.png" x="-52.5" y="-53" width="105" height="106"></image>
-</g>
-<g transform="matrix(1 0 0 1 318 432)" id="8e7dfdc1-8e67-4fb1-89a8-91eb819588e2"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067149249_af07f2be13.png" x="-51" y="-37" width="102" height="74"></image>
-</g>
-<g transform="matrix(1 0 0 1 215.5 386.5)" id="1271aaa4-abb5-400e-9c12-2933511b5310"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067149800_6fddede998.png" x="-29.5" y="-29.5" width="59" height="59"></image>
-</g>
-<g transform="matrix(1 0 0 1 368 349.5)" id="bb94d312-ed29-4494-975b-fc9797c64cb0"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067150224_313584e2f9.png" x="-30" y="-29.5" width="60" height="59"></image>
-</g>
-<g transform="matrix(1 0 0 1 860.5 379)" id="60487016-1a66-4bf8-8662-40fed9384361"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067150468_1f715fa127.png" x="-313.5" y="-321" width="627" height="642"></image>
-</g>
-<g transform="matrix(1 0 0 1 860 378.5)" id="c39179d1-890b-4609-aca4-b6d52c793ef7"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067150984_da48ae5407.png" x="-313" y="-320.5" width="626" height="641"></image>
-</g>
-<g transform="matrix(1 0 0 1 860 378.5)" id="501b2d53-4c2a-4a6d-9eea-2384dffc953b"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067151486_d347c9e23c.png" x="-313" y="-320.5" width="626" height="641"></image>
-</g>
-<g transform="matrix(1 0 0 1 860 378.5)" id="fdcd4bfa-2e26-4fe4-939d-38d039a57479"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067152214_4fe5b1808d.png" x="-313" y="-320.5" width="626" height="641"></image>
-</g>
-<g transform="matrix(1 0 0 1 860 378.5)" id="eda71a89-2013-4126-a3f5-76f6f10c80d9"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067152923_98f3e22bf9.png" x="-313" y="-320.5" width="626" height="641"></image>
-</g>
-<g transform="matrix(1 0 0 1 860 378.5)" id="8f7063fa-57a2-4fd9-8aee-c677de11d3a5"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067153439_c2e00edc48.png" x="-313" y="-320.5" width="626" height="641"></image>
-</g>
-<g transform="matrix(1 0 0 1 860 378.5)" id="438cfdbc-d2dc-4c90-a287-bc5aeef9f3dd"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067153776_a673580433.png" x="-313" y="-320.5" width="626" height="641"></image>
-</g>
-<g transform="matrix(1 0 0 1 587 158)" id="a59f31f7-8300-4d40-96d3-4e86ca6f3774"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067154291_dd7bc1a915.png" x="-57" y="-91" width="114" height="182"></image>
-</g>
-<g transform="matrix(1 0 0 1 596 167.1011)" style="" id="a6ccf3d3-9ef8-48c8-806e-950d44bd0917"  >
-		<text xml:space="preserve" font-family="站酷快乐体" font-size="42.96891472298264" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-35.5" y="-42.8254" >圈</tspan><tspan x="-35.5" y="13.4983" >不</tspan><tspan x="-35.5" y="69.8219" >住</tspan></text>
-</g>
-<g transform="matrix(1 0 0 1 362 404.5)" id="dd8dd1f7-29d7-46d3-86fe-a894d50573b2"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067154653_6462cd5873.png" x="-297" y="-346.5" width="594" height="693"></image>
-</g>
-<g transform="matrix(1 0 0 1 885 486.5)" id="685ddc42-9430-4f30-98d9-8dc466b029e1"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067155299_7bdd213f61.png" x="-253" y="-112.5" width="506" height="225"></image>
-</g>
-<g transform="matrix(1 0 0 1 896.5 386)" id="453ca091-2b4c-433c-a005-bd441b1a1c75"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067155596_49050aca39.png" x="-289.5" y="-230" width="579" height="460"></image>
-</g>
-<g transform="matrix(1 0 0 1 896 385.5)" id="88efdfd0-b9ef-40d2-b07e-9aa5e2d6e777"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067156146_67761912cf.png" x="-289" y="-229.5" width="578" height="459"></image>
-</g>
-<g transform="matrix(1 0 0 1 885 259.5)" id="766f3a63-5c38-446c-ab3d-5e2b32bd59a6"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067156730_895b8a509b.png" x="-253" y="-112.5" width="506" height="225"></image>
-</g>
-<g transform="matrix(1 0 0 1 884.5 259)" id="0b412b17-bb3d-4ea6-ac34-27d316196b17"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067157101_8b6dcee911.png" x="-252.5" y="-112" width="505" height="224"></image>
-</g>
-<g transform="matrix(1 0 0 1 845.5 421.5)" id="ef96594e-5f24-473a-9b91-1df3c4a9f6bb"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067157352_31b3b9f43d.png" x="-230.5" y="-128.5" width="461" height="257"></image>
-</g>
-<g transform="matrix(1 0 0 1 821.5 358)" id="5b066578-ee68-4137-b735-d70e1d16f7d0"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067157740_46ed030e24.png" x="-177.5" y="-57" width="355" height="114"></image>
-</g>
-<g transform="matrix(1 0 0 1 813.5 401.5)" id="110b5372-27ea-4e7c-a44b-fd838312a327"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067158252_49db50b6ad.png" x="-201.5" y="-67.5" width="403" height="135"></image>
-</g>
-<g transform="matrix(1 0 0 1 853 484)" id="bd983aa7-1ed7-4349-ab22-732004e49d85"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067158559_57e6db271b.png" x="-201" y="-67" width="402" height="134"></image>
-</g>
-<g transform="matrix(1 0 0 1 1073 473)" id="853ec455-c8f1-447e-a88f-ed951b4c3492"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067158726_15172acb9d.png" x="-13" y="-117" width="26" height="234"></image>
-</g>
-<g transform="matrix(1 0 0 1 931 257.5)" id="0d5618dd-93ff-4136-a83f-8d69ac8d5f78"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067159074_9528f03845.png" x="-137" y="-77.5" width="274" height="155"></image>
-</g>
-<g transform="matrix(1 0 0 1 921 251.5)" id="1c93d795-a847-48d6-973b-ee7914e1336e"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067159369_ccf743a46f.png" x="-143" y="-85.5" width="286" height="171"></image>
-</g>
-<g transform="matrix(1 0 0 1 939.5 246.5)" id="f05659ea-f0b2-4a38-8103-fec238d983bc"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 0.3686;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067159688_570c1b699a.png" x="-88.5" y="-51.5" width="177" height="103"></image>
-</g>
-<g transform="matrix(1 0 0 1 974 209.5)" id="e73e0fc0-7ebf-4e4f-bc05-781efa5a1979"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067160203_bd4cd6e713.png" x="-48" y="-52.5" width="96" height="105"></image>
-</g>
-<g transform="matrix(1 0 0 1 973.5 209)" id="6ae67adf-e8de-4f55-abeb-5f21859f0ecd"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067160526_7e0798fbbb.png" x="-47.5" y="-52" width="95" height="104"></image>
-</g>
-<g transform="matrix(1 0 0 1 910 240.5)" id="24cf9976-b00b-4587-b5a5-da8c76102cd2"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067160975_4e279b3ba0.png" x="-48" y="-52.5" width="96" height="105"></image>
-</g>
-<g transform="matrix(1 0 0 1 909.5 240)" id="feb0a848-4034-46e8-b904-35dd7315957d"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067161276_d480ccb927.png" x="-47.5" y="-52" width="95" height="104"></image>
-</g>
-<g transform="matrix(1 0 0 1 943.5 219)" id="9ad19c97-07c4-4adf-b717-1909ab246623"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067161529_1660f7fed3.png" x="-64.5" y="-39" width="129" height="78"></image>
-</g>
-<g transform="matrix(1 0 0 1 896 222)" id="7b846455-77a5-4fe5-88d2-05e49813f960"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067161836_d3277dbaeb.png" x="-14" y="-12" width="28" height="24"></image>
-</g>
-<g transform="matrix(1 0 0 1 837.5 429)" id="b4bc232d-b83c-409a-be4a-c5ce77835532"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067162143_6fda0de245.png" x="-206.5" y="-118" width="413" height="236"></image>
-</g>
-<g transform="matrix(1 0 0 1 1125.5 514.5)" id="a2096544-ef7d-4745-ad14-23f01181fa17"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067162553_a75905e1b0.png" x="-36.5" y="-114.5" width="73" height="229"></image>
-</g>
-<g transform="matrix(1 0 0 1 1132.5 535.4557)" style="" id="dd908fa2-84e5-4a93-8658-fa9b63f7bf82"  >
-		<text xml:space="preserve" font-family="站酷快乐体" font-size="43.835232080664795" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-28" y="-72.4184" >层</tspan><tspan x="-28" y="-14.9592" >层</tspan><tspan x="-28" y="42.5" >瞒</tspan><tspan x="-28" y="99.9592" >过</tspan></text>
-</g>
-<g transform="matrix(1 0 0 1 161.5 172.5)" id="4ddb69db-16a2-4116-8e6a-cae9fb30d56b"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067162786_60cee840f1.png" x="-95.5" y="-114.5" width="191" height="229"></image>
-</g>
-<g transform="matrix(1 0 0 1 172 138.5225)" style="" id="b64b5eb0-a0a8-477f-ab85-f1e65383aa9e"  >
-		<text xml:space="preserve" font-family="站酷快乐体" font-size="58.44697727649259" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(15,15,59); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-60.5" y="18.3605" >甜品</tspan></text>
-</g>
-<g transform="matrix(1 0 0 1 172 203.5575)" style="" id="6ec2891a-a9fe-478b-88df-f7239440ec4a"  >
-		<text xml:space="preserve" font-family="站酷快乐体" font-size="35.49999952212133" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(15,15,59); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-68.5" y="11.152" >SWEET</tspan></text>
-</g>
-<g transform="matrix(1 0 0 1 158.5 168)" id="23d9e8ed-8804-402a-a424-20e014529540"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067163272_7fdf2c7e7c.png" x="-11.5" y="-3" width="23" height="6"></image>
-</g>
-<g transform="matrix(1 0 0 1 327.5 1530)" id="c03a8fbf-09a0-4b88-8b93-a1ff295aff56"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067163724_0ca4420654.png" x="-256.5" y="-338" width="513" height="676"></image>
-</g>
-<g transform="matrix(1 0 0 1 327 1529.5)" id="a03f7dcd-196d-4117-9845-303ffe9b12b1"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067164070_37a2f3c5ef.png" x="-256" y="-337.5" width="512" height="675"></image>
-</g>
-<g transform="matrix(1 0 0 1 855.5 1471.5)" id="4db4d2c4-cfcb-4fb0-93af-c5e1c8f0fba7"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067164500_0579005628.png" x="-311.5" y="-395.5" width="623" height="791"></image>
-</g>
-<g transform="matrix(1 0 0 1 855 1471)" id="8d816ed7-dee4-4028-9c67-f65cdc67f9cc"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067164852_3b96226154.png" x="-311" y="-395" width="622" height="790"></image>
-</g>
-<g transform="matrix(1 0 0 1 613 2016.5)" id="2cc42613-925a-4c80-9c47-aa26b6ec588c"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067165320_4e50c83dd2.png" x="-544" y="-131.5" width="1088" height="263"></image>
-</g>
-<g transform="matrix(1 0 0 1 125 1062.7082)" style="" id="1ca7baab-b0b8-4db4-b554-972405e93d8d"  >
-		<text xml:space="preserve" font-family="站酷快乐体" font-size="123.9005118493066" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(21,21,21); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-70.5" y="-42.2823" >站</tspan><tspan x="-70.5" y="120.1265" >住</tspan></text>
-</g>
-<g transform="matrix(1 0 0 1 768.8756 910.6923)" style="" id="eeb74219-dea2-4079-be74-5d261735b641"  >
-		<text xml:space="preserve" font-family="站酷快乐体" font-size="271.136902082845" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(21,21,21); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-573.3756" y="85.1749" >甜品达人</tspan></text>
-</g>
-<g transform="matrix(1 0 0 1 112 1047.7082)" style="" id="287df54d-144a-434e-b5da-c539b059acf3"  >
-		<text xml:space="preserve" font-family="站酷快乐体" font-size="123.9005118493066" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(229,97,137); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-70.5" y="-42.2823" >站</tspan><tspan x="-70.5" y="120.1265" >住</tspan></text>
-</g>
-<g transform="matrix(1 0 0 1 743.1467 895.6923)" style="" id="80f33784-83f1-44ae-aeb1-677293a1d4d5"  >
-		<text xml:space="preserve" font-family="站酷快乐体" font-size="271.136902082845" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(229,97,137); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-559.6467" y="85.1749" >甜品达人</tspan></text>
-</g>
-<g transform="matrix(1 0 0 1 255.5 1387)" id="f409432b-b2ec-4f79-9c79-48a3a27c987c"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067165830_ba44cf379a.png" x="-183.5" y="-57" width="367" height="114"></image>
-</g>
-<g transform="matrix(1 0 0 1 281.5 1395.7761)" style="" id="e3f5ef83-40ae-4fb9-bf9a-36802169b3b6"  >
-		<text xml:space="preserve" font-family="站酷快乐体" font-size="78.36475620565557" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-127" y="24.6175" >甜点师</tspan></text>
-</g>
-<g transform="matrix(1 0 0 1 320.5 1589.72)" style="" id="571743b5-e5de-43f4-a3ac-0c0392723dc5"  >
-		<text xml:space="preserve" font-family="站酷快乐体" font-size="33.33333" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(81,81,81); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-206" y="-76.9153" >1.男女不限，学历不限；25-</tspan><tspan x="-206" y="-33.222" >40岁左右，身体健康2.有相</tspan><tspan x="-206" y="10.4713" >关工作经验者优先；3.具有</tspan><tspan x="-206" y="54.1647" >较强的沟通能力及服务意识</tspan><tspan x="-206" y="97.858" >，吃苦耐劳；</tspan></text>
-</g>
-<g transform="matrix(1 0 0 1 800 1299)" id="382b6864-8e48-417e-a5b7-d2bb0232ec4d"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067166137_9cd04531df.png" x="-196" y="-57" width="392" height="114"></image>
-</g>
-<g transform="matrix(1 0 0 1 825 1307.7761)" style="" id="86d3a37c-5a35-4aa7-8c21-cc3c7e0f6e52"  >
-		<text xml:space="preserve" font-family="站酷快乐体" font-size="78.36475620565557" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-119.5" y="24.6175" >收银员</tspan></text>
-</g>
-<g transform="matrix(1 0 0 1 620 2035.3035)" style="" id="ac444f0a-8857-45bf-ae54-b243b79bfc9f"  >
-		<text xml:space="preserve" font-family="站酷快乐体" font-size="36.82032721311628" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(21,21,21); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-272.5" y="11.5667" >简历投递:qiantuwang@163.com</tspan></text>
-</g>
-<g transform="matrix(1 0 0 1 571 1966.161)" style="" id="f0ef25d0-2f71-4add-b582-c17d15c28642"  >
-		<text xml:space="preserve" font-family="站酷快乐体" font-size="61.346882464575366" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(21,21,21); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-218.5" y="19.2715" >欢迎你的加入~</tspan></text>
-</g>
-<g transform="matrix(1 0 0 1 1035.5 1896)" id="c7805a42-7c70-46a5-88ac-754fe0b2bc17"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067166373_2ed689800f.png" x="-128.5" y="-94" width="257" height="188"></image>
-</g>
-<g transform="matrix(1 0 0 1 1043 1897)" id="a55e8097-9b21-441d-9a12-afd523668da9"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067166751_c9d45b8861.png" x="-118" y="-90" width="236" height="180"></image>
-</g>
-<g transform="matrix(1 0 0 1 1032 1870)" id="72a3859e-6a12-4ed2-b9ea-62b851e62fc3"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067166940_d6ea8c8479.png" x="-129" y="-94" width="258" height="188"></image>
-</g>
-<g transform="matrix(1 0 0 1 1031.5 1869.5)" id="beefdf6d-e62c-4ead-a761-cb3e9f313b75"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 0.8;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067167308_a905854bf7.png" x="-128.5" y="-93.5" width="257" height="187"></image>
-</g>
-<g transform="matrix(1 0 0 1 1031.5 1869.5)" id="81915565-cf7a-489c-a987-8a2087367f25"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067167674_7ef664ffea.png" x="-128.5" y="-93.5" width="257" height="187"></image>
-</g>
-<g transform="matrix(1 0 0 1 1027.5 1817.5)" id="aa62c7de-20cd-4ab1-9783-394ab62bef90"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067167981_0f9dc99d8f.png" x="-130.5" y="-87.5" width="261" height="175"></image>
-</g>
-<g transform="matrix(1 0 0 1 1027 1817)" id="a4e8f4b5-7ea3-4c9c-8b4c-c031acb0fc42"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067168365_b6bba81d10.png" x="-130" y="-87" width="260" height="174"></image>
-</g>
-<g transform="matrix(1 0 0 1 1027 1817)" id="5afab684-ecd2-431b-9063-59fc1112f4bf"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067168595_ea046bafa9.png" x="-130" y="-87" width="260" height="174"></image>
-</g>
-<g transform="matrix(1 0 0 1 1027 1817)" id="8c3ab884-6b62-4fa2-83cc-25ee362f9fed"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067169158_b0f2c70bc5.png" x="-130" y="-87" width="260" height="174"></image>
-</g>
-<g transform="matrix(1 0 0 1 1032.5 1824)" id="dc837470-04cc-4522-bda3-6fdab7a17053"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067169624_5efedd640e.png" x="-122.5" y="-80" width="245" height="160"></image>
-</g>
-<g transform="matrix(1 0 0 1 1026 1770)" id="511738dd-dcd3-4f24-a2de-006cd022c7e2"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067170135_02a2e454ca.png" x="-104" y="-32" width="208" height="64"></image>
-</g>
-<g transform="matrix(1 0 0 1 1059 1709.5)" id="00cb0bde-0886-43d8-a238-26e48947400b"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067170542_96a514b364.png" x="-27" y="-65.5" width="54" height="131"></image>
-</g>
-<g transform="matrix(1 0 0 1 1058.5 1709)" id="777e4090-18fd-443e-913b-2f9adf9874a6"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067170815_a2e49380fb.png" x="-26.5" y="-65" width="53" height="130"></image>
-</g>
-<g transform="matrix(1 0 0 1 1058.5 1709)" id="2d115bf6-28c2-4dd2-a436-c15b55336149"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067171160_41044cc987.png" x="-26.5" y="-65" width="53" height="130"></image>
-</g>
-<g transform="matrix(1 0 0 1 1076.5 1646.5)" id="e90a8494-8ee7-41d7-ab03-24328556d597"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067171722_bfc925e6de.png" x="-10.5" y="-5.5" width="21" height="11"></image>
-</g>
-<g transform="matrix(1 0 0 1 1076 1647)" id="ba1b76c3-51f0-46f9-a046-c774b9e4a793"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067172189_f893c344fd.png" x="-8" y="-4" width="16" height="8"></image>
-</g>
-<g transform="matrix(1 0 0 1 1052 1758.5)" id="64942f3b-00b9-46f1-8d51-2629f5aacadd"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067172695_9a4c9c5d7f.png" x="-41" y="-26.5" width="82" height="53"></image>
-</g>
-<g transform="matrix(1 0 0 1 1015 1740.5)" id="852f9628-e0a7-4e75-b950-5015610ec8a9"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067173151_5b05573b7d.png" x="-38" y="-43.5" width="76" height="87"></image>
-</g>
-<g transform="matrix(1 0 0 1 1023 1739.5)" id="8e1c2908-33ea-413b-8268-59cacd504dd3"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067173766_6e54bcb2ce.png" x="-27" y="-40.5" width="54" height="81"></image>
-</g>
-<g transform="matrix(1 0 0 1 1026 1741)" id="387964e3-5b69-44c7-a050-8f251ee38feb"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067174105_fda2511fb8.png" x="-21" y="-31" width="42" height="62"></image>
-</g>
-<g transform="matrix(1 0 0 1 1005 1739)" id="ad54817f-a735-408d-aa9e-cf90cc587187"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067174563_471f00a8fe.png" x="-22" y="-40" width="44" height="80"></image>
-</g>
-<g transform="matrix(1 0 0 1 867.5 1948)" id="5466cb6c-d190-44fa-b125-6e7fbb5f69c4"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067174949_8719057b17.png" x="-42.5" y="-43" width="85" height="86"></image>
-</g>
-<g transform="matrix(1 0 0 1 863 1947.5)" id="72bd3c4a-6d0e-4ad4-a012-5648cf6b509d"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067175248_88e2ebcd6f.png" x="-29" y="-39.5" width="58" height="79"></image>
-</g>
-<g transform="matrix(1 0 0 1 867 1947.5)" id="2b1c183c-1321-4beb-b22b-5555b307e776"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067175452_c20e3c3694.png" x="-32" y="-33.5" width="64" height="67"></image>
-</g>
-<g transform="matrix(1 0 0 1 881 1947.5)" id="acaf0dde-3967-4efa-8bcd-0d5e0aa90718"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067175767_6c1bebc300.png" x="-24" y="-39.5" width="48" height="79"></image>
-</g>
-<g transform="matrix(1 0 0 1 838 1935.5)" id="c6fc453f-9b20-42b3-a450-91b4e991100b"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067176101_707847c8bc.png" x="-19" y="-29.5" width="38" height="59"></image>
-</g>
-<g transform="matrix(1 0 0 1 837.5 1935)" id="3f2cf7d7-6f58-4b8f-be0c-45201e2dbd8b"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067176447_3828fcaec1.png" x="-18.5" y="-29" width="37" height="58"></image>
-</g>
-<g transform="matrix(1 0 0 1 861.5 1905.5)" id="981a5ce6-4d44-4b6e-b556-1315ae34bbbe"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067176893_b47a8724f6.png" x="-26.5" y="-15.5" width="53" height="31"></image>
-</g>
-<g transform="matrix(1 0 0 1 861 1905)" id="3d25e4c4-ca9c-49e7-953d-73c5e4acd8f7"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067177301_000d14e517.png" x="-26" y="-15" width="52" height="30"></image>
-</g>
-<g transform="matrix(1 0 0 1 854.5 1925)" id="c2009bf3-7474-471d-8390-f43f9de013da"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067177816_2d6d951b82.png" x="-19.5" y="-24" width="39" height="48"></image>
-</g>
-<g transform="matrix(1 0 0 1 862 1848.5)" id="ae01bcda-41e3-4587-bb29-5d5307576fac"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067178167_c4f8e1a951.png" x="-23" y="-27.5" width="46" height="55"></image>
-</g>
-<g transform="matrix(1 0 0 1 862 1847.5)" id="fdfecc72-697f-41f5-b1fe-9a1ceef3090b"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067178387_721d300e05.png" x="-20" y="-20.5" width="40" height="41"></image>
-</g>
-<g transform="matrix(1 0 0 1 862.5 1848.5)" id="38275bef-5093-4462-98cd-c06116b400a9"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067178840_97796548bd.png" x="-19.5" y="-19.5" width="39" height="39"></image>
-</g>
-<g transform="matrix(1 0 0 1 862.5 1854)" id="fc677680-2ba3-43fe-bd3b-9c02919b1b91"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067179299_c2bc345c22.png" x="-20.5" y="-18" width="41" height="36"></image>
-</g>
-<g transform="matrix(1 0 0 1 861.5 1827)" id="cdfd2784-1299-467d-8f1e-bbdcfc281448"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067179671_e093ad39d0.png" x="-17.5" y="-12" width="35" height="24"></image>
-</g>
-<g transform="matrix(1 0 0 1 861 1826.5)" id="5eca24c5-388b-49c7-95e2-c1da2ef208a0"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067179962_dc13fa0b19.png" x="-17" y="-11.5" width="34" height="23"></image>
-</g>
-<g transform="matrix(1 0 0 1 882 1836)" id="feae3530-8082-4009-86b4-e8fbd27488ef"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067180577_366fc62277.png" x="-11" y="-14" width="22" height="28"></image>
-</g>
-<g transform="matrix(1 0 0 1 881.5 1835.5)" id="1585b7ac-1c10-4cb9-af24-2d7992c721ae"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067180998_0b9fc680f6.png" x="-10.5" y="-13.5" width="21" height="27"></image>
-</g>
-<g transform="matrix(1 0 0 1 869 1833)" id="0bf77fd2-1d29-409e-8d5c-7776d94833df"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067181479_5bbc753120.png" x="-17" y="-10" width="34" height="20"></image>
-</g>
-<g transform="matrix(1 0 0 1 983 1777.5)" id="0cbb0e38-01bf-44e1-b9d8-d7f88309ca73"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067182025_a5370006dd.png" x="-18" y="-12.5" width="36" height="25"></image>
-</g>
-<g transform="matrix(1 0 0 1 983 1781)" id="afbcb1e9-1b28-4e2c-8032-8b864813f31b"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067182375_dc322cdfee.png" x="-16" y="-7" width="32" height="14"></image>
-</g>
-<g transform="matrix(1 0 0 1 982.5 1778)" id="d600180f-6d4f-46ed-aa1d-326fd6956e4e"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067182729_0e560d4aeb.png" x="-12.5" y="-7" width="25" height="14"></image>
-</g>
-<g transform="matrix(1 0 0 1 1019 1782)" id="5651f7ad-a93b-485e-b79f-e5fe8a60e972"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067183103_de759df8b1.png" x="-19" y="-12" width="38" height="24"></image>
-</g>
-<g transform="matrix(1 0 0 1 1019 1786.5)" id="835d59ad-c874-4a10-a439-7590cea4e1a6"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067183438_7de6e503f6.png" x="-16" y="-6.5" width="32" height="13"></image>
-</g>
-<g transform="matrix(1 0 0 1 1018 1782.5)" id="a7edefb1-ce8e-4fd9-8dc3-6bbb6443b37e"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067183780_2469ad73fc.png" x="-13" y="-6.5" width="26" height="13"></image>
-</g>
-<g transform="matrix(1 0 0 1 862.5 1769)" id="0ad68909-6c5a-4aba-b0ef-836ebbdb7e50"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067184202_f038712f23.png" x="-13.5" y="-18" width="27" height="36"></image>
-</g>
-<g transform="matrix(1 0 0 1 862 1768.5)" id="08981d1f-b63d-4b24-a5d0-a6e55d93840d"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067184702_3f98e2a2b1.png" x="-13" y="-17.5" width="26" height="35"></image>
-</g>
-<g transform="matrix(1 0 0 1 862 1768.5)" id="b888292e-7b3b-4ae8-bffb-a5f8b7dde3cc"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067185596_5649d86f9d.png" x="-13" y="-17.5" width="26" height="35"></image>
-</g>
-<g transform="matrix(1 0 0 1 994.5 1737)" id="5be89916-91f8-4485-b19f-073097d2ef3a"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067186861_42cad81b77.png" x="-11.5" y="-15" width="23" height="30"></image>
-</g>
-<g transform="matrix(1 0 0 1 1059 1886)" id="579bc5c7-9a85-49ec-ae56-c26a0965f97e"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067187373_2874427704.png" x="-56" y="-39" width="112" height="78"></image>
-</g>
-<g transform="matrix(1 0 0 1 1034 1902)" id="388af4c6-ae78-4d4f-b290-b432e4219eed"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067187743_33d37bd4fb.png" x="-109" y="-44" width="218" height="88"></image>
-</g>
-<g transform="matrix(1 0 0 1 93 850)" id="588e3c68-b3ec-475a-9f58-8daaaf8de8b1"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067188256_0e53d1508f.png" x="-90" y="-54" width="180" height="108"></image>
-</g>
-<g transform="matrix(1 0 0 1 994.5 705.5)" id="9cb1cfbd-d8c5-4a89-9f98-7c437618be1c"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067188580_1d31b4d0c7.png" x="-58.5" y="-88.5" width="117" height="177"></image>
-</g>
-<g transform="matrix(1 0 0 1 207 1180.5)" id="29f80ec9-de57-48cf-b6bb-406db145ce7e"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067188805_a478eb182c.png" x="-68" y="-95.5" width="136" height="191"></image>
-</g>
-<g transform="matrix(1 0 0 1 1096 1006)" id="1c7f49ae-dcc6-4eda-86a4-5d0eb6a900f0"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067189417_3b9ed3afcf.png" x="-119" y="-68" width="238" height="136"></image>
-</g>
-<g transform="matrix(1 0 0 1 510 2089.9449)" style="" id="c0210dc1-3206-43da-bc73-824111eaf69a"  >
-		<text xml:space="preserve" font-family="站酷快乐体" font-size="34.415749800318785" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(21,21,21); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-162.5" y="10.8114" >电话:021-88888888</tspan></text>
-</g>
-<g transform="matrix(1 0 0 1 889 2090.9449)" style="" id="587e27bd-0398-4830-87ee-36d694dc5281"  >
-		<text xml:space="preserve" font-family="站酷快乐体" font-size="34.415749800318785" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(21,21,21); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-223.5" y="10.8114" >地址:上海网络有限公司</tspan></text>
-</g>
-<g transform="matrix(1 0 0 1 870.5 1501.72)" style="" id="d58bd31b-9758-4fc7-a4ec-d629bada4d5a"  >
-		<text xml:space="preserve" font-family="站酷快乐体" font-size="33.33333" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(81,81,81); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-206" y="-76.9153" >1.男女不限，学历不限；25-</tspan><tspan x="-206" y="-33.222" >40岁左右，身体健康2.有相</tspan><tspan x="-206" y="10.4713" >关工作经验者优先；3.具有</tspan><tspan x="-206" y="54.1647" >较强的沟通能力及服务意识</tspan><tspan x="-206" y="97.858" >，吃苦耐劳；</tspan></text>
-</g>
-<g transform="matrix(1 0 0 1 1018 1233)" id="a156a9e1-001d-40b5-a891-884e7fc70068"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067189667_907e2bd76b.png" x="-107" y="-112" width="214" height="224"></image>
-</g>
-<g transform="matrix(1 0 0 1 66.5 1339.5)" id="5b511ec2-f3d9-41a7-a597-4a8546ec3c0d"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067189996_2114f7273d.png" x="-78.5" y="-85.5" width="157" height="171"></image>
-</g>
-<g transform="matrix(1 0 0 1 387.5 1133)" id="d04a5193-e6c9-4369-87c5-31cf7264ae2a"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067190211_f26a16971a.png" x="-29.5" y="-32" width="59" height="64"></image>
-</g>
-<g transform="matrix(1 0 0 1 784 772.5)" id="68c07dba-e5a9-419b-807f-754138ca2397"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067190816_637c158fbc.png" x="-25" y="-27.5" width="50" height="55"></image>
-</g>
-<g transform="matrix(0.7594 0 0 0.7594 239.0615 534.4638)" id="779500d7-5481-49c1-ba17-1544bd9a9628"  >
-	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1749977081198_62a606d347.png" x="-275" y="-218" width="550" height="436"></image>
+<g transform="matrix(1 0 0 1 640 2094.88)" style="" id="136574a3-0f3b-4828-a4e0-db3c4d708db5"  >
+		<text xml:space="preserve" font-family="站酷快乐体" font-size="52" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(71,78,71); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-200.5" y="16.3353" style="white-space: pre; ">农历正月初四</tspan></text>
 </g>
 </g>
 </svg>

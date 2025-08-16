@@ -108,7 +108,10 @@ bool RenderEngine::saveOutput(sk_sp<SkImage> image, const OutputConfig& outputCo
         return false;
     }
     
-    return imageWriter->saveImage(image, outputConfig.filename, outputConfig.quality);
+    // 将所有输出文件保存到根目录的output文件夹下
+    std::string outputPath = "output/" + outputConfig.filename;
+    
+    return imageWriter->saveImage(image, outputPath, outputConfig.quality);
 }
 
 } // namespace skia_renderer 

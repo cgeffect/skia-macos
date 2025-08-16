@@ -7,6 +7,8 @@
 #include "include/core/SkTypeface.h"
 #include "resources/font_manager.h"
 #include <memory>
+#include <vector>
+#include <string>
 
 namespace skia_renderer {
 
@@ -38,6 +40,14 @@ private:
     
     // 渲染填充
     void renderFill(SkCanvas* canvas, const TextElement& textElement, const SkFont& font);
+    
+    // 渲染文本（支持自动换行）
+    void renderTextWithWrapping(SkCanvas* canvas, const TextElement& textElement, 
+                               const SkFont& font, const SkPaint& paint, 
+                               float offsetX, float offsetY);
+    
+    // 分割文本为多行
+    std::vector<std::string> splitText(const std::string& text);
 };
 
 } // namespace skia_renderer 

@@ -1,7 +1,18 @@
 #include "../src/engine/render_engine.h"
 #include <iostream>
+#include <sys/stat.h>
 
 int main() {
+    // 创建output目录
+    struct stat st = {0};
+    if (stat("output", &st) == -1) {
+        #ifdef _WIN32
+            _mkdir("output");
+        #else
+            mkdir("output", 0700);
+        #endif
+    }
+    
     // 创建渲染引擎
     skia_renderer::RenderEngine engine;
     
@@ -57,13 +68,21 @@ int main() {
             std::cerr << "❌ 杯子海报渲染失败: " << engine.getErrorMessage() << std::endl;
         }
         
-        // 示例7: 渲染冬至海报
-        std::cout << "\n=== 示例7: 渲染冬至海报 ===" << std::endl;
-        if (engine.renderFromProtocol("projects/horizontal/horizontal_protocol.json")) {
-            std::cout << "✅ 冬至海报渲染成功！" << std::endl;
-        } else {
-            std::cerr << "❌ 冬至海报渲染失败: " << engine.getErrorMessage() << std::endl;
-        }
+            // 示例7: 渲染冬至海报
+    std::cout << "\n=== 示例7: 渲染冬至海报 ===" << std::endl;
+    if (engine.renderFromProtocol("projects/horizontal/horizontal_protocol.json")) {
+        std::cout << "✅ 冬至海报渲染成功！" << std::endl;
+    } else {
+        std::cerr << "❌ 冬至海报渲染失败: " << engine.getErrorMessage() << std::endl;
+    }
+
+    // 示例8: 渲染蛋黄心长图
+    std::cout << "\n=== 示例8: 渲染蛋黄心长图 ===" << std::endl;
+    if (engine.renderFromProtocol("projects/long/long_protocol.json")) {
+        std::cout << "✅ 蛋黄心长图渲染成功！" << std::endl;
+    } else {
+        std::cerr << "❌ 蛋黄心长图渲染失败: " << engine.getErrorMessage() << std::endl;
+    }
         
         return 0;
     } 

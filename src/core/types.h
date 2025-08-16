@@ -52,6 +52,8 @@ struct TextElement {
     std::string content;
     Transform transform;
     TextStyle style;
+    float width = 0.0f;  // 文本区域宽度
+    float height = 0.0f; // 文本区域高度
 };
 
 // 输出配置
