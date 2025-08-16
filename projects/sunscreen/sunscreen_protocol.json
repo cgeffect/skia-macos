@@ -7,7 +7,7 @@
     "images": [
         {
             "id": "background_1",
-            "path": "res/images/sunscreen_bg_1.png",
+            "path": "projects/sunscreen/resources/sunscreen_bg_1.png",
             "x": 0,
             "y": 0,
             "width": 1242,
@@ -19,7 +19,7 @@
         },
         {
             "id": "background_2",
-            "path": "res/images/sunscreen_bg_2.png",
+            "path": "projects/sunscreen/resources/sunscreen_bg_2.png",
             "x": 0,
             "y": 0,
             "width": 1242,
@@ -31,7 +31,7 @@
         },
         {
             "id": "product_1",
-            "path": "res/images/sunscreen_product_1.png",
+            "path": "projects/sunscreen/resources/sunscreen_product_1.png",
             "x": 69,
             "y": 754,
             "width": 254,
@@ -43,7 +43,7 @@
         },
         {
             "id": "product_2",
-            "path": "res/images/sunscreen_product_2.png",
+            "path": "projects/sunscreen/resources/sunscreen_product_2.png",
             "x": 916,
             "y": 443,
             "width": 318,
@@ -55,7 +55,7 @@
         },
         {
             "id": "product_3",
-            "path": "res/images/sunscreen_product_3.png",
+            "path": "projects/sunscreen/resources/sunscreen_product_3.png",
             "x": 664,
             "y": 1326,
             "width": 521,
@@ -67,7 +67,7 @@
         },
         {
             "id": "decor",
-            "path": "res/images/sunscreen_decor.png",
+            "path": "projects/sunscreen/resources/sunscreen_decor.png",
             "x": 252,
             "y": 352,
             "width": 737,

@@ -21,6 +21,7 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 set(libSRV_TRD_ROOT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty)
 list(APPEND libSRV_INCLUDES_DIR ./)
 list(APPEND libSRV_INCLUDES_DIR ${libSRV_TRD_ROOT_PATH}/skia/Skia-macOS-Release-arm64)
+list(APPEND libSRV_INCLUDES_DIR ${libSRV_TRD_ROOT_PATH}/json/include)
 
 # list(APPEND libs_trd_srv ${libSRV_TRD_ROOT_PATH}/skia/deploy/lib/libskia.a)
 
@@ -28,6 +29,8 @@ file(GLOB_RECURSE ABSL_LIBS ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/skia/Skia-macOS
 message(ABSL_LIBS ${ABSL_LIBS})
 file(GLOB_RECURSE allCPP 
         ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/protocol_parser.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/universal_renderer.cpp
         )
 # 在Xcode里面按照文件实际目录显示, 不要平铺
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${allCPP})
