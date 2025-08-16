@@ -9,7 +9,7 @@ FontManager::FontManager() {
     
     // 注册常用字体文件
     registerFontFile("站酷快乐体", "res/字制区喜脉体.ttf");
-    registerFontFile("SourceHanSansCN-Normal", "res/SourceHanSansCN-Normal.otf");
+    registerFontFile("SourceHanSansCN-Normal", "res/Fonts/SourceHanSansCN-Normal.otf");
 }
 
 FontManager::~FontManager() {

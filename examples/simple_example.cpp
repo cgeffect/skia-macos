@@ -16,7 +16,7 @@ int main() {
     // 示例2: 自定义字体管理器
     std::cout << "\n=== 示例2: 自定义字体管理器 ===" << std::endl;
     auto fontManager = std::make_shared<skia_renderer::FontManager>();
-    fontManager->registerFontFile("SourceHanSansCN-Normal", "res/SourceHanSansCN-Normal.otf");
+    fontManager->registerFontFile("SourceHanSansCN-Normal", "res/Fonts/SourceHanSansCN-Normal.otf");
     engine.setFontManager(fontManager);
     
     if (engine.renderFromProtocol("projects/sunscreen/sunscreen_protocol.json")) {
