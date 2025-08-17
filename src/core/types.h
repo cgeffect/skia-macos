@@ -21,6 +21,7 @@ struct CanvasConfig {
     int width = 1242;
     int height = 1660;
     std::string background = "#FFFFFF";
+    bool debug = false;  // 调试模式，显示文本区域框框
 };
 
 // 图片元素
@@ -30,6 +31,14 @@ struct ImageElement {
     Transform transform;
     int width = 0;
     int height = 0;
+};
+
+// 文本显示模式
+enum class TextDisplayMode {
+    SingleLine,     // 单行模式
+    MultiLine,      // 多行模式
+    WordWrap,       // 自动换行模式
+    AutoFit         // 自适应模式
 };
 
 // 文本样式
@@ -44,6 +53,9 @@ struct TextStyle {
     float shadowDy = 0.0f;
     float shadowSigma = 0.0f;
     SkColor shadowColor = SK_ColorBLACK;
+    TextDisplayMode displayMode = TextDisplayMode::WordWrap;
+    int maxLines = 0;  // 0表示无限制
+    bool ellipsis = false;  // 是否显示省略号
 };
 
 // 文本元素

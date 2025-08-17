@@ -1,0 +1,65 @@
+{
+    "canvas": {
+        "width": 800,
+        "height": 600,
+        "background": "#ffffff",
+        "debug": true
+    },
+    "images": [],
+    "texts": [
+        {
+            "id": "single_line_with_ellipsis",
+            "content": "单行文本测试：这是一行很长的文本，应该被截断并显示省略号",
+            "x": 50,
+            "y": 100,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#000000",
+            "opacity": 1.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "width": 300,
+            "height": 30,
+            "displayMode": "SingleLine",
+            "maxLines": 1,
+            "ellipsis": true
+        },
+        {
+            "id": "single_line_no_ellipsis",
+            "content": "单行文本测试：这是一行很长的文本，没有省略号",
+            "x": 50,
+            "y": 150,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#333333",
+            "opacity": 1.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "width": 300,
+            "height": 30,
+            "displayMode": "SingleLine",
+            "maxLines": 1,
+            "ellipsis": false
+        },
+        {
+            "id": "single_line_no_width",
+            "content": "没有宽度限制的文本：这是一行很长的文本，应该完整显示",
+            "x": 50,
+            "y": 200,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#666666",
+            "opacity": 1.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "displayMode": "SingleLine",
+            "maxLines": 1,
+            "ellipsis": true
+        }
+    ],
+    "output": {
+        "format": "png",
+        "filename": "single_line_poster.png",
+        "quality": 100
+    }
+}

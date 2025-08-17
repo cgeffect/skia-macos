@@ -1,0 +1,67 @@
+{
+    "canvas": {
+        "width": 800,
+        "height": 800,
+        "background": "#ffffff",
+        "debug": true
+    },
+    "images": [],
+    "texts": [
+        {
+            "id": "multi_line_3_lines",
+            "content": "这是一段多行文本，用来测试多行模式。当文本内容很长时，系统会根据设定的最大行数进行换行，超出部分会被截断或显示省略号。这种模式适合需要控制显示行数的场景。",
+            "x": 50,
+            "y": 100,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#000000",
+            "opacity": 1.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "width": 500,
+            "height": 200,
+            "displayMode": "MultiLine",
+            "maxLines": 3,
+            "ellipsis": true
+        },
+        {
+            "id": "multi_line_2_lines",
+            "content": "这是第二段多行文本，限制为2行显示。当文本内容很长时，系统会根据设定的最大行数进行换行，超出部分会被截断或显示省略号。",
+            "x": 50,
+            "y": 350,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#333333",
+            "opacity": 1.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "width": 400,
+            "height": 150,
+            "displayMode": "MultiLine",
+            "maxLines": 2,
+            "ellipsis": true
+        },
+        {
+            "id": "multi_line_no_limit",
+            "content": "这是第三段多行文本，没有行数限制。当文本内容很长时，系统会根据设定的最大行数进行换行，超出部分会被截断或显示省略号。这种模式适合需要控制显示行数的场景。",
+            "x": 50,
+            "y": 550,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#666666",
+            "opacity": 1.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "width": 600,
+            "height": 200,
+            "displayMode": "MultiLine",
+            "maxLines": 0,
+            "ellipsis": false
+        }
+    ],
+    "output": {
+        "format": "png",
+        "filename": "multi_line_poster.png",
+        "quality": 100
+    }
+}

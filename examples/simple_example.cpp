@@ -2,7 +2,7 @@
 #include <iostream>
 #include <sys/stat.h>
 
-int main() {
+int main(int argc, char* argv[]) {
     // 创建output目录
     struct stat st = {0};
     if (stat("output", &st) == -1) {
@@ -11,6 +11,21 @@ int main() {
         #else
             mkdir("output", 0700);
         #endif
+    }
+    
+    // 如果提供了命令行参数，渲染指定的协议文件
+    if (argc > 1) {
+        std::string protocolFile = argv[1];
+        std::cout << "渲染协议文件: " << protocolFile << std::endl;
+        
+        skia_renderer::RenderEngine engine;
+        if (engine.renderFromProtocol(protocolFile)) {
+            std::cout << "✅ 渲染成功！" << std::endl;
+        } else {
+            std::cerr << "❌ 渲染失败: " << engine.getErrorMessage() << std::endl;
+            return 1;
+        }
+        return 0;
     }
     
     // 创建渲染引擎
@@ -82,6 +97,22 @@ int main() {
         std::cout << "✅ 蛋黄心长图渲染成功！" << std::endl;
     } else {
         std::cerr << "❌ 蛋黄心长图渲染失败: " << engine.getErrorMessage() << std::endl;
+    }
+    
+    // 示例9: 渲染文本换行测试
+    std::cout << "\n=== 示例9: 渲染文本换行测试 ===" << std::endl;
+    if (engine.renderFromProtocol("projects/text_wrap_test/text_wrap_test_protocol.json")) {
+        std::cout << "✅ 文本换行测试渲染成功！" << std::endl;
+    } else {
+        std::cerr << "❌ 文本换行测试渲染失败: " << engine.getErrorMessage() << std::endl;
+    }
+    
+    // 示例10: 渲染服装海报
+    std::cout << "\n=== 示例10: 渲染服装海报 ===" << std::endl;
+    if (engine.renderFromProtocol("projects/clothes/clothes_protocol.json")) {
+        std::cout << "✅ 服装海报渲染成功！" << std::endl;
+    } else {
+        std::cerr << "❌ 服装海报渲染失败: " << engine.getErrorMessage() << std::endl;
     }
         
         return 0;

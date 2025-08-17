@@ -1,0 +1,84 @@
+{
+    "canvas": {
+        "width": 800,
+        "height": 1000,
+        "background": "#ffffff",
+        "debug": true
+    },
+    "images": [],
+    "texts": [
+        {
+            "id": "word_wrap_normal",
+            "content": "这是一段中等长度的文本，用来测试自动换行功能。当文本超过设定的宽度时，应该自动换行到下一行。",
+            "x": 50,
+            "y": 100,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#000000",
+            "opacity": 1.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "width": 300,
+            "height": 150,
+            "displayMode": "WordWrap",
+            "maxLines": 0,
+            "ellipsis": false
+        },
+        {
+            "id": "word_wrap_narrow",
+            "content": "这是一个窄宽度测试，文本需要在很窄的区域内显示，应该会频繁换行。窄宽度测试可以帮助验证换行算法的准确性。",
+            "x": 50,
+            "y": 300,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 14,
+            "fillColor": "#333333",
+            "opacity": 1.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "width": 150,
+            "height": 200,
+            "displayMode": "WordWrap",
+            "maxLines": 0,
+            "ellipsis": false
+        },
+        {
+            "id": "word_wrap_english",
+            "content": "This is an English text test for automatic word wrapping and font scaling. When the text content is too long to fit within the specified width and height constraints, the system should automatically wrap the text and scale the font size as needed.",
+            "x": 50,
+            "y": 550,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#666666",
+            "opacity": 1.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "width": 350,
+            "height": 180,
+            "displayMode": "WordWrap",
+            "maxLines": 0,
+            "ellipsis": false
+        },
+        {
+            "id": "word_wrap_mixed",
+            "content": "混合文本测试：This is a mixed Chinese and English text test. 当文本包含中英文混合内容时，换行算法需要正确处理不同字符的宽度。English words should be wrapped properly, 而中文字符也应该正确换行。",
+            "x": 50,
+            "y": 800,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#888888",
+            "opacity": 1.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "width": 300,
+            "height": 300,
+            "displayMode": "WordWrap",
+            "maxLines": 0,
+            "ellipsis": false
+        }
+    ],
+    "output": {
+        "format": "png",
+        "filename": "word_wrap_poster.png",
+        "quality": 100
+    }
+}

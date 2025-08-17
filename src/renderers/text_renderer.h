@@ -18,7 +18,7 @@ public:
     ~TextRenderer();
     
     // 渲染文本元素
-    bool renderText(SkCanvas* canvas, const TextElement& textElement);
+    bool renderText(SkCanvas* canvas, const TextElement& textElement, bool debugMode = false);
     
     // 设置字体管理器
     void setFontManager(std::shared_ptr<FontManager> fontManager);
@@ -46,8 +46,40 @@ private:
                                const SkFont& font, const SkPaint& paint, 
                                float offsetX, float offsetY);
     
+    // 单行文本渲染（支持省略号）
+    void renderSingleLineText(SkCanvas* canvas, const TextElement& textElement, 
+                             const SkFont& font, const SkPaint& paint, 
+                             float offsetX, float offsetY);
+    
+    // 多行文本渲染（固定行数）
+    void renderMultiLineText(SkCanvas* canvas, const TextElement& textElement, 
+                            const SkFont& font, const SkPaint& paint, 
+                            float offsetX, float offsetY);
+    
+    // 自动换行文本渲染
+    void renderWordWrapText(SkCanvas* canvas, const TextElement& textElement, 
+                           const SkFont& font, const SkPaint& paint, 
+                           float offsetX, float offsetY);
+    
+    // 自适应文本渲染（字体缩放）
+    void renderAutoFitText(SkCanvas* canvas, const TextElement& textElement, 
+                          const SkFont& font, const SkPaint& paint, 
+                          float offsetX, float offsetY);
+    
     // 分割文本为多行
     std::vector<std::string> splitText(const std::string& text);
+    
+    // 计算文本宽度
+    float calculateTextWidth(const std::string& text, const SkFont& font);
+    
+    // 智能换行算法
+    std::vector<std::string> smartWrapText(const std::string& text, float maxWidth, const SkFont& font);
+    
+    // 截断文本并添加省略号
+    std::string truncateTextWithEllipsis(const std::string& text, float maxWidth, const SkFont& font);
+    
+    // 绘制调试框框
+    void drawDebugRect(SkCanvas* canvas, const TextElement& textElement, float offsetX, float offsetY);
 };
 
 } // namespace skia_renderer 

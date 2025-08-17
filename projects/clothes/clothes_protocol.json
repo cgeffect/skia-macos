@@ -1,0 +1,40 @@
+{
+  "canvas": {
+    "width": 1000,
+    "height": 1000,
+    "background": "#ffffff",
+    "debug": false
+  },
+  "images": [
+    {
+      "id": "image_1",
+      "path": "projects/clothes/resources/1750068131805_d01a88a738.png",
+      "x": 0,
+      "y": 0,
+      "width": 2000,
+      "height": 2000,
+      "scaleX": 0.5,
+      "scaleY": 0.5,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "id": "image_2",
+      "path": "projects/clothes/resources/1750069348246_fea9c796b8.webp",
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 1024,
+      "scaleX": 0.9766,
+      "scaleY": 0.9766,
+      "rotation": 0,
+      "opacity": 1
+    }
+  ],
+  "texts": [],
+  "output": {
+    "format": "png",
+    "filename": "clothes_poster.png",
+    "quality": 100
+  }
+}

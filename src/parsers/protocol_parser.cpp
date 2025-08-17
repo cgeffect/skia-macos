@@ -79,6 +79,7 @@ bool ProtocolParser::parseCanvas(const json& j) {
     protocol.canvas.width = parseInt(j, "width", 1242);
     protocol.canvas.height = parseInt(j, "height", 1660);
     protocol.canvas.background = parseString(j, "background", "#FFFFFF");
+    protocol.canvas.debug = parseBool(j, "debug", false);
     return true;
 }
 
@@ -160,6 +161,22 @@ bool ProtocolParser::parseTextStyle(const json& j, TextStyle& style) {
     style.shadowDy = parseFloat(j, "shadowDy", 0.0f);
     style.shadowSigma = parseFloat(j, "shadowSigma", 0.0f);
     style.shadowColor = ColorParser::parseColor(parseString(j, "shadowColor", "#000000"));
+    
+    // 解析文本显示模式
+    std::string displayModeStr = parseString(j, "displayMode", "WordWrap");
+    if (displayModeStr == "SingleLine") {
+        style.displayMode = TextDisplayMode::SingleLine;
+    } else if (displayModeStr == "MultiLine") {
+        style.displayMode = TextDisplayMode::MultiLine;
+    } else if (displayModeStr == "AutoFit") {
+        style.displayMode = TextDisplayMode::AutoFit;
+    } else {
+        style.displayMode = TextDisplayMode::WordWrap; // 默认
+    }
+    
+    style.maxLines = parseInt(j, "maxLines", 0);
+    style.ellipsis = parseBool(j, "ellipsis", false);
+    
     return true;
 }
 

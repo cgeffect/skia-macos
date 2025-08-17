@@ -92,8 +92,11 @@ bool RenderEngine::renderTexts(const std::vector<TextElement>& texts) {
         return false;
     }
     
+    // 获取debug模式
+    bool debugMode = protocolParser->getProtocol().canvas.debug;
+    
     for (const auto& text : texts) {
-        if (!textRenderer->renderText(canvas, text)) {
+        if (!textRenderer->renderText(canvas, text, debugMode)) {
             errorMessage = "文本渲染失败: " + text.content;
             return false;
         }
