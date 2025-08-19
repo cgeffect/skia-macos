@@ -242,7 +242,8 @@ public:
             {"cup", "projects/cup/cup_protocol.json"},
             {"horizontal", "projects/horizontal/horizontal_protocol.json"},
             {"long", "projects/long/long_protocol.json"},
-            {"clothes", "projects/clothes/clothes_protocol.json"}
+            {"clothes", "projects/clothes/clothes_protocol.json"},
+            {"tshirt", "projects/tshirt/tshirt_protocol.json"}
         };
 
         int passedTests = 0;

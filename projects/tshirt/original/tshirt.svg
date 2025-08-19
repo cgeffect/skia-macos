@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1000" height="1000" viewBox="0 0 1000 1000" xml:space="preserve">
+<desc>Created with Fabric.js 5.5.2</desc>
+<defs>
+<clipPath id="CLIPPATH_2" >
+	<rect transform="matrix(1 0 0 1 500 500)" x="-500" y="-500" rx="0" ry="0" width="1000" height="1000" />
+</clipPath>
+</defs>
+<g clip-path="url(#CLIPPATH_2)" >
+<g transform="matrix(1 0 0 1 500 500)" id="workspace"  >
+<rect style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"  x="-500" y="-500" rx="0" ry="0" width="1000" height="1000" />
+</g>
+<g transform="matrix(0.4081 0 0 0.4081 491.3092 611.0616)" id="f436044e-74ee-4056-9f8e-b8b3fc5292ff"  >
+	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750068131805_d01a88a738.png" x="-1000" y="-1000" width="2000" height="2000"></image>
+</g>
+<g transform="matrix(0.9766 0 0 0.9766 500.0192 269.2023)" id="d7d0e38e-b0ec-423c-943b-b10101659638"  >
+	<image style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"  xlink:href="https://newapi.kuaitu.cc/uploads/1750067437001_6d9d73d27f.webp" x="-512" y="-768" width="1024" height="1536"></image>
+</g>
+</g>
+</svg>

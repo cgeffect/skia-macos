@@ -1,0 +1,40 @@
+{
+  "canvas": {
+    "width": 1000,
+    "height": 1000,
+    "background": "#ffffff",
+    "debug": false
+  },
+  "images": [
+    {
+      "id": "image_1",
+      "path": "projects/tshirt/resources/1750068131805_d01a88a738.png",
+      "x": 83.2092,
+      "y": 202.9616,
+      "width": 2000,
+      "height": 2000,
+      "scaleX": 0.4081,
+      "scaleY": 0.4081,
+      "rotation": 0,
+      "opacity": 1
+    },
+    {
+      "id": "image_2",
+      "path": "projects/tshirt/resources/1750067437001_6d9d73d27f.webp",
+      "x": 0,
+      "y": -480.8265,
+      "width": 1024,
+      "height": 1536,
+      "scaleX": 0.9766,
+      "scaleY": 0.9766,
+      "rotation": 0,
+      "opacity": 1
+    }
+  ],
+  "texts": [],
+  "output": {
+    "format": "png",
+    "filename": "tshirt_poster.png",
+    "quality": 100
+  }
+}
