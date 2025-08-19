@@ -40,6 +40,11 @@ file(GLOB_RECURSE allCPP
         ${CMAKE_CURRENT_SOURCE_DIR}/src/output/image_writer.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/engine/render_engine.cpp
         )
+
+# 简单测试文件（不依赖现有源码）
+file(GLOB_RECURSE simpleTestCPP 
+        ${CMAKE_CURRENT_SOURCE_DIR}/tests/simple_image_test.cpp
+        )
 # 在Xcode里面按照文件实际目录显示, 不要平铺
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${allCPP})
 
@@ -67,5 +72,10 @@ list(APPEND SYS_LIBS ${OpenGL_FRAMEWORK})
 add_executable(${LIBRARY_NAME} ${allCPP})
 target_include_directories(${LIBRARY_NAME} PRIVATE ${libSRV_INCLUDES_DIR})
 target_link_libraries(${LIBRARY_NAME} PRIVATE ${libs_trd_srv} ${ABSL_LIBS} ${SYS_LIBS})
+
+# 简单测试可执行文件（独立运行，不修改现有源码）
+add_executable(simple_test ${simpleTestCPP})
+target_include_directories(simple_test PRIVATE ${libSRV_INCLUDES_DIR})
+target_link_libraries(simple_test PRIVATE ${ABSL_LIBS} ${SYS_LIBS})
 
 message("--end avmedia complie---")
