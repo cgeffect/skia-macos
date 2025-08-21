@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.26.1)
 
-project(skia)
+project(PosterMaker)
 set(LIBRARY_NAME renderer)
 
 # 设置默认构建类型为 Debug
