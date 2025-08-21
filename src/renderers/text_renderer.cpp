@@ -33,6 +33,11 @@ bool TextRenderer::renderText(SkCanvas* canvas, const TextElement& textElement, 
         return false;
     }
     
+    // 调试信息
+    std::cout << "调试: 加载字体 '" << textElement.style.fontFamily << "' 成功" << std::endl;
+    std::cout << "调试: 文本内容: '" << textElement.content << "'" << std::endl;
+    std::cout << "调试: 位置: (" << textElement.transform.x << ", " << textElement.transform.y << ")" << std::endl;
+    
     // 创建字体
     SkFont font(typeface, textElement.style.fontSize);
     
@@ -91,9 +96,11 @@ void TextRenderer::drawDebugRect(SkCanvas* canvas, const TextElement& textElemen
         debugPaint.setStyle(SkPaint::kStroke_Style);
         debugPaint.setStrokeWidth(2.0f);
         
+        // 修正：红色边框应该与文本基线对齐
+        // 文本渲染从 transform.y + fontSize 开始，所以边框也应该从这里开始
         SkRect debugRect = SkRect::MakeXYWH(
             textElement.transform.x + offsetX,
-            textElement.transform.y + offsetY,
+            textElement.transform.y + textElement.style.fontSize + offsetY,
             textElement.width,
             textElement.height
         );

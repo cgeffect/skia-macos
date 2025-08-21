@@ -55,23 +55,7 @@ public:
                    float offsetX, float offsetY) override;
     
 private:
-    void renderSingleLineText(SkCanvas* canvas, const TextElement& textElement, 
-                             const SkFont& font, const SkPaint& paint, 
-                             float offsetX, float offsetY);
-    void renderMultiLineText(SkCanvas* canvas, const TextElement& textElement, 
-                            const SkFont& font, const SkPaint& paint, 
-                            float offsetX, float offsetY);
-    void renderWordWrapText(SkCanvas* canvas, const TextElement& textElement, 
-                           const SkFont& font, const SkPaint& paint, 
-                           float offsetX, float offsetY);
-    void renderAutoFitText(SkCanvas* canvas, const TextElement& textElement, 
-                          const SkFont& font, const SkPaint& paint, 
-                          float offsetX, float offsetY);
-    
     std::vector<std::string> splitText(const std::string& text);
-    float calculateTextWidth(const std::string& text, const SkFont& font);
-    std::vector<std::string> smartWrapText(const std::string& text, float maxWidth, const SkFont& font);
-    std::string truncateTextWithEllipsis(const std::string& text, float maxWidth, const SkFont& font);
 };
 
 // 段落文本布局器（基于SkParagraph）

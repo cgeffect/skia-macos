@@ -160,7 +160,7 @@ public:
         // 1. 运行渲染程序生成当前图片
         std::cout << "  渲染协议文件: " << protocolFile << std::endl;
         
-        std::string command = "./build/skia " + protocolFile;
+        std::string command = "./build/renderer " + protocolFile;
         int result = system(command.c_str());
         
         if (result != 0) {
@@ -313,7 +313,7 @@ public:
             std::cout << "  第 " << (i+1) << " 次渲染..." << std::endl;
             
             // 运行渲染程序
-            std::string command = "./build/skia " + protocolFile;
+            std::string command = "./build/renderer " + protocolFile;
             int result = system(command.c_str());
             
             if (result != 0) {

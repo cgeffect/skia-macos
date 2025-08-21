@@ -54,6 +54,7 @@ struct TextStyle {
     float shadowSigma = 0.0f;
     SkColor shadowColor = SK_ColorBLACK;
     TextDisplayMode displayMode = TextDisplayMode::WordWrap;
+    bool hasExplicitDisplayMode = false;  // 标记是否明确设置了displayMode
     int maxLines = 0;  // 0表示无限制
     bool ellipsis = false;  // 是否显示省略号
 };

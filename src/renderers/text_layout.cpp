@@ -11,6 +11,7 @@
 #include "modules/skparagraph/include/ParagraphStyle.h"
 #include "modules/skparagraph/include/TextStyle.h"
 #include "include/core/SkFontMgr.h"
+#include "include/ports/SkFontMgr_mac_ct.h"
 
 namespace skia_renderer {
 
@@ -78,14 +79,24 @@ int TextFeatureAnalyzer::countLines(const std::string& text) {
 LayoutStrategy TextFeatureAnalyzer::suggestLayoutStrategy(const TextElement& textElement) {
     TextFeatures features = analyze(textElement);
     
-    // 暂时强制使用简单布局，确保基本功能稳定
-    // TODO: 在 SkParagraph 字体管理问题解决后，再启用智能选择
-    return LayoutStrategy::Simple;
-    
-    if (features.hasComplexCharacters && features.hasLongText && features.needsWordWrap) {
+    // 新策略：基于displayMode属性选择渲染引擎
+    // 只有明确设置了新的displayMode属性才使用Paragraph
+    // 对于旧的协议（没有displayMode属性），使用Simple布局
+    if (textElement.style.displayMode == TextDisplayMode::SingleLine ||
+        textElement.style.displayMode == TextDisplayMode::MultiLine ||
+        textElement.style.displayMode == TextDisplayMode::AutoFit) {
         return LayoutStrategy::Paragraph;
     }
     
+    // 对于WordWrap模式，需要检查是否有其他新属性
+    if (textElement.style.displayMode == TextDisplayMode::WordWrap) {
+        // 如果有maxLines或ellipsis属性，说明是新的WordWrap模式
+        if (textElement.style.maxLines > 0 || textElement.style.ellipsis) {
+            return LayoutStrategy::Paragraph;
+        }
+    }
+    
+    // 旧的渲染方式使用Simple（默认的WordWrap或没有新属性）
     return LayoutStrategy::Simple;
 }
 
@@ -94,148 +105,31 @@ LayoutStrategy TextFeatureAnalyzer::suggestLayoutStrategy(const TextElement& tex
 bool SimpleTextLayoutEngine::layoutText(SkCanvas* canvas, const TextElement& textElement, 
                                        const SkFont& font, const SkPaint& paint, 
                                        float offsetX, float offsetY) {
-    // 如果没有设置宽度和高度，直接按单行模式渲染
-    if (textElement.width <= 0 && textElement.height <= 0) {
-        canvas->drawString(textElement.content.c_str(), 
-                          textElement.transform.x + offsetX, 
-                          textElement.transform.y + textElement.style.fontSize + offsetY, 
-                          font, paint);
-        return true;
-    }
+    // SimpleTextLayoutEngine只处理无宽高限制的文本（旧的渲染逻辑）
+    // 支持手动换行（\r\n），不支持自动换行
     
-    // 根据显示模式选择渲染方法
-    switch (textElement.style.displayMode) {
-        case TextDisplayMode::SingleLine:
-            renderSingleLineText(canvas, textElement, font, paint, offsetX, offsetY);
-            break;
-        case TextDisplayMode::MultiLine:
-            renderMultiLineText(canvas, textElement, font, paint, offsetX, offsetY);
-            break;
-        case TextDisplayMode::AutoFit:
-            renderAutoFitText(canvas, textElement, font, paint, offsetX, offsetY);
-            break;
-        case TextDisplayMode::WordWrap:
-        default:
-            renderWordWrapText(canvas, textElement, font, paint, offsetX, offsetY);
-            break;
+    // 分割文本（按\r\n换行）
+    std::vector<std::string> lines = splitText(textElement.content);
+    
+    float lineHeight = textElement.style.fontSize * 1.2f;
+    for (size_t i = 0; i < lines.size(); ++i) {
+        float y = textElement.transform.y + textElement.style.fontSize + offsetY + i * lineHeight;
+        canvas->drawString(lines[i].c_str(), 
+                          textElement.transform.x + offsetX, 
+                          y, 
+                          font, paint);
     }
     
     return true;
 }
 
-void SimpleTextLayoutEngine::renderSingleLineText(SkCanvas* canvas, const TextElement& textElement, 
-                                                 const SkFont& font, const SkPaint& paint, 
-                                                 float offsetX, float offsetY) {
-    std::string displayText = textElement.content;
-    
-    if (textElement.width > 0 && textElement.style.ellipsis) {
-        displayText = truncateTextWithEllipsis(textElement.content, textElement.width, font);
-    }
-    
-    canvas->drawString(displayText.c_str(), 
-                      textElement.transform.x + offsetX, 
-                      textElement.transform.y + textElement.style.fontSize + offsetY, 
-                      font, paint);
-}
+// SimpleTextLayoutEngine不再需要复杂的渲染方法，只保留基本的文本分割功能
 
-void SimpleTextLayoutEngine::renderMultiLineText(SkCanvas* canvas, const TextElement& textElement, 
-                                                const SkFont& font, const SkPaint& paint, 
-                                                float offsetX, float offsetY) {
-    if (textElement.width <= 0) {
-        canvas->drawString(textElement.content.c_str(), 
-                          textElement.transform.x + offsetX, 
-                          textElement.transform.y + textElement.style.fontSize + offsetY, 
-                          font, paint);
-        return;
-    }
-    
-    std::vector<std::string> lines = smartWrapText(textElement.content, textElement.width, font);
-    
-    if (textElement.style.maxLines > 0 && lines.size() > textElement.style.maxLines) {
-        lines.resize(textElement.style.maxLines);
-        if (textElement.style.ellipsis && !lines.empty()) {
-            std::string lastLine = lines.back();
-            std::string ellipsisText = truncateTextWithEllipsis(lastLine, textElement.width, font);
-            if (ellipsisText != lastLine) {
-                lines.back() = ellipsisText;
-            }
-        }
-    }
-    
-    float lineHeight = textElement.style.fontSize * 1.2f;
-    for (size_t i = 0; i < lines.size(); ++i) {
-        float y = textElement.transform.y + textElement.style.fontSize + offsetY + i * lineHeight;
-        canvas->drawString(lines[i].c_str(), 
-                          textElement.transform.x + offsetX, 
-                          y, 
-                          font, paint);
-    }
-}
+// 这些复杂的渲染方法现在由ParagraphTextLayoutEngine处理
 
-void SimpleTextLayoutEngine::renderWordWrapText(SkCanvas* canvas, const TextElement& textElement, 
-                                               const SkFont& font, const SkPaint& paint, 
-                                               float offsetX, float offsetY) {
-    if (textElement.width <= 0) {
-        canvas->drawString(textElement.content.c_str(), 
-                          textElement.transform.x + offsetX, 
-                          textElement.transform.y + textElement.style.fontSize + offsetY, 
-                          font, paint);
-        return;
-    }
-    
-    std::vector<std::string> lines = smartWrapText(textElement.content, textElement.width, font);
-    
-    float lineHeight = textElement.style.fontSize * 1.2f;
-    for (size_t i = 0; i < lines.size(); ++i) {
-        float y = textElement.transform.y + textElement.style.fontSize + offsetY + i * lineHeight;
-        canvas->drawString(lines[i].c_str(), 
-                          textElement.transform.x + offsetX, 
-                          y, 
-                          font, paint);
-    }
-}
+// 这些复杂的渲染方法现在由ParagraphTextLayoutEngine处理
 
-void SimpleTextLayoutEngine::renderAutoFitText(SkCanvas* canvas, const TextElement& textElement, 
-                                              const SkFont& font, const SkPaint& paint, 
-                                              float offsetX, float offsetY) {
-    if (textElement.width <= 0 || textElement.height <= 0) {
-        canvas->drawString(textElement.content.c_str(), 
-                          textElement.transform.x + offsetX, 
-                          textElement.transform.y + textElement.style.fontSize + offsetY, 
-                          font, paint);
-        return;
-    }
-    
-    float currentFontSize = textElement.style.fontSize;
-    float minFontSize = 8.0f;
-    
-    SkFont currentFont = font;
-    
-    while (currentFontSize >= minFontSize) {
-        currentFont.setSize(currentFontSize);
-        std::vector<std::string> lines = smartWrapText(textElement.content, textElement.width, currentFont);
-        
-        float totalHeight = lines.size() * currentFontSize * 1.2f;
-        
-        if (totalHeight <= textElement.height) {
-            break;
-        }
-        
-        currentFontSize -= 1.0f;
-    }
-    
-    currentFont.setSize(currentFontSize);
-    std::vector<std::string> lines = smartWrapText(textElement.content, textElement.width, currentFont);
-    
-    float lineHeight = currentFontSize * 1.2f;
-    for (size_t i = 0; i < lines.size(); ++i) {
-        float y = textElement.transform.y + currentFontSize + offsetY + i * lineHeight;
-        canvas->drawString(lines[i].c_str(), 
-                          textElement.transform.x + offsetX, 
-                          y, 
-                          currentFont, paint);
-    }
-}
+// 这些复杂的渲染方法现在由ParagraphTextLayoutEngine处理
 
 std::vector<std::string> SimpleTextLayoutEngine::splitText(const std::string& text) {
     std::vector<std::string> lines;
@@ -264,67 +158,7 @@ std::vector<std::string> SimpleTextLayoutEngine::splitText(const std::string& te
     return lines;
 }
 
-float SimpleTextLayoutEngine::calculateTextWidth(const std::string& text, const SkFont& font) {
-    SkRect bounds;
-    font.measureText(text.c_str(), text.length(), SkTextEncoding::kUTF8, &bounds);
-    return bounds.width();
-}
-
-std::vector<std::string> SimpleTextLayoutEngine::smartWrapText(const std::string& text, float maxWidth, const SkFont& font) {
-    std::vector<std::string> lines;
-    std::string currentLine;
-    
-    std::istringstream iss(text);
-    std::string word;
-    
-    while (iss >> word) {
-        std::string testLine = currentLine.empty() ? word : currentLine + " " + word;
-        float testWidth = calculateTextWidth(testLine, font);
-        
-        if (testWidth <= maxWidth) {
-            currentLine = testLine;
-        } else {
-            if (!currentLine.empty()) {
-                lines.push_back(currentLine);
-                currentLine = word;
-            } else {
-                lines.push_back(word);
-            }
-        }
-    }
-    
-    if (!currentLine.empty()) {
-        lines.push_back(currentLine);
-    }
-    
-    return lines;
-}
-
-std::string SimpleTextLayoutEngine::truncateTextWithEllipsis(const std::string& text, float maxWidth, const SkFont& font) {
-    const std::string ellipsis = "...";
-    float ellipsisWidth = calculateTextWidth(ellipsis, font);
-    
-    if (calculateTextWidth(text, font) <= maxWidth) {
-        return text;
-    }
-    
-    int left = 0;
-    int right = text.length();
-    
-    while (left < right) {
-        int mid = (left + right + 1) / 2;
-        std::string testText = text.substr(0, mid) + ellipsis;
-        float testWidth = calculateTextWidth(testText, font);
-        
-        if (testWidth <= maxWidth) {
-            left = mid;
-        } else {
-            right = mid - 1;
-        }
-    }
-    
-    return text.substr(0, left) + ellipsis;
-}
+// 这些方法现在由ParagraphTextLayoutEngine处理，不再需要
 
 // ==================== ParagraphTextLayoutEngine 实现 ====================
 
@@ -337,15 +171,89 @@ bool ParagraphTextLayoutEngine::layoutText(SkCanvas* canvas, const TextElement& 
 
 void ParagraphTextLayoutEngine::renderParagraph(SkCanvas* canvas, const TextElement& textElement, 
                                                const SkPaint& paint, float offsetX, float offsetY) {
-    // 由于 SkParagraph 的字体管理比较复杂，我们暂时回退到简单渲染
-    // 这样可以确保文字能够正常显示
-    std::cerr << "ParagraphTextLayoutEngine: 回退到简单渲染以确保兼容性" << std::endl;
-    
-    // 使用简单渲染
-    canvas->drawString(textElement.content.c_str(), 
-                      textElement.transform.x + offsetX, 
-                      textElement.transform.y + textElement.style.fontSize + offsetY, 
-                      SkFont(), paint);
+    try {
+        // 创建字体集合
+        auto fontCollection = sk_make_sp<skia::textlayout::FontCollection>();
+        
+        // 使用系统默认字体管理器
+        auto fontMgr = SkFontMgr_New_CoreText(nullptr);
+        if (fontMgr) {
+            fontCollection->setDefaultFontManager(fontMgr);
+        }
+        
+        // 创建段落样式
+        skia::textlayout::ParagraphStyle paragraphStyle;
+        
+        // 根据显示模式设置样式
+        switch (textElement.style.displayMode) {
+            case TextDisplayMode::SingleLine:
+                paragraphStyle.setMaxLines(1);
+                if (textElement.style.ellipsis) {
+                    paragraphStyle.setEllipsis(SkString("..."));
+                }
+                break;
+                
+            case TextDisplayMode::MultiLine:
+                if (textElement.style.maxLines > 0) {
+                    paragraphStyle.setMaxLines(textElement.style.maxLines);
+                }
+                if (textElement.style.ellipsis) {
+                    paragraphStyle.setEllipsis(SkString("..."));
+                }
+                break;
+                
+            case TextDisplayMode::WordWrap:
+                // 自动换行，不需要特殊设置
+                break;
+                
+            case TextDisplayMode::AutoFit:
+                // 自适应模式，通过调整字体大小实现
+                break;
+        }
+        
+        // 设置文本对齐
+        paragraphStyle.setTextAlign(skia::textlayout::TextAlign::kLeft);
+        
+        // 创建段落构建器
+        auto paragraphBuilder = skia::textlayout::ParagraphBuilder::make(paragraphStyle, fontCollection);
+        
+        // 创建文本样式
+        skia::textlayout::TextStyle textStyle;
+        textStyle.setFontSize(textElement.style.fontSize);
+        textStyle.setColor(textElement.style.fillColor);
+        
+        // 设置字体
+        if (!textElement.style.fontFamily.empty()) {
+            std::vector<SkString> fontFamilies;
+            fontFamilies.push_back(SkString(textElement.style.fontFamily.c_str()));
+            textStyle.setFontFamilies(fontFamilies);
+        }
+        
+        // 添加文本
+        paragraphBuilder->pushStyle(textStyle);
+        paragraphBuilder->addText(textElement.content.c_str());
+        paragraphBuilder->pop();
+        
+        // 构建段落
+        auto paragraph = paragraphBuilder->Build();
+        
+        // 布局段落
+        float layoutWidth = textElement.width > 0 ? textElement.width : 1000.0f;
+        paragraph->layout(layoutWidth);
+        
+        // 渲染段落
+        paragraph->paint(canvas, 
+                        textElement.transform.x + offsetX, 
+                        textElement.transform.y + textElement.style.fontSize + offsetY);
+        
+    } catch (const std::exception& e) {
+        std::cerr << "ParagraphTextLayoutEngine 错误: " << e.what() << std::endl;
+        // 回退到简单渲染
+        canvas->drawString(textElement.content.c_str(), 
+                          textElement.transform.x + offsetX, 
+                          textElement.transform.y + textElement.style.fontSize + offsetY, 
+                          SkFont(), paint);
+    }
 }
 
 // ==================== TextEffectRenderer 实现 ====================

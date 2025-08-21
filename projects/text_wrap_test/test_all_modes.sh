@@ -2,9 +2,15 @@
 
 echo "=== 测试所有文本显示模式 ==="
 
+# 获取项目根目录
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(dirname "$(dirname "$SCRIPT_DIR")")"
+
+echo "项目根目录: $PROJECT_ROOT"
+cd "$PROJECT_ROOT"
+
 # 编译项目
 echo "1. 编译项目..."
-cd /Users/jason/Jason/opengl/skia-macos
 ./build.sh
 
 if [ $? -ne 0 ]; then
@@ -17,7 +23,7 @@ echo "✅ 编译成功"
 # 测试单行模式
 echo ""
 echo "2. 测试单行模式..."
-./build/skia projects/text_wrap_test/single_line_protocol.json
+./build/renderer projects/text_wrap_test/single_line_protocol.json
 if [ $? -eq 0 ]; then
     echo "✅ 单行模式测试成功"
 else
@@ -27,7 +33,7 @@ fi
 # 测试多行模式
 echo ""
 echo "3. 测试多行模式..."
-./build/skia projects/text_wrap_test/multi_line_protocol.json
+./build/renderer projects/text_wrap_test/multi_line_protocol.json
 if [ $? -eq 0 ]; then
     echo "✅ 多行模式测试成功"
 else
@@ -37,7 +43,7 @@ fi
 # 测试自动换行模式
 echo ""
 echo "4. 测试自动换行模式..."
-./build/skia projects/text_wrap_test/word_wrap_protocol.json
+./build/renderer projects/text_wrap_test/word_wrap_protocol.json
 if [ $? -eq 0 ]; then
     echo "✅ 自动换行模式测试成功"
 else
@@ -47,7 +53,7 @@ fi
 # 测试自适应模式
 echo ""
 echo "5. 测试自适应模式..."
-./build/skia projects/text_wrap_test/auto_fit_protocol.json
+./build/renderer projects/text_wrap_test/auto_fit_protocol.json
 if [ $? -eq 0 ]; then
     echo "✅ 自适应模式测试成功"
 else
