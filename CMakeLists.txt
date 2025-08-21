@@ -1,8 +1,7 @@
 cmake_minimum_required(VERSION 3.26.1)
-message("--begin avmedia complie---")
 
 project(skia)
-set(LIBRARY_NAME skia)
+set(LIBRARY_NAME renderer)
 # 关闭所有编译警告
 # add_compile_options(-w)
 # 为 C++ 源文件添加编译选项，抑制 -Wdeprecated-builtins 警告
@@ -36,6 +35,7 @@ file(GLOB_RECURSE allCPP
         ${CMAKE_CURRENT_SOURCE_DIR}/src/resources/font_manager.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/canvas_renderer.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/image_renderer.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/text_layout.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/text_renderer.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/output/image_writer.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/engine/render_engine.cpp
@@ -44,6 +44,21 @@ file(GLOB_RECURSE allCPP
 # 简单测试文件（不依赖现有源码）
 file(GLOB_RECURSE simpleTestCPP 
         ${CMAKE_CURRENT_SOURCE_DIR}/tests/simple_image_test.cpp
+        )
+
+# 智能文本渲染器测试文件
+file(GLOB_RECURSE smartTextTestCPP 
+        ${CMAKE_CURRENT_SOURCE_DIR}/examples/simple_example.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/core/types.h
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/utils/color_parser.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/parsers/protocol_parser.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/resources/font_manager.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/canvas_renderer.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/image_renderer.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/text_layout.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/text_renderer.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/output/image_writer.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/engine/render_engine.cpp
         )
 # 在Xcode里面按照文件实际目录显示, 不要平铺
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${allCPP})
@@ -78,4 +93,8 @@ add_executable(simple_test ${simpleTestCPP})
 target_include_directories(simple_test PRIVATE ${libSRV_INCLUDES_DIR})
 target_link_libraries(simple_test PRIVATE ${ABSL_LIBS} ${SYS_LIBS})
 
-message("--end avmedia complie---")
+# 智能文本渲染器测试可执行文件
+add_executable(smart_text_test ${smartTextTestCPP})
+target_include_directories(smart_text_test PRIVATE ${libSRV_INCLUDES_DIR})
+target_link_libraries(smart_text_test PRIVATE ${ABSL_LIBS} ${SYS_LIBS})
+

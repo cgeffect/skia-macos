@@ -5,6 +5,7 @@
 #include "include/core/SkFont.h"
 #include "include/core/SkPaint.h"
 #include "include/core/SkTypeface.h"
+#include "renderers/text_layout.h"
 #include "resources/font_manager.h"
 #include <memory>
 #include <vector>
@@ -12,6 +13,7 @@
 
 namespace skia_renderer {
 
+// 主文本渲染器
 class TextRenderer {
 public:
     TextRenderer();
@@ -25,61 +27,38 @@ public:
     
     // 获取字体管理器
     std::shared_ptr<FontManager> getFontManager() const;
+    
+    // 设置布局策略
+    void setLayoutStrategy(LayoutStrategy strategy) { layoutStrategy = strategy; }
+    
+    // 获取布局策略
+    LayoutStrategy getLayoutStrategy() const { return layoutStrategy; }
+    
+    // 获取渲染统计信息
+    struct RenderStats {
+        int simpleLayoutCount = 0;
+        int paragraphLayoutCount = 0;
+        int totalRenderCount = 0;
+    };
+    
+    RenderStats getRenderStats() const { return renderStats; }
+    void resetRenderStats() { renderStats = RenderStats(); }
 
 private:
     std::shared_ptr<FontManager> fontManager;
+    std::unique_ptr<SimpleTextLayoutEngine> simpleLayoutEngine;
+    std::unique_ptr<ParagraphTextLayoutEngine> paragraphLayoutEngine;
+    LayoutStrategy layoutStrategy;
+    RenderStats renderStats;
     
     // 应用变换
     void applyTransform(SkCanvas* canvas, const Transform& transform);
     
-    // 渲染阴影
-    void renderShadow(SkCanvas* canvas, const TextElement& textElement, const SkFont& font);
-    
-    // 渲染描边
-    void renderStroke(SkCanvas* canvas, const TextElement& textElement, const SkFont& font);
-    
-    // 渲染填充
-    void renderFill(SkCanvas* canvas, const TextElement& textElement, const SkFont& font);
-    
-    // 渲染文本（支持自动换行）
-    void renderTextWithWrapping(SkCanvas* canvas, const TextElement& textElement, 
-                               const SkFont& font, const SkPaint& paint, 
-                               float offsetX, float offsetY);
-    
-    // 单行文本渲染（支持省略号）
-    void renderSingleLineText(SkCanvas* canvas, const TextElement& textElement, 
-                             const SkFont& font, const SkPaint& paint, 
-                             float offsetX, float offsetY);
-    
-    // 多行文本渲染（固定行数）
-    void renderMultiLineText(SkCanvas* canvas, const TextElement& textElement, 
-                            const SkFont& font, const SkPaint& paint, 
-                            float offsetX, float offsetY);
-    
-    // 自动换行文本渲染
-    void renderWordWrapText(SkCanvas* canvas, const TextElement& textElement, 
-                           const SkFont& font, const SkPaint& paint, 
-                           float offsetX, float offsetY);
-    
-    // 自适应文本渲染（字体缩放）
-    void renderAutoFitText(SkCanvas* canvas, const TextElement& textElement, 
-                          const SkFont& font, const SkPaint& paint, 
-                          float offsetX, float offsetY);
-    
-    // 分割文本为多行
-    std::vector<std::string> splitText(const std::string& text);
-    
-    // 计算文本宽度
-    float calculateTextWidth(const std::string& text, const SkFont& font);
-    
-    // 智能换行算法
-    std::vector<std::string> smartWrapText(const std::string& text, float maxWidth, const SkFont& font);
-    
-    // 截断文本并添加省略号
-    std::string truncateTextWithEllipsis(const std::string& text, float maxWidth, const SkFont& font);
-    
     // 绘制调试框框
     void drawDebugRect(SkCanvas* canvas, const TextElement& textElement, float offsetX, float offsetY);
+    
+    // 智能选择布局引擎
+    TextLayoutEngine* selectLayoutEngine(const TextElement& textElement);
 };
 
 } // namespace skia_renderer 
