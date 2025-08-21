@@ -87,6 +87,7 @@ cd skia-macos
 
 - **[协议格式详解](docs/PROTOCOL.md)** - JSON 协议格式、属性说明、配置示例
 - **[文本渲染功能](docs/TEXT_RENDERING.md)** - 四种文本显示模式、智能布局策略、技术实现
+- **[测试系统详解](docs/TESTING.md)** - 自动化测试、图像对比、一致性验证、故障排除
 
 ## ⚙️ 构建模式
 
@@ -112,18 +113,20 @@ cd skia-macos
 
 ## 🧪 测试系统
 
-项目包含完整的自动化测试系统，覆盖14个测试项目：
+项目包含完整的自动化测试系统，通过图像对比验证渲染一致性，覆盖14个测试项目：
 
 ```bash
+# 运行完整测试套件
+./run_simple_test.sh
+
 # 运行所有测试
 ./build/simple_test run
 
-# 更新特定测试的基线
-./build/simple_test update trip
-
-# 设置容差
-./build/simple_test tolerance 0.02
+# 一致性测试
+./build/simple_test consistency auto_fit 5
 ```
+
+**详细说明**: 请参阅 **[测试系统详解](docs/TESTING.md)** 了解测试原理、使用方法、故障排除等完整信息。
 
 ## 📈 性能特点
 
