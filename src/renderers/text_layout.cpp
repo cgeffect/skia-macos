@@ -309,14 +309,18 @@ float ParagraphTextLayoutEngine::calculateAutoFitFontSize(const TextElement& tex
     
     // 如果原始字体大小就适合，直接返回
     if (paragraphHeight <= targetHeight && paragraphWidth <= targetWidth) {
+        #ifndef NDEBUG
         std::cout << "调试: AutoFit - 原始字体大小 " << originalFontSize << " 适合容器，无需缩放" << std::endl;
+        #endif
         return originalFontSize;
     }
     
     // 第二步：如果原始字体大小不适合，才开始缩小字体
+    #ifndef NDEBUG
     std::cout << "调试: AutoFit - 原始字体大小 " << originalFontSize << " 不适合容器，开始缩放" << std::endl;
     std::cout << "调试: AutoFit - 容器尺寸: " << targetWidth << "x" << targetHeight << std::endl;
     std::cout << "调试: AutoFit - 文本尺寸: " << paragraphWidth << "x" << paragraphHeight << std::endl;
+    #endif
     
     float minFontSize = 8.0f;  // 最小字体大小
     float maxFontSize = originalFontSize;
@@ -358,7 +362,9 @@ float ParagraphTextLayoutEngine::calculateAutoFitFontSize(const TextElement& tex
         }
     }
     
+    #ifndef NDEBUG
     std::cout << "调试: AutoFit - 最终字体大小: " << minFontSize << std::endl;
+    #endif
     return minFontSize;
 }
 

@@ -33,10 +33,12 @@ bool TextRenderer::renderText(SkCanvas* canvas, const TextElement& textElement, 
         return false;
     }
     
-    // 调试信息
-    std::cout << "调试: 加载字体 '" << textElement.style.fontFamily << "' 成功" << std::endl;
-    std::cout << "调试: 文本内容: '" << textElement.content << "'" << std::endl;
-    std::cout << "调试: 位置: (" << textElement.transform.x << ", " << textElement.transform.y << ")" << std::endl;
+        // 调试信息
+        #ifndef NDEBUG
+        std::cout << "调试: 加载字体 '" << textElement.style.fontFamily << "' 成功" << std::endl;
+        std::cout << "调试: 文本内容: '" << textElement.content << "'" << std::endl;
+        std::cout << "调试: 位置: (" << textElement.transform.x << ", " << textElement.transform.y << ")" << std::endl;
+        #endif
     
     // 创建字体
     SkFont font(typeface, textElement.style.fontSize);

@@ -37,8 +37,15 @@ skia-macos/
 git clone <repository-url>
 cd skia-macos
 
-# 编译项目
+# 编译项目 (默认 Debug 模式)
 ./build.sh
+
+# 或指定构建模式
+./build.sh --debug    # Debug 模式 (包含调试信息)
+./build.sh --release  # Release 模式 (优化性能)
+
+# 查看构建选项
+./build.sh --help
 
 # 运行示例
 ./build/renderer
@@ -80,6 +87,28 @@ cd skia-macos
 
 - **[协议格式详解](docs/PROTOCOL.md)** - JSON 协议格式、属性说明、配置示例
 - **[文本渲染功能](docs/TEXT_RENDERING.md)** - 四种文本显示模式、智能布局策略、技术实现
+
+## ⚙️ 构建模式
+
+项目支持两种构建模式：
+
+### Debug 模式 (默认)
+```bash
+./build.sh --debug
+```
+- 包含调试信息 (`-g`)
+- 无优化 (`-O0`)
+- 启用调试输出 (控制台显示详细信息)
+- 适合开发和调试
+
+### Release 模式
+```bash
+./build.sh --release
+```
+- 最高优化 (`-O3`)
+- 禁用调试输出 (静默运行)
+- 更小的可执行文件
+- 适合生产环境
 
 ## 🧪 测试系统
 

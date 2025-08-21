@@ -383,7 +383,16 @@ int main(int argc, char* argv[]) {
         } else if (command == "consistency" && argc > 2) {
             std::string testName = argv[2];
             int iterations = (argc > 3) ? std::stoi(argv[3]) : 5;
-            std::string protocolFile = "projects/" + testName + "/" + testName + "_protocol.json";
+            
+            // 特殊处理文本模式测试的路径
+            std::string protocolFile;
+            if (testName == "single_line" || testName == "multi_line" || 
+                testName == "word_wrap" || testName == "auto_fit") {
+                protocolFile = "projects/text_wrap_test/" + testName + "_protocol.json";
+            } else {
+                protocolFile = "projects/" + testName + "/" + testName + "_protocol.json";
+            }
+            
             test.consistencyTest(testName, protocolFile, iterations);
         } else {
             std::cout << "用法:" << std::endl;

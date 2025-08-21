@@ -2,13 +2,35 @@ cmake_minimum_required(VERSION 3.26.1)
 
 project(skia)
 set(LIBRARY_NAME renderer)
+
+# 设置默认构建类型为 Debug
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Debug)
+endif()
+
+# 设置构建类型选项
+set(CMAKE_BUILD_TYPE ${CMAKE_BUILD_TYPE} CACHE STRING "构建类型 (Debug/Release)" FORCE)
+set_property(CACHE CMAKE_BUILD_TYPE PROPERTY STRINGS "Debug" "Release")
+
+# 根据构建类型设置编译选项和宏定义
+if(CMAKE_BUILD_TYPE STREQUAL "Release")
+    # Release 模式：优化 + 禁用调试
+    set(CMAKE_C_FLAGS_RELEASE   "-O3")
+    set(CMAKE_CXX_FLAGS_RELEASE "-O3")
+    add_definitions(-DNDEBUG)
+    message(STATUS "构建类型: Release (优化模式，禁用调试)")
+else()
+    # Debug 模式：调试信息 + 启用调试
+    set(CMAKE_C_FLAGS_DEBUG   "-O0 -g")
+    set(CMAKE_CXX_FLAGS_DEBUG "-O0 -g")
+    add_definitions(-DDEBUG)
+    message(STATUS "构建类型: Debug (调试模式，启用调试)")
+endif()
+
 # 关闭所有编译警告
 # add_compile_options(-w)
 # 为 C++ 源文件添加编译选项，抑制 -Wdeprecated-builtins 警告
 # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-deprecated-builtins -Wno-deprecated-declarations")
-set(CMAKE_C_FLAGS_DEBUG   "-O0 -g")
-set(CMAKE_CXX_FLAGS_DEBUG "-O0 -g")
-message(STATUS "Debug build avmedia")
 
 set(CMAKE_SYSTEM_PROCESSOR "arm64")
 set(CMAKE_OSX_ARCHITECTURES "arm64")
@@ -23,10 +45,8 @@ list(APPEND libSRV_INCLUDES_DIR ${libSRV_TRD_ROOT_PATH}/skia/Skia-macOS-Release-
 list(APPEND libSRV_INCLUDES_DIR ${libSRV_TRD_ROOT_PATH}/json/include)
 list(APPEND libSRV_INCLUDES_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
-# list(APPEND libs_trd_srv ${libSRV_TRD_ROOT_PATH}/skia/deploy/lib/libskia.a)
-
 file(GLOB_RECURSE ABSL_LIBS ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/skia/Skia-macOS-Release-arm64/out/Release-arm64/*.a)
-message(ABSL_LIBS ${ABSL_LIBS})
+# message(ABSL_LIBS ${ABSL_LIBS})
 file(GLOB_RECURSE allCPP 
         ${CMAKE_CURRENT_SOURCE_DIR}/examples/simple_example.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/src/core/types.h

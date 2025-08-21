@@ -31,7 +31,7 @@ echo "🔍 运行一致性测试..."
 echo ""
 
 # 测试几个关键项目的一致性
-for project in trip food clothes; do
+for project in trip food clothes single_line auto_fit; do
     echo "测试项目: $project"
     ./build/simple_test consistency $project 3
     echo ""
@@ -71,4 +71,5 @@ echo ""
 echo "🎯 特点:"
 echo "  - 不修改任何现有源码"
 echo "  - 独立运行渲染程序"
-echo "  - 纯单元测试设计" 
+echo "  - 纯单元测试设计"
+echo "  - 覆盖14个测试项目（包含4种文本模式）" 
