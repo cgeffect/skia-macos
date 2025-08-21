@@ -53,7 +53,7 @@
             "scaleX": 1.0,
             "scaleY": 1.0,
             "width": 350,
-            "height": 180,
+            "height": 120,
             "displayMode": "WordWrap",
             "maxLines": 0,
             "ellipsis": false
@@ -62,7 +62,7 @@
             "id": "word_wrap_mixed",
             "content": "混合文本测试：This is a mixed Chinese and English text test. 当文本包含中英文混合内容时，换行算法需要正确处理不同字符的宽度。English words should be wrapped properly, 而中文字符也应该正确换行。",
             "x": 50,
-            "y": 800,
+            "y": 700,
             "fontFamily": "SourceHanSansCN-Normal",
             "fontSize": 18,
             "fillColor": "#888888",
@@ -70,7 +70,7 @@
             "scaleX": 1.0,
             "scaleY": 1.0,
             "width": 300,
-            "height": 300,
+            "height": 200,
             "displayMode": "WordWrap",
             "maxLines": 0,
             "ellipsis": false

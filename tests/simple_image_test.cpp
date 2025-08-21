@@ -243,7 +243,11 @@ public:
             {"horizontal", "projects/horizontal/horizontal_protocol.json"},
             {"long", "projects/long/long_protocol.json"},
             {"clothes", "projects/clothes/clothes_protocol.json"},
-            {"tshirt", "projects/tshirt/tshirt_protocol.json"}
+            {"tshirt", "projects/tshirt/tshirt_protocol.json"},
+            {"single_line", "projects/text_wrap_test/single_line_protocol.json"},
+            {"multi_line", "projects/text_wrap_test/multi_line_protocol.json"},
+            {"word_wrap", "projects/text_wrap_test/word_wrap_protocol.json"},
+            {"auto_fit", "projects/text_wrap_test/auto_fit_protocol.json"}
         };
 
         int passedTests = 0;

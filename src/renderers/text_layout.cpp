@@ -94,6 +94,10 @@ LayoutStrategy TextFeatureAnalyzer::suggestLayoutStrategy(const TextElement& tex
         if (textElement.style.maxLines > 0 || textElement.style.ellipsis) {
             return LayoutStrategy::Paragraph;
         }
+        // 如果WordWrap模式有width属性，也使用Paragraph（支持自动换行）
+        if (textElement.width > 0) {
+            return LayoutStrategy::Paragraph;
+        }
     }
     
     // 旧的渲染方式使用Simple（默认的WordWrap或没有新属性）
@@ -253,6 +257,7 @@ void ParagraphTextLayoutEngine::renderParagraph(SkCanvas* canvas, const TextElem
         paragraph->layout(layoutWidth);
         
         // 渲染段落
+        // 需要添加fontSize来对齐文本基线
         paragraph->paint(canvas, 
                         textElement.transform.x + offsetX, 
                         textElement.transform.y + textElement.style.fontSize + offsetY);

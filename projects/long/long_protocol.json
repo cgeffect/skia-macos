@@ -1145,9 +1145,7 @@
             "fillColor": "#fdb300",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 95,
-            "height": 13.9992
+            "scaleY": 1
         },
         {
             "id": "text_2",
@@ -1159,9 +1157,7 @@
             "fillColor": "#ffffff",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 71,
-            "height": 58.3495
+            "scaleY": 1
         },
         {
             "id": "text_3",
@@ -1173,9 +1169,7 @@
             "fillColor": "#ffffff",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 72,
-            "height": 58.3495
+            "scaleY": 1
         },
         {
             "id": "text_4",
@@ -1187,9 +1181,7 @@
             "fillColor": "#ffffff",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 27.4885,
-            "height": 150.9829
+            "scaleY": 1
         },
         {
             "id": "text_5",
@@ -1201,9 +1193,7 @@
             "fillColor": "#ffffff",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 45,
-            "height": 124.2954
+            "scaleY": 1
         },
         {
             "id": "text_6",
@@ -1215,9 +1205,7 @@
             "fillColor": "#ffffff",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 71,
-            "height": 58.3495
+            "scaleY": 1
         },
         {
             "id": "text_7",
@@ -1229,9 +1217,7 @@
             "fillColor": "#ffffff",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 46,
-            "height": 130.4493
+            "scaleY": 1
         },
         {
             "id": "text_8",
@@ -1243,9 +1229,7 @@
             "fillColor": "#cc8909",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 53,
-            "height": 96.9105
+            "scaleY": 1
         },
         {
             "id": "text_9",
@@ -1257,9 +1241,7 @@
             "fillColor": "#cc8909",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 53,
-            "height": 96.9105
+            "scaleY": 1
         },
         {
             "id": "text_10",
@@ -1271,9 +1253,7 @@
             "fillColor": "#cc8909",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 54,
-            "height": 80.3787
+            "scaleY": 1
         },
         {
             "id": "text_11",
@@ -1285,9 +1265,7 @@
             "fillColor": "#f4a301",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 303,
-            "height": 41.7635
+            "scaleY": 1
         },
         {
             "id": "text_12",
@@ -1299,9 +1277,7 @@
             "fillColor": "#f4a301",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 209,
-            "height": 22.8137
+            "scaleY": 1
         },
         {
             "id": "text_13",
@@ -1313,9 +1289,7 @@
             "fillColor": "#fff7de",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 86,
-            "height": 71.831
+            "scaleY": 1
         },
         {
             "id": "text_14",
@@ -1327,9 +1301,7 @@
             "fillColor": "#fff7de",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 72,
-            "height": 59.4205
+            "scaleY": 1
         },
         {
             "id": "text_15",
@@ -1341,9 +1313,7 @@
             "fillColor": "#ffffff",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 238,
-            "height": 63.4724
+            "scaleY": 1
         },
         {
             "id": "text_16",
@@ -1355,9 +1325,7 @@
             "fillColor": "#ffffff",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 86,
-            "height": 71.831
+            "scaleY": 1
         },
         {
             "id": "text_17",
@@ -1369,9 +1337,7 @@
             "fillColor": "#ffffff",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 72,
-            "height": 59.4205
+            "scaleY": 1
         },
         {
             "id": "text_18",
@@ -1383,9 +1349,7 @@
             "fillColor": "#653927",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 270,
-            "height": 44.6244
+            "scaleY": 1
         },
         {
             "id": "text_19",
@@ -1397,9 +1361,7 @@
             "fillColor": "#ffffff",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 238,
-            "height": 63.4724
+            "scaleY": 1
         },
         {
             "id": "text_20",
@@ -1411,9 +1373,7 @@
             "fillColor": "#fefefe",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 276.6617,
-            "height": 33.2096
+            "scaleY": 1
         },
         {
             "id": "text_21",
@@ -1425,9 +1385,7 @@
             "fillColor": "#fefefe",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 160,
-            "height": 37.907
+            "scaleY": 1
         },
         {
             "id": "text_22",
@@ -1439,9 +1397,7 @@
             "fillColor": "#9f3c12",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 465,
-            "height": 68.4663
+            "scaleY": 1
         },
         {
             "id": "text_23",
@@ -1453,9 +1409,7 @@
             "fillColor": "#ffffff",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 163,
-            "height": 20.5092
+            "scaleY": 1
         },
         {
             "id": "text_24",
@@ -1467,9 +1421,7 @@
             "fillColor": "#f4a301",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 472,
-            "height": 43.9007
+            "scaleY": 1
         },
         {
             "id": "text_25",
@@ -1481,9 +1433,7 @@
             "fillColor": "#653927",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 143,
-            "height": 22.7016
+            "scaleY": 1
         },
         {
             "id": "text_26",
@@ -1495,9 +1445,7 @@
             "fillColor": "#653927",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 143,
-            "height": 22.7016
+            "scaleY": 1
         },
         {
             "id": "text_27",
@@ -1509,9 +1457,7 @@
             "fillColor": "#653927",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 122,
-            "height": 22.7016
+            "scaleY": 1
         },
         {
             "id": "text_28",
@@ -1523,9 +1469,7 @@
             "fillColor": "#61312f",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 297,
-            "height": 60.9317
+            "scaleY": 1
         },
         {
             "id": "text_29",
@@ -1537,9 +1481,7 @@
             "fillColor": "#61312f",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 379,
-            "height": 105.8319
+            "scaleY": 1
         },
         {
             "id": "text_30",
@@ -1551,9 +1493,7 @@
             "fillColor": "#5b271f",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 119,
-            "height": 22.2735
+            "scaleY": 1
         },
         {
             "id": "text_31",
@@ -1565,9 +1505,7 @@
             "fillColor": "#5b271f",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 172,
-            "height": 32.0305
+            "scaleY": 1
         },
         {
             "id": "text_32",
@@ -1579,9 +1517,7 @@
             "fillColor": "#5b271f",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 79,
-            "height": 33.5891
+            "scaleY": 1
         },
         {
             "id": "text_33",
@@ -1598,9 +1534,7 @@
             "shadowSigma": 2.0,
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 121,
-            "height": 121.0898
+            "scaleY": 1
         },
         {
             "id": "text_35",
@@ -1617,9 +1551,7 @@
             "shadowSigma": 2.0,
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 57,
-            "height": 55.0013
+            "scaleY": 1
         },
         {
             "id": "text_37",
@@ -1636,9 +1568,7 @@
             "shadowSigma": 2.0,
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 53,
-            "height": 40.8231
+            "scaleY": 1
         },
         {
             "id": "text_39",
@@ -1655,9 +1585,7 @@
             "shadowSigma": 2.0,
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 60,
-            "height": 47.9907
+            "scaleY": 1
         },
         {
             "id": "text_41",
@@ -1674,9 +1602,7 @@
             "shadowSigma": 2.0,
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 75,
-            "height": 68.4986
+            "scaleY": 1
         },
         {
             "id": "text_43",
@@ -1693,9 +1619,7 @@
             "shadowSigma": 2.0,
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 75,
-            "height": 65.7672
+            "scaleY": 1
         },
         {
             "id": "text_45",
@@ -1712,9 +1636,7 @@
             "shadowSigma": 2.0,
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 75,
-            "height": 76.9694
+            "scaleY": 1
         },
         {
             "id": "text_47",
@@ -1731,9 +1653,7 @@
             "shadowSigma": 2.0,
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 97,
-            "height": 106.7706
+            "scaleY": 1
         },
         {
             "id": "text_49",
@@ -1750,9 +1670,7 @@
             "shadowSigma": 2.0,
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 81,
-            "height": 84.0555
+            "scaleY": 1
         },
         {
             "id": "text_51",
@@ -1764,9 +1682,7 @@
             "fillColor": "#ffffff",
             "opacity": 1,
             "scaleX": 1,
-            "scaleY": 1,
-            "width": 117,
-            "height": 23.5991
+            "scaleY": 1
         }
     ],
     "output": {
