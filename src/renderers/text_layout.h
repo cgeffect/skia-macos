@@ -68,6 +68,9 @@ public:
 private:
     void renderParagraph(SkCanvas* canvas, const TextElement& textElement, 
                         const SkPaint& paint, float offsetX, float offsetY);
+    
+    float calculateAutoFitFontSize(const TextElement& textElement, 
+                                  void* fontCollection);  // 使用void*避免头文件依赖
 };
 
 // 文本效果渲染器
