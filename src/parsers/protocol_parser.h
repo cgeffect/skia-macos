@@ -41,6 +41,7 @@ private:
     bool parseOutput(const json& j);
     bool parseTransform(const json& j, Transform& transform);
     bool parseTextStyle(const json& j, TextStyle& style);
+    bool parseRichTextSegments(const json& j, std::vector<RichTextSegment>& segments);
     
     // 辅助方法
     float parseFloat(const json& j, const std::string& key, float defaultValue = 0.0f);

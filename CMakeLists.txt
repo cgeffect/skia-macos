@@ -59,6 +59,7 @@ file(GLOB_RECURSE COMMON_SOURCE_FILES
         ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/image_renderer.cpp    # 图片渲染
         ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/text_layout.cpp       # 文本布局
         ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/text_renderer.cpp     # 文本渲染
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/rich_text_renderer.cpp # 富文本渲染
         ${CMAKE_CURRENT_SOURCE_DIR}/src/output/image_writer.cpp         # 图片输出
         ${CMAKE_CURRENT_SOURCE_DIR}/src/engine/render_engine.cpp        # 渲染引擎
         )
@@ -105,4 +106,6 @@ set(textStylesTestCPP ${CMAKE_CURRENT_SOURCE_DIR}/examples/text_styles_demo.cpp 
 add_executable(text_styles_demo ${textStylesTestCPP})
 target_include_directories(text_styles_demo PRIVATE ${libSRV_INCLUDES_DIR})
 target_link_libraries(text_styles_demo PRIVATE ${ABSL_LIBS} ${SYS_LIBS})
+
+
 

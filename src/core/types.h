@@ -59,6 +59,27 @@ struct TextStyle {
     bool ellipsis = false;                                   // 是否在截断时显示省略号"..."
 };
 
+// 富文本片段 - 定义同行多色文本中的单个文本段
+struct RichTextSegment {
+    std::string content;                    // 文本内容
+    std::string fontFamily = "";            // 字体族名称，空字符串表示继承父级
+    float fontSize = 0.0f;                  // 字体大小，0表示继承父级
+    SkColor fillColor = SK_ColorTRANSPARENT; // 填充颜色，透明表示继承父级
+    SkColor strokeColor = SK_ColorTRANSPARENT; // 描边颜色，透明表示继承父级  
+    float strokeWidth = -1.0f;              // 描边宽度，-1表示继承父级
+    bool hasShadow = false;                 // 是否启用阴影效果
+    float shadowDx = 0.0f;                  // 阴影X轴偏移
+    float shadowDy = 0.0f;                  // 阴影Y轴偏移
+    float shadowSigma = 0.0f;               // 阴影模糊半径
+    SkColor shadowColor = SK_ColorTRANSPARENT; // 阴影颜色，透明表示继承父级
+};
+
+// 富文本渲染策略枚举
+enum class RichTextRenderStrategy {
+    MeasureText,    // 使用measureText API进行精确测量和定位（默认）
+    Paragraph       // 使用SkParagraph API进行高级富文本渲染
+};
+
 // 文本元素 - 定义要渲染的文本及其所有属性
 struct TextElement {
     std::string id;         // 文本唯一标识符，用于调试和引用
@@ -67,6 +88,14 @@ struct TextElement {
     TextStyle style;        // 文本样式（字体、颜色、效果、布局）
     float width = 0.0f;     // 文本容器宽度 (像素)，0表示无宽度限制
     float height = 0.0f;    // 文本容器高度 (像素)，0表示无高度限制，AutoFit模式需要
+    
+    // 富文本支持
+    std::vector<RichTextSegment> richTextSegments;  // 富文本片段数组，空数组表示使用普通文本
+    RichTextRenderStrategy richTextStrategy = RichTextRenderStrategy::MeasureText; // 富文本渲染策略
+    float letterSpacing = 0.0f;                     // 字间距 (像素)，仅在富文本模式下生效
+    
+    // 判断是否为富文本模式
+    bool isRichText() const { return !richTextSegments.empty(); }
 };
 
 // 输出配置 - 定义渲染结果的保存格式和参数

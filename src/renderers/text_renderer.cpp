@@ -1,4 +1,5 @@
 #include "renderers/text_renderer.h"
+#include "renderers/rich_text_renderer.h"
 #include <iostream>
 
 namespace skia_renderer {
@@ -26,6 +27,40 @@ bool TextRenderer::renderText(SkCanvas *canvas, const TextElement &textElement, 
         return false;
     }
 
+    // 【新增】检查是否为富文本模式
+    if (textElement.isRichText()) {
+        #ifndef NDEBUG
+        std::cout << "调试: 检测到富文本模式，片段数量: " << textElement.richTextSegments.size() << std::endl;
+        #endif
+        
+        // 创建富文本渲染器
+        auto richTextRenderer = RichTextRendererFactory::create(textElement.richTextStrategy);
+        
+        #ifndef NDEBUG
+        std::cout << "调试: 使用富文本渲染策略: " << richTextRenderer->getStrategyName() << std::endl;
+        #endif
+        
+        // 应用透明度
+        if (textElement.transform.opacity < 1.0f) {
+            canvas->save();
+            SkPaint opacityPaint;
+            opacityPaint.setAlphaf(textElement.transform.opacity);
+            canvas->saveLayer(nullptr, &opacityPaint);
+        }
+        
+        // 渲染富文本
+        bool success = richTextRenderer->renderRichText(canvas, textElement, fontManager.get());
+        
+        // 恢复透明度状态
+        if (textElement.transform.opacity < 1.0f) {
+            canvas->restore(); // 恢复saveLayer
+            canvas->restore(); // 恢复save
+        }
+        
+        return success;
+    }
+
+    // 【原有逻辑】普通文本渲染
     // 加载字体
     sk_sp<SkTypeface> typeface = fontManager->loadFont(textElement.style.fontFamily);
     if (!typeface) {

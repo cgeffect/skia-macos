@@ -1,0 +1,325 @@
+{
+    "canvas": {
+        "width": 1000,
+        "height": 800,
+        "background": "#F8F9FA"
+    },
+    "images": [],
+    "texts": [
+        {
+            "id": "title",
+            "content": "富文本协议演示 Rich Text Protocol Demo",
+            "x": 50,
+            "y": 50,
+            "fontFamily": "SourceHanSansCN-Bold",
+            "fontSize": 24,
+            "fillColor": "#2C3E50",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "basic_rich_text",
+            "content": "",
+            "x": 50,
+            "y": 120,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#34495E",
+            "displayMode": "SingleLine",
+            "richTextSegments": [
+                {
+                    "content": "这是",
+                    "fillColor": "#E74C3C"
+                },
+                {
+                    "content": "一段",
+                    "fillColor": "#F39C12"
+                },
+                {
+                    "content": "同行",
+                    "fillColor": "#27AE60"
+                },
+                {
+                    "content": "多色",
+                    "fillColor": "#3498DB"
+                },
+                {
+                    "content": "文本",
+                    "fillColor": "#9B59B6"
+                },
+                {
+                    "content": "演示",
+                    "fillColor": "#E91E63"
+                }
+            ],
+            "letterSpacing": 5,
+            "richTextStrategy": "measureText"
+        },
+        {
+            "id": "rich_text_with_styles",
+            "content": "",
+            "x": 50,
+            "y": 180,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#2C3E50",
+            "displayMode": "SingleLine",
+            "richTextSegments": [
+                {
+                    "content": "Rich",
+                    "fontFamily": "SourceHanSansCN-Bold",
+                    "fontSize": 24,
+                    "fillColor": "#E74C3C"
+                },
+                {
+                    "content": " Text ",
+                    "fillColor": "#34495E"
+                },
+                {
+                    "content": "with",
+                    "fontFamily": "SourceHanSansCN-Medium",
+                    "fillColor": "#3498DB",
+                    "strokeWidth": 1,
+                    "strokeColor": "#2980B9"
+                },
+                {
+                    "content": " Different ",
+                    "fillColor": "#27AE60"
+                },
+                {
+                    "content": "Styles",
+                    "fontFamily": "SourceHanSansCN-Bold",
+                    "fontSize": 22,
+                    "fillColor": "#F39C12",
+                    "hasShadow": true,
+                    "shadowDx": 2,
+                    "shadowDy": 2,
+                    "shadowSigma": 2,
+                    "shadowColor": "#E67E22"
+                }
+            ],
+            "letterSpacing": 3,
+            "richTextStrategy": "measureText"
+        },
+        {
+            "id": "chinese_english_mix",
+            "content": "",
+            "x": 50,
+            "y": 250,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#2C3E50",
+            "displayMode": "SingleLine",
+            "richTextSegments": [
+                {
+                    "content": "中文",
+                    "fillColor": "#E74C3C"
+                },
+                {
+                    "content": "和",
+                    "fillColor": "#34495E"
+                },
+                {
+                    "content": "English",
+                    "fontFamily": "Arial",
+                    "fillColor": "#3498DB"
+                },
+                {
+                    "content": "混合",
+                    "fillColor": "#27AE60"
+                },
+                {
+                    "content": "Text",
+                    "fontFamily": "Arial",
+                    "fillColor": "#F39C12"
+                },
+                {
+                    "content": "文本",
+                    "fillColor": "#9B59B6"
+                }
+            ],
+            "letterSpacing": 2,
+            "richTextStrategy": "measureText"
+        },
+        {
+            "id": "paragraph_strategy_demo",
+            "content": "",
+            "x": 50,
+            "y": 320,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#2C3E50",
+            "displayMode": "SingleLine",
+            "richTextSegments": [
+                {
+                    "content": "使用",
+                    "fillColor": "#E74C3C"
+                },
+                {
+                    "content": "Paragraph",
+                    "fontFamily": "Arial",
+                    "fillColor": "#3498DB"
+                },
+                {
+                    "content": "策略",
+                    "fillColor": "#27AE60"
+                },
+                {
+                    "content": "渲染",
+                    "fillColor": "#F39C12"
+                },
+                {
+                    "content": "的",
+                    "fillColor": "#9B59B6"
+                },
+                {
+                    "content": "富文本",
+                    "fillColor": "#E91E63"
+                }
+            ],
+            "letterSpacing": 4,
+            "richTextStrategy": "paragraph"
+        },
+        {
+            "id": "complex_effects",
+            "content": "",
+            "x": 50,
+            "y": 390,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#2C3E50",
+            "displayMode": "SingleLine",
+            "richTextSegments": [
+                {
+                    "content": "复杂",
+                    "fontFamily": "SourceHanSansCN-Bold",
+                    "fontSize": 24,
+                    "fillColor": "#E74C3C",
+                    "strokeWidth": 1.5,
+                    "strokeColor": "#C0392B"
+                },
+                {
+                    "content": "效果",
+                    "fontSize": 22,
+                    "fillColor": "#3498DB",
+                    "hasShadow": true,
+                    "shadowDx": 3,
+                    "shadowDy": 3,
+                    "shadowSigma": 3,
+                    "shadowColor": "#2980B9"
+                },
+                {
+                    "content": "组合",
+                    "fontFamily": "SourceHanSansCN-Medium",
+                    "fillColor": "#27AE60",
+                    "strokeWidth": 2,
+                    "strokeColor": "#229954"
+                },
+                {
+                    "content": "演示",
+                    "fontSize": 26,
+                    "fillColor": "#F39C12",
+                    "hasShadow": true,
+                    "shadowDx": 2,
+                    "shadowDy": 4,
+                    "shadowSigma": 2,
+                    "shadowColor": "#E67E22"
+                }
+            ],
+            "letterSpacing": 6,
+            "richTextStrategy": "measureText"
+        },
+        {
+            "id": "strategy_comparison_title",
+            "content": "渲染策略对比 Strategy Comparison",
+            "x": 50,
+            "y": 480,
+            "fontFamily": "SourceHanSansCN-Bold",
+            "fontSize": 20,
+            "fillColor": "#2C3E50",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "measuretext_demo",
+            "content": "",
+            "x": 50,
+            "y": 530,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#34495E",
+            "displayMode": "SingleLine",
+            "richTextSegments": [
+                {
+                    "content": "MeasureText策略: ",
+                    "fillColor": "#7F8C8D"
+                },
+                {
+                    "content": "精确",
+                    "fillColor": "#E74C3C"
+                },
+                {
+                    "content": "测量",
+                    "fillColor": "#F39C12"
+                },
+                {
+                    "content": "高性能",
+                    "fillColor": "#27AE60"
+                },
+                {
+                    "content": "灵活控制",
+                    "fillColor": "#3498DB"
+                }
+            ],
+            "letterSpacing": 3,
+            "richTextStrategy": "measureText"
+        },
+        {
+            "id": "paragraph_demo",
+            "content": "",
+            "x": 50,
+            "y": 580,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#34495E",
+            "displayMode": "SingleLine",
+            "richTextSegments": [
+                {
+                    "content": "Paragraph策略: ",
+                    "fillColor": "#7F8C8D"
+                },
+                {
+                    "content": "功能",
+                    "fillColor": "#9B59B6"
+                },
+                {
+                    "content": "强大",
+                    "fillColor": "#E91E63"
+                },
+                {
+                    "content": "标准",
+                    "fillColor": "#FF5722"
+                },
+                {
+                    "content": "兼容",
+                    "fillColor": "#795548"
+                }
+            ],
+            "letterSpacing": 3,
+            "richTextStrategy": "paragraph"
+        },
+        {
+            "id": "footer",
+            "content": "✨ 支持两种渲染策略的富文本系统 ✨",
+            "x": 50,
+            "y": 650,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#95A5A6",
+            "displayMode": "SingleLine"
+        }
+    ],
+    "output": {
+        "format": "png",
+        "filename": "rich_text_new_demo.png",
+        "quality": 100
+    }
+}
