@@ -1,0 +1,696 @@
+{
+    "canvas": {
+        "width": 1200,
+        "height": 1200,
+        "backgroundColor": "#F8F9FA"
+    },
+    "texts": [
+        {
+            "id": "title",
+            "content": "Skia 富文本渲染演示 - Rich Text Rendering",
+            "x": 600,
+            "y": 50,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 32,
+            "fillColor": "#2C3E50",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "section1_title",
+            "content": "1. 字体样式组合 Font Style Combinations",
+            "x": 50,
+            "y": 120,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#E74C3C",
+            "strokeWidth": 1,
+            "strokeColor": "#C0392B",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "light_weight",
+            "content": "细体 Light Weight - SourceHanSansCN-Light",
+            "x": 80,
+            "y": 160,
+            "fontFamily": "SourceHanSansCN-Light",
+            "fontSize": 18,
+            "fillColor": "#95A5A6",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "normal_weight",
+            "content": "正常 Normal Weight - SourceHanSansCN-Normal",
+            "x": 80,
+            "y": 190,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#2C3E50",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "bold_weight",
+            "content": "粗体 Bold Weight - SourceHanSansCN-Bold",
+            "x": 80,
+            "y": 220,
+            "fontFamily": "SourceHanSansCN-Bold",
+            "fontSize": 18,
+            "fillColor": "#2C3E50",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "heavy_weight",
+            "content": "超粗 Heavy Weight - SourceHanSansCN-Heavy",
+            "x": 80,
+            "y": 250,
+            "fontFamily": "SourceHanSansCN-Heavy",
+            "fontSize": 18,
+            "fillColor": "#34495E",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "italic_simulation",
+            "content": "斜体效果 Italic Effect - 通过旋转变换实现",
+            "x": 80,
+            "y": 290,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#8E44AD",
+            "transform": {
+                "rotation": -12
+            },
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "underline_simulation",
+            "content": "下划线模拟 Underline Simulation",
+            "x": 80,
+            "y": 320,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#27AE60",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "underline_line",
+            "content": "________________________________",
+            "x": 80,
+            "y": 328,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 12,
+            "fillColor": "#27AE60",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "section2_title",
+            "content": "2. 同行多色文本 Multi-color Inline Text",
+            "x": 50,
+            "y": 370,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#3498DB",
+            "strokeWidth": 1,
+            "strokeColor": "#2980B9",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "inline_text1",
+            "content": "这是",
+            "x": 80,
+            "y": 410,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#E74C3C",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "inline_text2",
+            "content": "一段",
+            "x": 130,
+            "y": 410,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#F39C12",
+            "strokeWidth": 1,
+            "strokeColor": "#E67E22",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "inline_text3",
+            "content": "同行",
+            "x": 180,
+            "y": 410,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#27AE60",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "inline_text4",
+            "content": "多色",
+            "x": 230,
+            "y": 410,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#3498DB",
+            "hasShadow": true,
+            "shadowColor": "#2980B9",
+            "shadowDx": 1,
+            "shadowDy": 1,
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "inline_text5",
+            "content": "文本",
+            "x": 280,
+            "y": 410,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#9B59B6",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "inline_text6",
+            "content": "This",
+            "x": 340,
+            "y": 410,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#E91E63",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "inline_text7",
+            "content": "is",
+            "x": 380,
+            "y": 410,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#FF5722",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "inline_text8",
+            "content": "mixed",
+            "x": 405,
+            "y": 410,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#795548",
+            "strokeWidth": 1.5,
+            "strokeColor": "#5D4037",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "inline_text9",
+            "content": "color",
+            "x": 465,
+            "y": 410,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#607D8B",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "inline_text10",
+            "content": "text!",
+            "x": 515,
+            "y": 410,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#009688",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "section3_title",
+            "content": "3. 渐变和彩虹效果 Gradient & Rainbow Effects",
+            "x": 50,
+            "y": 470,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#E67E22",
+            "strokeWidth": 1,
+            "strokeColor": "#D35400",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "gradient_shadow",
+            "content": "渐变效果",
+            "x": 85,
+            "y": 515,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#8E44AD",
+            "transform": {
+                "opacity": 0.3
+            },
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "gradient_main",
+            "content": "渐变效果",
+            "x": 80,
+            "y": 510,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#E74C3C",
+            "strokeWidth": 1,
+            "strokeColor": "#C0392B",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rainbow_text",
+            "content": "彩",
+            "x": 250,
+            "y": 510,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#E74C3C",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rainbow_text2",
+            "content": "虹",
+            "x": 275,
+            "y": 510,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#F39C12",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rainbow_text3",
+            "content": "文",
+            "x": 300,
+            "y": 510,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#F1C40F",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rainbow_text4",
+            "content": "字",
+            "x": 325,
+            "y": 510,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#27AE60",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rainbow_text5",
+            "content": "R",
+            "x": 360,
+            "y": 510,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#3498DB",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rainbow_text6",
+            "content": "a",
+            "x": 380,
+            "y": 510,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#9B59B6",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rainbow_text7",
+            "content": "i",
+            "x": 395,
+            "y": 510,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#E91E63",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rainbow_text8",
+            "content": "n",
+            "x": 405,
+            "y": 510,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#FF5722",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rainbow_text9",
+            "content": "b",
+            "x": 425,
+            "y": 510,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#795548",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rainbow_text10",
+            "content": "o",
+            "x": 445,
+            "y": 510,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#607D8B",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rainbow_text11",
+            "content": "w",
+            "x": 465,
+            "y": 510,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#E74C3C",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "section4_title",
+            "content": "4. 多层文字效果 Multi-layer Text Effects",
+            "x": 50,
+            "y": 580,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#E67E22",
+            "strokeWidth": 1,
+            "strokeColor": "#D35400",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "layered_shadow1",
+            "content": "多层阴影",
+            "x": 85,
+            "y": 625,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 28,
+            "fillColor": "#34495E",
+            "transform": {
+                "opacity": 0.3
+            },
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "layered_shadow2",
+            "content": "多层阴影",
+            "x": 83,
+            "y": 623,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 28,
+            "fillColor": "#5D6D7E",
+            "transform": {
+                "opacity": 0.5
+            },
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "layered_shadow3",
+            "content": "多层阴影",
+            "x": 81,
+            "y": 621,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 28,
+            "fillColor": "#85929E",
+            "transform": {
+                "opacity": 0.7
+            },
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "layered_main",
+            "content": "多层阴影",
+            "x": 80,
+            "y": 620,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 28,
+            "fillColor": "#E74C3C",
+            "strokeWidth": 2,
+            "strokeColor": "#C0392B",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "layered_text_en1",
+            "content": "Layered",
+            "x": 285,
+            "y": 625,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 28,
+            "fillColor": "#34495E",
+            "transform": {
+                "opacity": 0.3
+            },
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "layered_text_en2",
+            "content": "Layered",
+            "x": 283,
+            "y": 623,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 28,
+            "fillColor": "#5D6D7E",
+            "transform": {
+                "opacity": 0.5
+            },
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "layered_text_en3",
+            "content": "Layered",
+            "x": 281,
+            "y": 621,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 28,
+            "fillColor": "#85929E",
+            "transform": {
+                "opacity": 0.7
+            },
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "layered_text_en_main",
+            "content": "Layered",
+            "x": 280,
+            "y": 620,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 28,
+            "fillColor": "#3498DB",
+            "strokeWidth": 2,
+            "strokeColor": "#2980B9",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "section5_title",
+            "content": "5. 创意文字排版 Creative Typography",
+            "x": 50,
+            "y": 790,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#16A085",
+            "strokeWidth": 1,
+            "strokeColor": "#138D75",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "wave_text1",
+            "content": "波",
+            "x": 80,
+            "y": 830,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#E74C3C",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "wave_text2",
+            "content": "浪",
+            "x": 110,
+            "y": 825,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#F39C12",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "wave_text3",
+            "content": "文",
+            "x": 140,
+            "y": 820,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#F1C40F",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "wave_text4",
+            "content": "字",
+            "x": 170,
+            "y": 825,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#27AE60",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "wave_text5",
+            "content": "W",
+            "x": 210,
+            "y": 830,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#3498DB",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "wave_text6",
+            "content": "a",
+            "x": 235,
+            "y": 825,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#9B59B6",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "wave_text7",
+            "content": "v",
+            "x": 255,
+            "y": 820,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#E91E63",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "wave_text8",
+            "content": "e",
+            "x": 275,
+            "y": 825,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#FF5722",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rotate_text1",
+            "content": "旋",
+            "x": 400,
+            "y": 830,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#E74C3C",
+            "transform": {
+                "rotation": -15
+            },
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rotate_text2",
+            "content": "转",
+            "x": 430,
+            "y": 830,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#F39C12",
+            "transform": {
+                "rotation": 15
+            },
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rotate_text3",
+            "content": "R",
+            "x": 460,
+            "y": 830,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#27AE60",
+            "transform": {
+                "rotation": -10
+            },
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rotate_text4",
+            "content": "o",
+            "x": 485,
+            "y": 830,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#3498DB",
+            "transform": {
+                "rotation": 20
+            },
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rotate_text5",
+            "content": "t",
+            "x": 505,
+            "y": 830,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#9B59B6",
+            "transform": {
+                "rotation": -25
+            },
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rotate_text6",
+            "content": "a",
+            "x": 520,
+            "y": 830,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#E91E63",
+            "transform": {
+                "rotation": 10
+            },
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rotate_text7",
+            "content": "t",
+            "x": 540,
+            "y": 830,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#FF5722",
+            "transform": {
+                "rotation": -5
+            },
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rotate_text8",
+            "content": "e",
+            "x": 555,
+            "y": 830,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#795548",
+            "transform": {
+                "rotation": 30
+            },
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "summary",
+            "content": "富文本总结：通过组合多个单独的文本元素，每个元素使用不同的颜色、大小、位置、变换和效果，可以创造出丰富的富文本效果。这种方法虽然需要更多的文本元素，但提供了最大的灵活性和创意空间。多层绘制技术让我们能够实现发光、浮雕、霓虹等复杂的视觉效果。",
+            "x": 50,
+            "y": 910,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#2C3E50",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        }
+    ],
+    "output": {
+        "filename": "rich_text_demo.png",
+        "format": "PNG"
+    }
+}

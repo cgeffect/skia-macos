@@ -3,7 +3,8 @@
 
 namespace skia_renderer {
 
-CanvasRenderer::CanvasRenderer() : canvas(nullptr) {
+CanvasRenderer::CanvasRenderer() :
+    canvas(nullptr) {
 }
 
 CanvasRenderer::~CanvasRenderer() {
@@ -14,29 +15,32 @@ bool CanvasRenderer::createCanvas(int width, int height) {
         width, height,
         SkColorType::kRGBA_8888_SkColorType,
         SkAlphaType::kOpaque_SkAlphaType);
-    
+
     surface = SkSurfaces::Raster(info);
     if (!surface) {
         std::cerr << "无法创建Surface" << std::endl;
         return false;
     }
-    
     canvas = surface->getCanvas();
+    if (!canvas) {
+        std::cerr << "无法获取Canvas" << std::endl;
+        return false;
+    }
     return true;
 }
 
-bool CanvasRenderer::setBackground(const std::string& backgroundColor) {
+bool CanvasRenderer::setBackground(const std::string &backgroundColor) {
     if (!canvas) {
         std::cerr << "画布未初始化" << std::endl;
         return false;
     }
-    
+
     SkColor color = parseBackgroundColor(backgroundColor);
     canvas->clear(color);
     return true;
 }
 
-SkCanvas* CanvasRenderer::getCanvas() const {
+SkCanvas *CanvasRenderer::getCanvas() const {
     return canvas;
 }
 
@@ -51,8 +55,8 @@ sk_sp<SkImage> CanvasRenderer::makeImageSnapshot() {
     return surface->makeImageSnapshot();
 }
 
-SkColor CanvasRenderer::parseBackgroundColor(const std::string& colorString) {
+SkColor CanvasRenderer::parseBackgroundColor(const std::string &colorString) {
     return ColorParser::parseColor(colorString);
 }
 
-} // namespace skia_renderer 
+} // namespace skia_renderer

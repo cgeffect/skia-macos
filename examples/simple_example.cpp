@@ -6,11 +6,7 @@ int main(int argc, char *argv[]) {
     // 创建output目录
     struct stat st = {0};
     if (stat("output", &st) == -1) {
-#ifdef _WIN32
-        _mkdir("output");
-#else
         mkdir("output", 0700);
-#endif
     }
 
     // 如果提供了命令行参数，渲染指定的协议文件
@@ -33,7 +29,7 @@ int main(int argc, char *argv[]) {
 
     // 示例1: 从协议文件渲染
     std::cout << "=== 示例1: 从协议文件渲染 ===" << std::endl;
-    if (engine.renderFromProtocol("projects/trip/trip_protocol.json")) {
+    if (engine.renderFromProtocol("/Users/jason/Desktop/skia-macos/projects/trip/trip_protocol.json")) {
         std::cout << "✅ 渲染成功！" << std::endl;
     } else {
         std::cerr << "❌ 渲染失败: " << engine.getErrorMessage() << std::endl;

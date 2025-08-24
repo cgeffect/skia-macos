@@ -260,6 +260,128 @@ public:
 - 支持阴影、描边、填充等效果
 - 与布局逻辑完全解耦
 
+#### 多层绘制机制详解
+
+**核心原理**：文本视觉效果通过**多次绘制相同文本**实现，而不是简单的属性设置。
+
+```cpp
+// 文本效果渲染的完整流程
+if (textElement.style.hasShadow) {
+    TextEffectRenderer::renderShadow(canvas, textElement, selectedEngine, font);  // 第一次绘制
+}
+if (textElement.style.strokeWidth > 0) {
+    TextEffectRenderer::renderStroke(canvas, textElement, selectedEngine, font); // 第二次绘制
+}
+TextEffectRenderer::renderFill(canvas, textElement, selectedEngine, font);      // 第三次绘制
+```
+
+##### 三层绘制策略
+
+**绘制顺序至关重要：阴影 → 描边 → 填充（从底层到顶层）**
+
+1. **阴影绘制（第一层 - 最底层）**
+   ```cpp
+   void TextEffectRenderer::renderShadow(...) {
+       SkPaint shadowPaint;
+       shadowPaint.setColor(textElement.style.shadowColor);  // 阴影颜色
+       shadowPaint.setStyle(SkPaint::kFill_Style);           // 填充模式
+       
+       // 关键：在偏移位置绘制文本副本
+       layoutEngine->layoutText(canvas, textElement, font, shadowPaint, 
+                               shadowDx, shadowDy);  // 偏移量实现阴影
+   }
+   ```
+   - **原理**：在主文本后面绘制一个位移的副本
+   - **关键参数**：`shadowDx, shadowDy` 决定阴影方向和距离
+   - **效果**：形成投影效果
+
+2. **描边绘制（第二层 - 中间层）**
+   ```cpp
+   void TextEffectRenderer::renderStroke(...) {
+       SkPaint strokePaint;
+       strokePaint.setColor(textElement.style.strokeColor);     // 描边颜色
+       strokePaint.setStyle(SkPaint::kStroke_Style);            // 关键：只绘制轮廓
+       strokePaint.setStrokeWidth(textElement.style.strokeWidth); // 轮廓宽度
+       
+       // 在原位置绘制，但只绘制轮廓线
+       layoutEngine->layoutText(canvas, textElement, font, strokePaint, 0, 0);
+   }
+   ```
+   - **原理**：绘制文本的轮廓线，不填充内部
+   - **关键参数**：`kStroke_Style` 只画轮廓，`strokeWidth` 控制粗细
+   - **效果**：在文本周围形成边框
+
+3. **填充绘制（第三层 - 最顶层）**
+   ```cpp
+   void TextEffectRenderer::renderFill(...) {
+       SkPaint fillPaint;
+       fillPaint.setColor(textElement.style.fillColor);  // 填充颜色
+       fillPaint.setStyle(SkPaint::kFill_Style);         // 填充内部
+       
+       // 在原位置绘制，填充文本内部
+       layoutEngine->layoutText(canvas, textElement, font, fillPaint, 0, 0);
+   }
+   ```
+   - **原理**：填充文本的内部区域
+   - **关键参数**：`kFill_Style` 填充内部
+   - **效果**：显示最终的文本内容
+
+##### SkPaint.Style的关键作用
+
+| Style类型 | 作用 | 视觉效果 |
+|-----------|------|----------|
+| `kFill_Style` | 填充内部 | 实心文本 |
+| `kStroke_Style` | 只绘制轮廓 | 空心边框 |
+| `kStrokeAndFill_Style` | 既描边又填充 | 带边框的实心文本 |
+
+##### 绘制顺序的重要性
+
+```
+视觉层次（从底到顶）：
+┌─────────────────┐
+│   填充文本      │ ← 第三层：最终显示的文本内容
+├─────────────────┤
+│   描边轮廓      │ ← 第二层：文本边框
+├─────────────────┤
+│ 阴影副本(偏移)  │ ← 第一层：投影效果
+└─────────────────┘
+```
+
+**错误的顺序会导致**：
+- 阴影覆盖主文本
+- 描边被填充遮挡
+- 视觉效果异常
+
+##### 实际效果示例
+
+假设文本同时具有阴影、描边和填充：
+
+```json
+{
+  "fillColor": "#FFFFFF",      // 白色填充
+  "strokeColor": "#000000",    // 黑色描边
+  "strokeWidth": 2.0,          // 2像素宽度
+  "hasShadow": true,
+  "shadowColor": "#666666",    // 灰色阴影
+  "shadowDx": 3,               // 右偏移3像素
+  "shadowDy": 3                // 下偏移3像素
+}
+```
+
+**绘制过程**：
+1. 在(x+3, y+3)绘制灰色阴影文本
+2. 在(x, y)绘制黑色描边（2px宽）
+3. 在(x, y)绘制白色填充文本
+
+**最终效果**：白色文本 + 黑色边框 + 右下灰色阴影
+
+##### 性能优化特点
+
+- **按需绘制**：只绘制启用的效果
+- **独立控制**：每种效果可以独立开关
+- **GPU加速**：利用硬件加速进行多次绘制
+- **内存友好**：不需要额外的缓冲区
+
 ### AutoFit 模式实现
 
 #### 智能字体缩放算法

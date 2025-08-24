@@ -1,0 +1,154 @@
+{
+    "canvas": {
+        "width": 1200,
+        "height": 900,
+        "background": "#FAFAFA",
+        "debug": false
+    },
+    "images": [],
+    "texts": [
+        {
+            "id": "title",
+            "content": "Skia 多语言文本渲染演示",
+            "x": 600,
+            "y": 50,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 32,
+            "fillColor": "#1A237E",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "chinese_section",
+            "content": "中文文本渲染测试",
+            "x": 50,
+            "y": 120,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#D32F2F",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "chinese_simple",
+            "content": "简体中文：这是一段简体中文文本，包含常用汉字和标点符号。测试文字渲染效果，包括字体、间距、对齐等。",
+            "x": 50,
+            "y": 160,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#424242",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "chinese_traditional",
+            "content": "繁體中文：這是一段繁體中文文本，包含繁體漢字和標點符號。測試文字渲染效果，包括字體、間距、對齊等。",
+            "x": 50,
+            "y": 210,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#424242",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "english_section",
+            "content": "English Text Rendering Test",
+            "x": 50,
+            "y": 280,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#1976D2",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "english_text",
+            "content": "English Text: This is an English text sample demonstrating font rendering, spacing, alignment, and typography. The quick brown fox jumps over the lazy dog. ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789",
+            "x": 50,
+            "y": 320,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#424242",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "mixed_section",
+            "content": "中英文混合排版测试 Mixed Language Layout Test",
+            "x": 50,
+            "y": 420,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#388E3C",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "mixed_text_1",
+            "content": "混合文本示例1：This is a mixed text sample 这是一个中英文混合的文本示例。It demonstrates how Chinese and English characters 可以在同一段落中和谐共存。The font rendering engine 能够正确处理不同语言的字符 and their spacing requirements.",
+            "x": 50,
+            "y": 460,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#424242",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "mixed_text_2",
+            "content": "技术术语混合：API接口、JavaScript编程、HTML标签、CSS样式、React组件、Vue.js框架、Node.js服务器、MongoDB数据库、Redis缓存、Docker容器、Kubernetes集群等现代Web开发技术栈。",
+            "x": 50,
+            "y": 540,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#424242",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "numbers_symbols",
+            "content": "数字和符号测试 Numbers & Symbols Test",
+            "x": 50,
+            "y": 620,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#F57C00",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "numbers_text",
+            "content": "数字：0123456789 | 英文标点：!@#$%^&*()_+-=[]{}|;',./<>? | 中文标点：，。！？；：''《》【】（）…… | 特殊符号：©®™°±×÷≠≤≥∞∑∆√∫",
+            "x": 50,
+            "y": 660,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#424242",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "unicode_test",
+            "content": "Unicode测试：emoji表情 😀😃😄😁😆😅😂🤣 | 数学符号 ∀∃∄∅∆∇∈∉∋∌∏∑ | 希腊字母 αβγδεζηθικλμνξοπρστυφχψω | 其他语言 Français Español Deutsch Русский العربية 日本語 한국어",
+            "x": 50,
+            "y": 720,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#424242",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "summary",
+            "content": "多语言支持总结：Skia文本渲染引擎能够很好地支持中文、英文以及其他Unicode字符的混合排版。字体回退机制确保了不同字符都能正确显示，智能换行算法能够处理中英文混合文本的断行需求。",
+            "x": 50,
+            "y": 800,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#6A1B9A",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        }
+    ],
+    "output": {
+        "format": "png",
+        "filename": "mixed_languages_demo.png",
+        "quality": 100
+    }
+}

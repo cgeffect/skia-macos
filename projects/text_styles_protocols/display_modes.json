@@ -1,0 +1,184 @@
+{
+    "canvas": {
+        "width": 1200,
+        "height": 1000,
+        "background": "#FFFFFF",
+        "debug": true
+    },
+    "images": [],
+    "texts": [
+        {
+            "id": "title",
+            "content": "Skia 四种文本显示模式对比演示",
+            "x": 600,
+            "y": 50,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 28,
+            "fillColor": "#2C3E50",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "single_line_title",
+            "content": "1. SingleLine 模式 - 单行显示，超出截断",
+            "x": 50,
+            "y": 120,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#E74C3C",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "single_line_demo",
+            "content": "这是一段很长的文本，在SingleLine模式下会被强制显示在一行内，超出容器宽度的部分会被截断并显示省略号，这样可以确保文本始终保持在一行内显示。",
+            "x": 50,
+            "y": 160,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#34495E",
+            "width": 500,
+            "displayMode": "SingleLine",
+            "ellipsis": true
+        },
+        {
+            "id": "multi_line_title",
+            "content": "2. MultiLine 模式 - 固定行数，支持省略号",
+            "x": 50,
+            "y": 220,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#3498DB",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "multi_line_demo",
+            "content": "这是一段用来演示MultiLine模式的文本内容。在MultiLine模式下，文本可以显示多行，但是行数会受到maxLines属性的限制。当文本内容超出设定的最大行数时，最后一行会显示省略号来表示还有更多内容。这种模式特别适合用于显示简介、描述等需要控制显示行数的场景。",
+            "x": 50,
+            "y": 260,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#34495E",
+            "width": 500,
+            "height": 80,
+            "displayMode": "MultiLine",
+            "maxLines": 3,
+            "ellipsis": true
+        },
+        {
+            "id": "word_wrap_title",
+            "content": "3. WordWrap 模式 - 智能换行，中英文混合",
+            "x": 50,
+            "y": 380,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#9B59B6",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "word_wrap_demo",
+            "content": "This is a demonstration of WordWrap mode. 这种模式会根据容器的宽度自动进行换行。它支持中英文混合文本的智能换行，English words will not be broken in the middle, 而中文字符可以在任意位置换行。This mode is perfect for displaying long paragraphs and articles. 它是最常用的文本显示模式之一。",
+            "x": 50,
+            "y": 420,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#34495E",
+            "width": 500,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "auto_fit_title",
+            "content": "4. AutoFit 模式 - 自适应字体大小",
+            "x": 50,
+            "y": 580,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#F39C12",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "auto_fit_demo",
+            "content": "这是AutoFit模式的演示文本。在这种模式下，系统会自动调整字体大小以确保文本完全适应指定的容器尺寸。当文本内容较长时，字体会自动缩小；当文本内容较短时，字体会保持原始大小。这种模式特别适合需要精确控制文本显示区域的场景，比如按钮文字、标签等。",
+            "x": 50,
+            "y": 620,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#34495E",
+            "width": 500,
+            "height": 120,
+            "displayMode": "AutoFit"
+        },
+        {
+            "id": "comparison_title",
+            "content": "右侧对比区域",
+            "x": 650,
+            "y": 120,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#2C3E50",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "same_text_single",
+            "content": "相同文本在不同模式下的表现：这是一段测试文本，用来展示不同显示模式的效果差异。",
+            "x": 650,
+            "y": 160,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#E74C3C",
+            "width": 500,
+            "displayMode": "SingleLine",
+            "ellipsis": true
+        },
+        {
+            "id": "same_text_multi",
+            "content": "相同文本在不同模式下的表现：这是一段测试文本，用来展示不同显示模式的效果差异。",
+            "x": 650,
+            "y": 200,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#3498DB",
+            "width": 500,
+            "displayMode": "MultiLine",
+            "maxLines": 2,
+            "ellipsis": true
+        },
+        {
+            "id": "same_text_wrap",
+            "content": "相同文本在不同模式下的表现：这是一段测试文本，用来展示不同显示模式的效果差异。",
+            "x": 650,
+            "y": 260,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#9B59B6",
+            "width": 500,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "same_text_autofit",
+            "content": "相同文本在不同模式下的表现：这是一段测试文本，用来展示不同显示模式的效果差异。",
+            "x": 650,
+            "y": 340,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#F39C12",
+            "width": 500,
+            "height": 60,
+            "displayMode": "AutoFit"
+        },
+        {
+            "id": "summary",
+            "content": "总结：四种显示模式各有特点 - SingleLine适合标题标签，MultiLine适合简介描述，WordWrap适合长文本内容，AutoFit适合固定尺寸区域。选择合适的模式可以获得最佳的文本显示效果。",
+            "x": 50,
+            "y": 800,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#7F8C8D",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        }
+    ],
+    "output": {
+        "format": "png",
+        "filename": "display_modes_demo.png",
+        "quality": 100
+    }
+}

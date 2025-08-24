@@ -1,0 +1,227 @@
+{
+    "canvas": {
+        "width": 1200,
+        "height": 800,
+        "background": "#F8F9FA",
+        "debug": true
+    },
+    "images": [],
+    "texts": [
+        {
+            "id": "title",
+            "content": "Skia 文本对齐和布局演示",
+            "x": 600,
+            "y": 50,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 28,
+            "fillColor": "#212529",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "container_demo_title",
+            "content": "容器约束演示 - 使用debug模式显示文本边界",
+            "x": 50,
+            "y": 120,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#495057",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "fixed_width_demo",
+            "content": "固定宽度容器：这段文本被限制在固定宽度的容器中，可以看到红色的边界框。文本会根据容器宽度自动换行。",
+            "x": 50,
+            "y": 180,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#DC3545",
+            "width": 300,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "fixed_height_demo",
+            "content": "固定宽高容器：这段文本被限制在固定宽度和高度的容器中，超出部分会被截断。可以清楚看到容器的边界限制。",
+            "x": 400,
+            "y": 180,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#28A745",
+            "width": 250,
+            "height": 80,
+            "displayMode": "MultiLine",
+            "maxLines": 4,
+            "ellipsis": true
+        },
+        {
+            "id": "auto_fit_container",
+            "content": "自适应容器：这段文本会自动调整字体大小以适应容器。无论文本长度如何，都会完全显示在指定区域内。",
+            "x": 700,
+            "y": 180,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#007BFF",
+            "width": 200,
+            "height": 100,
+            "displayMode": "AutoFit"
+        },
+        {
+            "id": "spacing_demo_title",
+            "content": "间距和排版演示",
+            "x": 50,
+            "y": 340,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#495057",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "tight_spacing",
+            "content": "紧密间距文本 Tight Spacing Text - 字符间距较小",
+            "x": 50,
+            "y": 380,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#6610F2",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "normal_spacing",
+            "content": "正常间距文本 Normal Spacing Text - 默认字符间距",
+            "x": 50,
+            "y": 410,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#6F42C1",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "wide_spacing",
+            "content": "宽松间距文本 W i d e   S p a c i n g   T e x t - 通过空格模拟",
+            "x": 50,
+            "y": 440,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#E83E8C",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "line_height_demo_title",
+            "content": "行高演示",
+            "x": 50,
+            "y": 500,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#495057",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "compact_lines",
+            "content": "紧密行高文本\n第二行文本\n第三行文本\n行间距较小",
+            "x": 50,
+            "y": 540,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 14,
+            "fillColor": "#FD7E14",
+            "width": 200,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "normal_lines",
+            "content": "正常行高文本\n\n第二行文本\n\n第三行文本\n\n标准行间距",
+            "x": 300,
+            "y": 540,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 14,
+            "fillColor": "#20C997",
+            "width": 200,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "loose_lines",
+            "content": "宽松行高文本\n\n\n第二行文本\n\n\n第三行文本\n\n\n行间距较大",
+            "x": 550,
+            "y": 540,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 14,
+            "fillColor": "#17A2B8",
+            "width": 200,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "position_demo_title",
+            "content": "位置定位演示",
+            "x": 800,
+            "y": 340,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#495057",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "top_left",
+            "content": "左上角",
+            "x": 800,
+            "y": 380,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#DC3545",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "top_right",
+            "content": "右上角",
+            "x": 1050,
+            "y": 380,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#28A745",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "center",
+            "content": "中心位置",
+            "x": 925,
+            "y": 450,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#007BFF",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "bottom_left",
+            "content": "左下角",
+            "x": 800,
+            "y": 520,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#FFC107",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "bottom_right",
+            "content": "右下角",
+            "x": 1050,
+            "y": 520,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#6F42C1",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "layout_summary",
+            "content": "布局总结：通过设置width和height属性可以创建文本容器，debug模式能够显示容器边界。不同的displayMode提供了不同的布局策略。位置可以通过x,y坐标精确控制，间距可以通过换行符和空格进行调整。",
+            "x": 50,
+            "y": 680,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#6C757D",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        }
+    ],
+    "output": {
+        "format": "png",
+        "filename": "text_alignment_demo.png",
+        "quality": 100
+    }
+}

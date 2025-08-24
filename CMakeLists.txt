@@ -47,41 +47,23 @@ list(APPEND libSRV_INCLUDES_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 file(GLOB_RECURSE ABSL_LIBS ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/skia/Skia-macOS-Release-arm64/out/Release-arm64/*.a)
 # message(ABSL_LIBS ${ABSL_LIBS})
-file(GLOB_RECURSE allCPP 
-        ${CMAKE_CURRENT_SOURCE_DIR}/examples/simple_example.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/core/types.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/utils/color_parser.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/parsers/protocol_parser.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/resources/font_manager.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/canvas_renderer.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/image_renderer.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/text_layout.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/text_renderer.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/output/image_writer.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/engine/render_engine.cpp
-        )
 
-# 简单测试文件（不依赖现有源码）
-file(GLOB_RECURSE simpleTestCPP 
-        ${CMAKE_CURRENT_SOURCE_DIR}/tests/simple_image_test.cpp
-        )
-
-# 智能文本渲染器测试文件
-file(GLOB_RECURSE smartTextTestCPP 
-        ${CMAKE_CURRENT_SOURCE_DIR}/examples/simple_example.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/core/types.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/utils/color_parser.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/parsers/protocol_parser.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/resources/font_manager.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/canvas_renderer.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/image_renderer.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/text_layout.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/text_renderer.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/output/image_writer.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/engine/render_engine.cpp
+# 定义公共源文件变量（所有可执行文件都需要的核心源码）
+# 避免在多个可执行文件中重复列出相同的源文件
+file(GLOB_RECURSE COMMON_SOURCE_FILES
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/core/types.h                    # 核心数据结构
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/utils/color_parser.cpp          # 颜色解析工具
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/parsers/protocol_parser.cpp     # JSON协议解析
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/resources/font_manager.cpp      # 字体管理
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/canvas_renderer.cpp   # 画布渲染
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/image_renderer.cpp    # 图片渲染
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/text_layout.cpp       # 文本布局
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/renderers/text_renderer.cpp     # 文本渲染
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/output/image_writer.cpp         # 图片输出
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/engine/render_engine.cpp        # 渲染引擎
         )
 # 在Xcode里面按照文件实际目录显示, 不要平铺
-source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${allCPP})
+source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${COMMON_SOURCE_FILES})
 
 # finds all required platform libraries.
 find_library(LZMA_FRAMEWORK lzma)
@@ -104,17 +86,23 @@ find_library(OpenGL_FRAMEWORK OpenGL)
 list(APPEND SYS_LIBS ${OpenGL_FRAMEWORK})
 
 # 在 add_library 里添加 allHEADER 是为了让xcode工程显示头文件
-add_executable(${LIBRARY_NAME} ${allCPP})
+add_executable(${LIBRARY_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/examples/simple_example.cpp ${COMMON_SOURCE_FILES})
 target_include_directories(${LIBRARY_NAME} PRIVATE ${libSRV_INCLUDES_DIR})
 target_link_libraries(${LIBRARY_NAME} PRIVATE ${libs_trd_srv} ${ABSL_LIBS} ${SYS_LIBS})
 
 # 简单测试可执行文件（独立运行，不修改现有源码）
-add_executable(simple_test ${simpleTestCPP})
+add_executable(simple_test ${CMAKE_CURRENT_SOURCE_DIR}/tests/simple_image_test.cpp)
 target_include_directories(simple_test PRIVATE ${libSRV_INCLUDES_DIR})
 target_link_libraries(simple_test PRIVATE ${ABSL_LIBS} ${SYS_LIBS})
 
 # 智能文本渲染器测试可执行文件
-add_executable(smart_text_test ${smartTextTestCPP})
+add_executable(smart_text_test ${CMAKE_CURRENT_SOURCE_DIR}/examples/simple_example.cpp ${COMMON_SOURCE_FILES})
 target_include_directories(smart_text_test PRIVATE ${libSRV_INCLUDES_DIR})
 target_link_libraries(smart_text_test PRIVATE ${ABSL_LIBS} ${SYS_LIBS})
+
+# 文本样式演示可执行文件（使用公共源文件）
+set(textStylesTestCPP ${CMAKE_CURRENT_SOURCE_DIR}/examples/text_styles_demo.cpp ${COMMON_SOURCE_FILES})
+add_executable(text_styles_demo ${textStylesTestCPP})
+target_include_directories(text_styles_demo PRIVATE ${libSRV_INCLUDES_DIR})
+target_link_libraries(text_styles_demo PRIVATE ${ABSL_LIBS} ${SYS_LIBS})
 

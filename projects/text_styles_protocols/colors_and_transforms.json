@@ -1,0 +1,261 @@
+{
+    "canvas": {
+        "width": 1200,
+        "height": 800,
+        "background": "#ECEFF1",
+        "debug": false
+    },
+    "images": [],
+    "texts": [
+        {
+            "id": "title",
+            "content": "Skia 颜色和变换效果演示",
+            "x": 600,
+            "y": 50,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 32,
+            "fillColor": "#263238",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "color_section_title",
+            "content": "颜色效果展示",
+            "x": 100,
+            "y": 120,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#37474F",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "red_text",
+            "content": "红色文本 Red Text",
+            "x": 100,
+            "y": 160,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 22,
+            "fillColor": "#F44336",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "green_text",
+            "content": "绿色文本 Green Text",
+            "x": 100,
+            "y": 190,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 22,
+            "fillColor": "#4CAF50",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "blue_text",
+            "content": "蓝色文本 Blue Text",
+            "x": 100,
+            "y": 220,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 22,
+            "fillColor": "#2196F3",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "purple_text",
+            "content": "紫色文本 Purple Text",
+            "x": 100,
+            "y": 250,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 22,
+            "fillColor": "#9C27B0",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "gradient_simulation",
+            "content": "渐变模拟效果 (通过多个颜色文本实现)",
+            "x": 100,
+            "y": 290,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#607D8B",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "transform_section_title",
+            "content": "变换效果展示",
+            "x": 100,
+            "y": 350,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#37474F",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "normal_text",
+            "content": "正常文本 Normal Text",
+            "x": 100,
+            "y": 390,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#424242",
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "rotation": 0,
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "scaled_text",
+            "content": "缩放文本 Scaled Text (1.5x)",
+            "x": 100,
+            "y": 430,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#FF5722",
+            "scaleX": 1.5,
+            "scaleY": 1.5,
+            "rotation": 0,
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rotated_text",
+            "content": "旋转文本 Rotated Text (15°)",
+            "x": 100,
+            "y": 480,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#3F51B5",
+            "scaleX": 1.0,
+            "scaleY": 1.0,
+            "rotation": 15,
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "skewed_text",
+            "content": "拉伸文本 Skewed Text (2x宽)",
+            "x": 100,
+            "y": 520,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#009688",
+            "scaleX": 2.0,
+            "scaleY": 1.0,
+            "rotation": 0,
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "compressed_text",
+            "content": "压缩文本 Compressed Text (0.5x高)",
+            "x": 100,
+            "y": 560,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#795548",
+            "scaleX": 1.0,
+            "scaleY": 0.5,
+            "rotation": 0,
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "complex_transform",
+            "content": "复合变换 Complex Transform",
+            "x": 100,
+            "y": 600,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#E91E63",
+            "scaleX": 1.2,
+            "scaleY": 0.8,
+            "rotation": -10,
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "transparency_section",
+            "content": "透明度效果",
+            "x": 600,
+            "y": 350,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#37474F",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "opacity_100",
+            "content": "不透明 Opacity 100%",
+            "x": 600,
+            "y": 390,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#F44336",
+            "opacity": 1.0,
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "opacity_75",
+            "content": "半透明 Opacity 75%",
+            "x": 600,
+            "y": 420,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#F44336",
+            "opacity": 0.75,
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "opacity_50",
+            "content": "半透明 Opacity 50%",
+            "x": 600,
+            "y": 450,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#F44336",
+            "opacity": 0.5,
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "opacity_25",
+            "content": "很透明 Opacity 25%",
+            "x": 600,
+            "y": 480,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 20,
+            "fillColor": "#F44336",
+            "opacity": 0.25,
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "layered_effect",
+            "content": "叠加效果演示",
+            "x": 600,
+            "y": 520,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#2196F3",
+            "opacity": 0.7,
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "layered_effect_2",
+            "content": "叠加效果演示",
+            "x": 605,
+            "y": 525,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#FF9800",
+            "opacity": 0.6,
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "summary_colors",
+            "content": "颜色和变换总结：Skia支持丰富的文本颜色设置（RGB、RGBA、十六进制等格式），以及多种变换效果（缩放、旋转、透明度）。这些效果可以组合使用，创造出丰富的视觉效果。",
+            "x": 50,
+            "y": 680,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 16,
+            "fillColor": "#546E7A",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        }
+    ],
+    "output": {
+        "format": "png",
+        "filename": "colors_and_transforms_demo.png",
+        "quality": 100
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "canvas": {
+        "width": 1200,
+        "height": 900,
+        "background": "#2C3E50",
+        "debug": false
+    },
+    "images": [],
+    "texts": [
+        {
+            "id": "title",
+            "content": "Skia 文本效果演示 - 阴影、描边、填充",
+            "x": 600,
+            "y": 60,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 28,
+            "fillColor": "#ECF0F1",
+            "opacity": 1.0,
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "fill_only",
+            "content": "纯填充文本 - Fill Only",
+            "x": 80,
+            "y": 150,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 32,
+            "fillColor": "#E74C3C",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "stroke_only",
+            "content": "纯描边文本 - Stroke Only",
+            "x": 80,
+            "y": 220,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 32,
+            "fillColor": "#2C3E50",
+            "strokeColor": "#3498DB",
+            "strokeWidth": 2.0,
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "fill_and_stroke",
+            "content": "填充+描边文本 - Fill & Stroke",
+            "x": 80,
+            "y": 290,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 32,
+            "fillColor": "#F1C40F",
+            "strokeColor": "#E67E22",
+            "strokeWidth": 1.5,
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "shadow_only",
+            "content": "纯阴影文本 - Shadow Only",
+            "x": 80,
+            "y": 360,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 32,
+            "fillColor": "#9B59B6",
+            "hasShadow": true,
+            "shadowDx": 3,
+            "shadowDy": 3,
+            "shadowColor": "#8E44AD",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "shadow_and_stroke",
+            "content": "阴影+描边文本 - Shadow & Stroke",
+            "x": 80,
+            "y": 430,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 32,
+            "fillColor": "#1ABC9C",
+            "strokeColor": "#16A085",
+            "strokeWidth": 1.5,
+            "hasShadow": true,
+            "shadowDx": 2,
+            "shadowDy": 2,
+            "shadowColor": "#148F77",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "all_effects",
+            "content": "全效果文本 - All Effects Combined",
+            "x": 80,
+            "y": 500,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 32,
+            "fillColor": "#ECF0F1",
+            "strokeColor": "#34495E",
+            "strokeWidth": 2.0,
+            "hasShadow": true,
+            "shadowDx": 4,
+            "shadowDy": 4,
+            "shadowColor": "#7F8C8D",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "thick_stroke",
+            "content": "粗描边效果 - Thick Stroke (5px)",
+            "x": 80,
+            "y": 570,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 32,
+            "fillColor": "#FFFFFF",
+            "strokeColor": "#E74C3C",
+            "strokeWidth": 5.0,
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "large_shadow",
+            "content": "大阴影效果 - Large Shadow Offset",
+            "x": 80,
+            "y": 640,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 32,
+            "fillColor": "#F39C12",
+            "hasShadow": true,
+            "shadowDx": 8,
+            "shadowDy": 8,
+            "shadowColor": "#D35400",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "effect_comparison",
+            "content": "效果对比说明：从上到下展示了不同文本效果的组合，包括纯填充、纯描边、填充+描边、阴影等各种效果。每种效果都是通过多次绘制文本实现的。",
+            "x": 80,
+            "y": 740,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#BDC3C7",
+            "width": 1040,
+            "displayMode": "WordWrap"
+        }
+    ],
+    "output": {
+        "format": "png",
+        "filename": "text_effects_demo.png",
+        "quality": 100
+    }
+}

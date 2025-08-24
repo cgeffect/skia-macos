@@ -1,0 +1,115 @@
+{
+    "canvas": {
+        "width": 1200,
+        "height": 800,
+        "background": "#F5F5F5",
+        "debug": false
+    },
+    "images": [],
+    "texts": [
+        {
+            "id": "title",
+            "content": "Skia 基础字体样式演示",
+            "x": 600,
+            "y": 80,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 32,
+            "fillColor": "#2C3E50",
+            "opacity": 1.0,
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "small_font",
+            "content": "小字体 (12px): The quick brown fox jumps over the lazy dog. 敏捷的棕色狐狸跳过懒惰的狗。",
+            "x": 50,
+            "y": 150,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 12,
+            "fillColor": "#34495E",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "medium_font",
+            "content": "中字体 (18px): The quick brown fox jumps over the lazy dog. 敏捷的棕色狐狸跳过懒惰的狗。",
+            "x": 50,
+            "y": 200,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#34495E",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "large_font",
+            "content": "大字体 (24px): The quick brown fox jumps over the lazy dog. 敏捷的棕色狐狸跳过懒惰的狗。",
+            "x": 50,
+            "y": 260,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#34495E",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "extra_large_font",
+            "content": "超大字体 (36px): The quick brown fox jumps over the lazy dog.",
+            "x": 50,
+            "y": 340,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 36,
+            "fillColor": "#34495E",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "chinese_text",
+            "content": "中文字体测试 (28px): 这是一段中文文本，用来测试中文字体的渲染效果和排版质量。",
+            "x": 50,
+            "y": 430,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 28,
+            "fillColor": "#E74C3C",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "english_text",
+            "content": "English Font Test (28px): This is an English text sample to demonstrate font rendering and typography quality.",
+            "x": 50,
+            "y": 510,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 28,
+            "fillColor": "#3498DB",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "mixed_text",
+            "content": "中英混合 Mixed Text (26px): 这是一段包含English和中文的混合文本，用来测试mixed language rendering效果。",
+            "x": 50,
+            "y": 590,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 26,
+            "fillColor": "#9B59B6",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        },
+        {
+            "id": "numbers_symbols",
+            "content": "数字符号 Numbers & Symbols (24px): 0123456789 !@#$%^&*() 《》【】''——…… ±×÷≠≤≥",
+            "x": 50,
+            "y": 670,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 24,
+            "fillColor": "#F39C12",
+            "width": 1100,
+            "displayMode": "WordWrap"
+        }
+    ],
+    "output": {
+        "format": "png",
+        "filename": "basic_font_styles_demo.png",
+        "quality": 100
+    }
+}

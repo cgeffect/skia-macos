@@ -118,9 +118,13 @@ bool SimpleTextLayoutEngine::layoutText(SkCanvas* canvas, const TextElement& tex
     float lineHeight = textElement.style.fontSize * 1.2f;
     for (size_t i = 0; i < lines.size(); ++i) {
         float y = textElement.transform.y + textElement.style.fontSize + offsetY + i * lineHeight;
+        
+        // 【关键】文本渲染的双重控制机制：
+        // - 缩放和旋转：通过Canvas变换矩阵控制（在applyTransform中设置）
+        // - 平移（位置）：通过drawString的x,y参数直接控制
         canvas->drawString(lines[i].c_str(), 
-                          textElement.transform.x + offsetX, 
-                          y, 
+                          textElement.transform.x + offsetX,  // X位置：直接传给drawString
+                          y,                                  // Y位置：直接传给drawString
                           font, paint);
     }
     
@@ -128,13 +132,6 @@ bool SimpleTextLayoutEngine::layoutText(SkCanvas* canvas, const TextElement& tex
 }
 
 // SimpleTextLayoutEngine不再需要复杂的渲染方法，只保留基本的文本分割功能
-
-// 这些复杂的渲染方法现在由ParagraphTextLayoutEngine处理
-
-// 这些复杂的渲染方法现在由ParagraphTextLayoutEngine处理
-
-// 这些复杂的渲染方法现在由ParagraphTextLayoutEngine处理
-
 std::vector<std::string> SimpleTextLayoutEngine::splitText(const std::string& text) {
     std::vector<std::string> lines;
     std::stringstream ss(text);
@@ -369,33 +366,47 @@ float ParagraphTextLayoutEngine::calculateAutoFitFontSize(const TextElement& tex
 }
 
 // ==================== TextEffectRenderer 实现 ====================
+// 【核心原理】通过多次绘制相同文本实现复合视觉效果
 
 void TextEffectRenderer::renderShadow(SkCanvas* canvas, const TextElement& textElement, 
                                      TextLayoutEngine* layoutEngine, const SkFont& font) {
+    // 【阴影实现】在偏移位置绘制一次文本
     SkPaint shadowPaint;
-    shadowPaint.setColor(textElement.style.shadowColor);
-    shadowPaint.setStyle(SkPaint::kFill_Style);
+    shadowPaint.setColor(textElement.style.shadowColor);  // 使用阴影颜色
+    shadowPaint.setStyle(SkPaint::kFill_Style);           // 填充模式
     
+    // 注意：FakeBold应该在SkFont上设置，不是在SkPaint上
+    
+    // 关键：使用偏移量 shadowDx, shadowDy 在偏移位置绘制
+    // 这就是阴影效果的本质：在主文本后面绘制一个位移的副本
     layoutEngine->layoutText(canvas, textElement, font, shadowPaint, 
                            textElement.style.shadowDx, textElement.style.shadowDy);
 }
 
 void TextEffectRenderer::renderStroke(SkCanvas* canvas, const TextElement& textElement, 
                                      TextLayoutEngine* layoutEngine, const SkFont& font) {
+    // 【描边实现】绘制文本的轮廓线
     SkPaint strokePaint;
-    strokePaint.setColor(textElement.style.strokeColor);
-    strokePaint.setStyle(SkPaint::kStroke_Style);
-    strokePaint.setStrokeWidth(textElement.style.strokeWidth);
+    strokePaint.setColor(textElement.style.strokeColor);     // 使用描边颜色
+    strokePaint.setStyle(SkPaint::kStroke_Style);            // 关键：描边模式（只绘制轮廓）
+    strokePaint.setStrokeWidth(textElement.style.strokeWidth); // 设置描边宽度
     
+    // 注意：FakeBold应该在SkFont上设置，不是在SkPaint上
+    
+    // 在原位置绘制，但只绘制轮廓线
     layoutEngine->layoutText(canvas, textElement, font, strokePaint, 0, 0);
 }
 
 void TextEffectRenderer::renderFill(SkCanvas* canvas, const TextElement& textElement, 
                                    TextLayoutEngine* layoutEngine, const SkFont& font) {
+    // 【填充实现】绘制文本的实体部分
     SkPaint fillPaint;
-    fillPaint.setColor(textElement.style.fillColor);
-    fillPaint.setStyle(SkPaint::kFill_Style);
+    fillPaint.setColor(textElement.style.fillColor);  // 使用填充颜色
+    fillPaint.setStyle(SkPaint::kFill_Style);         // 填充模式（填充内部）
     
+    // 注意：FakeBold应该在SkFont上设置，不是在SkPaint上
+    
+    // 在原位置绘制，填充文本内部
     layoutEngine->layoutText(canvas, textElement, font, fillPaint, 0, 0);
 }
 
