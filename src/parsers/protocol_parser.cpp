@@ -128,6 +128,24 @@ bool ProtocolParser::parseTexts(const json& j) {
             return false;
         }
         
+        // 解析富文本相关属性
+        if (textJson.contains("richTextSegments") && textJson["richTextSegments"].is_array()) {
+            if (!parseRichTextSegments(textJson["richTextSegments"], text.richTextSegments)) {
+                return false;
+            }
+        }
+        
+        // 解析富文本渲染策略
+        std::string strategyStr = parseString(textJson, "richTextStrategy", "measureText");
+        if (strategyStr == "paragraph") {
+            text.richTextStrategy = RichTextRenderStrategy::Paragraph;
+        } else {
+            text.richTextStrategy = RichTextRenderStrategy::MeasureText; // 默认策略
+        }
+        
+        // 解析字间距
+        text.letterSpacing = parseFloat(textJson, "letterSpacing", 0.0f);
+        
         protocol.texts.push_back(text);
     }
     return true;
@@ -206,6 +224,65 @@ bool ProtocolParser::parseBool(const json& j, const std::string& key, bool defau
         return j[key].get<bool>();
     }
     return defaultValue;
+}
+
+bool ProtocolParser::parseRichTextSegments(const json& j, std::vector<RichTextSegment>& segments) {
+    if (!j.is_array()) {
+        errorMessage = "richTextSegments必须是数组";
+        return false;
+    }
+    
+    segments.clear();
+    for (const auto& segmentJson : j) {
+        RichTextSegment segment;
+        
+        // 必需字段
+        segment.content = parseString(segmentJson, "content", "");
+        if (segment.content.empty()) {
+            errorMessage = "富文本片段的content不能为空";
+            return false;
+        }
+        
+        // 可选样式字段（使用特殊值表示继承父级）
+        segment.fontFamily = parseString(segmentJson, "fontFamily", "");
+        segment.fontSize = parseFloat(segmentJson, "fontSize", 0.0f);
+        
+        // 颜色解析（使用透明色表示继承）
+        std::string fillColorStr = parseString(segmentJson, "fillColor", "");
+        if (!fillColorStr.empty()) {
+            segment.fillColor = ColorParser::parseColor(fillColorStr);
+        } else {
+            segment.fillColor = SK_ColorTRANSPARENT; // 表示继承父级
+        }
+        
+        std::string strokeColorStr = parseString(segmentJson, "strokeColor", "");
+        if (!strokeColorStr.empty()) {
+            segment.strokeColor = ColorParser::parseColor(strokeColorStr);
+        } else {
+            segment.strokeColor = SK_ColorTRANSPARENT; // 表示继承父级
+        }
+        
+        segment.strokeWidth = parseFloat(segmentJson, "strokeWidth", -1.0f); // -1表示继承父级
+        
+        // 阴影属性
+        segment.hasShadow = parseBool(segmentJson, "hasShadow", false);
+        if (segment.hasShadow) {
+            segment.shadowDx = parseFloat(segmentJson, "shadowDx", 0.0f);
+            segment.shadowDy = parseFloat(segmentJson, "shadowDy", 0.0f);
+            segment.shadowSigma = parseFloat(segmentJson, "shadowSigma", 0.0f);
+            
+            std::string shadowColorStr = parseString(segmentJson, "shadowColor", "");
+            if (!shadowColorStr.empty()) {
+                segment.shadowColor = ColorParser::parseColor(shadowColorStr);
+            } else {
+                segment.shadowColor = SK_ColorTRANSPARENT; // 表示继承父级
+            }
+        }
+        
+        segments.push_back(segment);
+    }
+    
+    return true;
 }
 
 } // namespace skia_renderer 

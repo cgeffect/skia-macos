@@ -86,26 +86,18 @@ list(APPEND SYS_LIBS ${APP_FRAMEWORK})
 find_library(OpenGL_FRAMEWORK OpenGL)
 list(APPEND SYS_LIBS ${OpenGL_FRAMEWORK})
 
-# 在 add_library 里添加 allHEADER 是为了让xcode工程显示头文件
-add_executable(${LIBRARY_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/examples/simple_example.cpp ${COMMON_SOURCE_FILES})
-target_include_directories(${LIBRARY_NAME} PRIVATE ${libSRV_INCLUDES_DIR})
-target_link_libraries(${LIBRARY_NAME} PRIVATE ${libs_trd_srv} ${ABSL_LIBS} ${SYS_LIBS})
-
 # 简单测试可执行文件（独立运行，不修改现有源码）
-add_executable(simple_test ${CMAKE_CURRENT_SOURCE_DIR}/tests/simple_image_test.cpp)
-target_include_directories(simple_test PRIVATE ${libSRV_INCLUDES_DIR})
-target_link_libraries(simple_test PRIVATE ${ABSL_LIBS} ${SYS_LIBS})
+add_executable(simple_image_test ${CMAKE_CURRENT_SOURCE_DIR}/tests/simple_image_test.cpp)
+target_include_directories(simple_image_test PRIVATE ${libSRV_INCLUDES_DIR})
+target_link_libraries(simple_image_test PRIVATE ${ABSL_LIBS} ${SYS_LIBS})
 
 # 智能文本渲染器测试可执行文件
-add_executable(smart_text_test ${CMAKE_CURRENT_SOURCE_DIR}/examples/simple_example.cpp ${COMMON_SOURCE_FILES})
-target_include_directories(smart_text_test PRIVATE ${libSRV_INCLUDES_DIR})
-target_link_libraries(smart_text_test PRIVATE ${ABSL_LIBS} ${SYS_LIBS})
+add_executable(simple_example ${CMAKE_CURRENT_SOURCE_DIR}/examples/simple_example.cpp ${COMMON_SOURCE_FILES})
+target_include_directories(simple_example PRIVATE ${libSRV_INCLUDES_DIR})
+target_link_libraries(simple_example PRIVATE ${ABSL_LIBS} ${SYS_LIBS})
 
 # 文本样式演示可执行文件（使用公共源文件）
-set(textStylesTestCPP ${CMAKE_CURRENT_SOURCE_DIR}/examples/text_styles_demo.cpp ${COMMON_SOURCE_FILES})
-add_executable(text_styles_demo ${textStylesTestCPP})
+add_executable(text_styles_demo ${CMAKE_CURRENT_SOURCE_DIR}/examples/text_styles_demo.cpp ${COMMON_SOURCE_FILES})
 target_include_directories(text_styles_demo PRIVATE ${libSRV_INCLUDES_DIR})
 target_link_libraries(text_styles_demo PRIVATE ${ABSL_LIBS} ${SYS_LIBS})
-
-
 

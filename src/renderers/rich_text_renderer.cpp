@@ -86,6 +86,10 @@ bool MeasureTextRichTextRenderer::renderRichText(SkCanvas* canvas,
         renderSegment(canvas, segment, mergedStyle, currentX, baseY, fontManager);
         
         // 计算下一个片段的X位置
+        /**
+         segmentWidth：文本紧贴的边界框宽度
+         letterSpacing：片段之间的字间距, 如果为0则为字体本身的字间距, 如果设置为正值, 则为本身的字间距加上增量的字间距
+         */
         float segmentWidth = calculateSegmentWidth(segment, mergedStyle, fontManager);
         currentX += segmentWidth + textElement.letterSpacing;
         

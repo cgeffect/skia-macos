@@ -9,7 +9,15 @@ FontManager::FontManager() {
     
     // 注册常用字体文件
     registerFontFile("站酷快乐体", "res/Fonts/站酷快乐体2016修订版.ttf");
+    
+    // 注册 Source Han Sans CN 字体家族的所有Weight变体
+    registerFontFile("SourceHanSansCN-ExtraLight", "res/Fonts/SourceHanSansCN-ExtraLight.otf");
+    registerFontFile("SourceHanSansCN-Light", "res/Fonts/SourceHanSansCN-Light.otf");
     registerFontFile("SourceHanSansCN-Normal", "res/Fonts/SourceHanSansCN-Normal.otf");
+    registerFontFile("SourceHanSansCN-Regular", "res/Fonts/SourceHanSansCN-Regular.otf");
+    registerFontFile("SourceHanSansCN-Medium", "res/Fonts/SourceHanSansCN-Medium.otf");
+    registerFontFile("SourceHanSansCN-Bold", "res/Fonts/SourceHanSansCN-Bold.otf");
+    registerFontFile("SourceHanSansCN-Heavy", "res/Fonts/SourceHanSansCN-Heavy.otf");
 }
 
 FontManager::~FontManager() {

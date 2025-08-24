@@ -1,0 +1,172 @@
+{
+    "canvas": {
+        "width": 800,
+        "height": 400,
+        "background": "#FFFFFF"
+    },
+    "images": [],
+    "texts": [
+        {
+            "id": "comparison_title",
+            "content": "字间距对比演示 Letter Spacing Comparison Demo",
+            "x": 50,
+            "y": 40,
+            "fontFamily": "SourceHanSansCN-Bold",
+            "fontSize": 20,
+            "fillColor": "#2C3E50",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "normal_text_label",
+            "content": "1. 普通文本 (Normal Text):",
+            "x": 50,
+            "y": 80,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 14,
+            "fillColor": "#7F8C8D",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "normal_text",
+            "content": "这是一段正常文本",
+            "x": 80,
+            "y": 110,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#000000",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rich_text_no_spacing_label",
+            "content": "2. 富文本 letterSpacing=0 (字体自然间距):",
+            "x": 50,
+            "y": 140,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 14,
+            "fillColor": "#7F8C8D",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rich_text_no_spacing",
+            "content": "",
+            "x": 80,
+            "y": 170,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#000000",
+            "displayMode": "SingleLine",
+            "richTextSegments": [
+                {
+                    "content": "这是",
+                    "fillColor": "#E74C3C"
+                },
+                {
+                    "content": "一段",
+                    "fillColor": "#F39C12"
+                },
+                {
+                    "content": "正常",
+                    "fillColor": "#27AE60"
+                },
+                {
+                    "content": "文本",
+                    "fillColor": "#3498DB"
+                }
+            ],
+            "letterSpacing": 0
+        },
+        {
+            "id": "rich_text_with_spacing_label",
+            "content": "3. 富文本 letterSpacing=5 (额外5像素间距):",
+            "x": 50,
+            "y": 200,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 14,
+            "fillColor": "#7F8C8D",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rich_text_with_spacing",
+            "content": "",
+            "x": 80,
+            "y": 230,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#000000",
+            "displayMode": "SingleLine",
+            "richTextSegments": [
+                {
+                    "content": "这是",
+                    "fillColor": "#E74C3C"
+                },
+                {
+                    "content": "一段",
+                    "fillColor": "#F39C12"
+                },
+                {
+                    "content": "正常",
+                    "fillColor": "#27AE60"
+                },
+                {
+                    "content": "文本",
+                    "fillColor": "#3498DB"
+                }
+            ],
+            "letterSpacing": 5
+        },
+        {
+            "id": "rich_text_large_spacing_label",
+            "content": "4. 富文本 letterSpacing=10 (额外10像素间距):",
+            "x": 50,
+            "y": 260,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 14,
+            "fillColor": "#7F8C8D",
+            "displayMode": "SingleLine"
+        },
+        {
+            "id": "rich_text_large_spacing",
+            "content": "",
+            "x": 80,
+            "y": 290,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 18,
+            "fillColor": "#000000",
+            "displayMode": "SingleLine",
+            "richTextSegments": [
+                {
+                    "content": "这是",
+                    "fillColor": "#E74C3C"
+                },
+                {
+                    "content": "一段",
+                    "fillColor": "#F39C12"
+                },
+                {
+                    "content": "正常",
+                    "fillColor": "#27AE60"
+                },
+                {
+                    "content": "文本",
+                    "fillColor": "#3498DB"
+                }
+            ],
+            "letterSpacing": 10
+        },
+        {
+            "id": "conclusion",
+            "content": "📝 结论：letterSpacing=0时，富文本片段紧贴，保持字体自然间距",
+            "x": 50,
+            "y": 340,
+            "fontFamily": "SourceHanSansCN-Normal",
+            "fontSize": 14,
+            "fillColor": "#8E44AD",
+            "displayMode": "SingleLine"
+        }
+    ],
+    "output": {
+        "format": "png",
+        "filename": "spacing_comparison_demo.png",
+        "quality": 100
+    }
+}

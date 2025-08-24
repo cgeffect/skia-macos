@@ -46,8 +46,10 @@ fi
 
 if [ $? -eq 0 ]; then
     echo "=== $BUILD_TYPE 版本构建成功！ ==="
-    echo "可执行文件位置: ./build/renderer"
-    echo "测试程序位置: ./build/simple_test"
+    echo "主要可执行文件:"
+    echo "  - 渲染器: ./build/simple_example"
+    echo "  - 文本样式演示: ./build/text_styles_demo"
+    echo "  - 简单测试: ./build/simple_image_test"
 else
     echo "=== 构建失败！ ==="
     exit 1

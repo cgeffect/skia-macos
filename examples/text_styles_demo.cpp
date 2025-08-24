@@ -6,11 +6,7 @@ int main() {
     // 创建output目录
     struct stat st = {0};
     if (stat("output", &st) == -1) {
-#ifdef _WIN32
-        _mkdir("output");
-#else
         mkdir("output", 0700);
-#endif
     }
 
     std::cout << "=== Skia文本样式功能演示 ===" << std::endl;

@@ -39,7 +39,7 @@ if [ $? -eq 0 ]; then
     echo "   - output/rich_text_demo.png              (富文本效果)"
     echo ""
     echo "🎯 你也可以单独运行某个演示："
-    echo "   ./build/renderer projects/text_styles_protocols/basic_font_styles.json"
+    echo "   ./build/simple_example projects/text_styles_protocols/basic_font_styles.json"
     echo ""
     echo "📚 查看详细说明："
     echo "   cat examples/README_TEXT_STYLES.md"

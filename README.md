@@ -48,17 +48,20 @@ cd skia-macos
 ./build.sh --help
 
 # 运行示例
-./build/renderer
+./build/simple_example
 ```
 
 ### 基本使用
 
 ```bash
 # 渲染单个协议文件
-./build/renderer projects/trip/trip_protocol.json
+./build/simple_example projects/trip/trip_protocol.json
 
-# 运行所有测试
-./build/simple_test run
+# 运行文本样式演示
+./build/text_styles_demo
+
+# 运行简单测试
+./build/simple_image_test
 ```
 
 ## 📋 项目示例
