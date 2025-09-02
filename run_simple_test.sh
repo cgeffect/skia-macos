@@ -10,7 +10,7 @@ echo "时间: $(date)"
 echo ""
 
 # 检查是否已编译
-if [ ! -f "build/simple_test" ]; then
+if [ ! -f "build/simple_image_test" ]; then
     echo "❌ 简单测试程序未编译，正在编译..."
     ./build.sh
 fi
@@ -33,7 +33,7 @@ echo ""
 # 测试几个关键项目的一致性
 for project in trip food clothes single_line auto_fit; do
     echo "测试项目: $project"
-    ./build/simple_test consistency $project 3
+    ./build/simple_image_test consistency $project 3
     echo ""
 done
 
@@ -41,7 +41,7 @@ done
 echo "🔄 运行完整图片对比测试..."
 echo ""
 
-./build/simple_test run
+./build/simple_image_test run
 
 echo ""
 echo "=== 测试完成 ==="
@@ -64,9 +64,9 @@ fi
 echo ""
 echo "💡 使用说明:"
 echo "  - 运行测试: ./run_simple_test.sh"
-echo "  - 更新基线: ./build/simple_test update <project_name>"
-echo "  - 设置容差: ./build/simple_test tolerance <value>"
-echo "  - 一致性测试: ./build/simple_test consistency <project_name> [iterations]"
+echo "  - 更新基线: ./build/simple_image_test update <project_name>"
+echo "  - 设置容差: ./build/simple_image_test tolerance <value>"
+echo "  - 一致性测试: ./build/simple_image_test consistency <project_name> [iterations]"
 echo ""
 echo "🎯 特点:"
 echo "  - 不修改任何现有源码"
