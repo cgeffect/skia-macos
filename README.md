@@ -76,8 +76,28 @@ cd skia-macos
 - **冬至海报**: `projects/horizontal/`
 - **服装海报**: `projects/clothes/`
 
+<!-- 优化点1：包裹 div 实现整排居中，避免左对齐凌乱 -->
+<div align="center">
+  <!-- 第一排：4张图片（保留间距，避免挤在一起） -->
+  <img src="projects/clothes/output/clothes_poster.png" alt="服装海报效果" width="200" style="margin: 8px;">
+  <img src="projects/cup/output/cup_poster.png" alt="杯子海报效果" width="200" style="margin: 8px;">
+  <img src="projects/tshirt/output/tshirt_poster.png" alt="T恤海报效果" width="200" style="margin: 8px;">
+  <img src="projects/sunscreen/output/sunscreen_poster.png" alt="防晒海报效果" width="200" style="margin: 8px;">
+</div>
+
+<!-- 优化点2：增加 <br><br> 加大两排间距，换行更明显（单 <br> 间距可能过窄） -->
+<br><br>
+
+<!-- 第二排：3张图片，同样居中+间距 -->
+<div align="center">
+  <img src="projects/dessert/output/dessert_poster.png" alt="甜品海报效果" width="200" style="margin: 8px;">
+  <img src="projects/food/output/food_poster.png" alt="美食海报效果" width="200" style="margin: 8px;">
+  <img src="projects/spring/output/spring_poster.png" alt="春天海报效果" width="200" style="margin: 8px;">
+</div>
+
 ### 长图设计
 - **蛋黄心长图**: `projects/long/` (94张图片的复杂长图)
+<img src="projects/long/output/long_poster.png" alt="文本渲染效果" width="200">
 
 ### 功能测试
 - **文本渲染模式测试**: `projects/text_wrap_test/` (四种文本显示模式完整测试)
