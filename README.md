@@ -1,4 +1,3 @@
-https://github.com/cgeffect/person/blob/master/public/resume/云剪辑系统技术介绍.pdf
 # 🎨 PosterMaker - 智能海报生成器
 
 基于 Skia 图形库的高性能海报生成引擎，支持 JSON 协议驱动的动态图形渲染。专为营销海报、社交媒体图片、电商主图等场景设计。
